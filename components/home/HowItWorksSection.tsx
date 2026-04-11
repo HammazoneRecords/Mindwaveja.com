@@ -75,30 +75,47 @@ export function HowItWorksSection() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="relative"
             >
-              <div className="bg-white dark:bg-bg-tertiary border border-charcoal-100 dark:border-border-primary rounded-3xl p-6 text-center hover:border-wave-300 dark:hover:border-brand-red hover:shadow-glow-red transition-all shadow-soft">
+              <div
+                className="rounded-3xl p-6 text-center transition-all"
+                style={{
+                  backgroundColor: 'rgb(var(--color-bg-elevated))',
+                  border: '1px solid rgb(var(--color-border-primary))',
+                }}
+              >
                 {/* Step Number */}
-                <div className={`text-[3.0625rem] font-bold font-display mb-4 ${
-                  step.color === 'wave' ? 'text-wave-200 dark:text-brand-red' : 
-                  step.color === 'leaf' ? 'text-leaf-200 dark:text-brand-green' : 'text-gradient opacity-30 dark:opacity-40'
-                }`}>
+                <div
+                  className="text-[3.0625rem] font-bold font-display mb-4"
+                  style={{
+                    color: step.color === 'wave' ? 'rgb(var(--color-brand-red))' :
+                           step.color === 'leaf' ? 'rgb(var(--color-brand-green))' :
+                           'rgb(var(--color-text-tertiary))',
+                  }}
+                >
                   {step.number}
                 </div>
 
                 {/* Icon */}
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4 ${
-                  step.color === 'wave' ? 'bg-wave-50 dark:bg-brand-red/10 text-wave-500 dark:text-brand-red' : 
-                  step.color === 'leaf' ? 'bg-leaf-50 dark:bg-brand-green/10 text-leaf-500 dark:text-brand-green' : 'bg-gradient-to-br from-wave-50 to-leaf-50 dark:from-brand-red/10 dark:to-brand-green/10 text-charcoal-700 dark:text-primary'
-                }`}>
+                <div
+                  className="inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4"
+                  style={{
+                    backgroundColor: step.color === 'wave' ? 'rgb(var(--color-brand-red) / 0.10)' :
+                                     step.color === 'leaf' ? 'rgb(var(--color-brand-green) / 0.10)' :
+                                     'rgb(var(--color-bg-secondary))',
+                    color: step.color === 'wave' ? 'rgb(var(--color-brand-red))' :
+                           step.color === 'leaf' ? 'rgb(var(--color-brand-green))' :
+                           'rgb(var(--color-text-secondary))',
+                  }}
+                >
                   {step.icon}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-[1.375rem] font-semibold text-charcoal-900 dark:text-primary mb-2">
+                <h3 className="text-[1.375rem] font-semibold mb-2" style={{ color: 'rgb(var(--color-text-primary))' }}>
                   {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-charcoal-600 dark:text-secondary text-[0.9375rem] leading-relaxed">
+                <p className="text-[0.9375rem] leading-relaxed" style={{ color: 'rgb(var(--color-text-secondary))' }}>
                   {step.description}
                 </p>
               </div>
