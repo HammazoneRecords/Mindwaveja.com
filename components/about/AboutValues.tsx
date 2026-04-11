@@ -61,14 +61,14 @@ export function AboutValues() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className={`bg-white border border-charcoal-100 rounded-2xl p-6 shadow-soft transition-all duration-300 ${
-              value.color === 'wave' 
-                ? 'hover:border-wave-300 hover:shadow-glow-red' 
-                : 'hover:border-leaf-300 hover:shadow-glow-green'
-            }`}
+            className="rounded-2xl p-6 transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(var(--color-bg-elevated))',
+              border: '1px solid rgb(var(--color-border-primary))',
+            }}
           >
-            <h3 className="text-charcoal-900 font-semibold mb-3">{value.title}</h3>
-            <p className="text-charcoal-600 text-sm leading-relaxed">{value.description}</p>
+            <h3 className="font-semibold mb-3" style={{ color: 'rgb(var(--color-text-primary))' }}>{value.title}</h3>
+            <p className="text-sm leading-relaxed" style={{ color: 'rgb(var(--color-text-secondary))' }}>{value.description}</p>
           </motion.div>
         ))}
       </div>
