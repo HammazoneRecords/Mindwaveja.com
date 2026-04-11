@@ -65,38 +65,45 @@ export function FeaturesSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`group relative bg-white dark:bg-bg-tertiary border border-charcoal-100 dark:border-border-primary rounded-3xl p-6 lg:p-8 transition-all duration-300 shadow-soft ${
-              feature.color === 'wave' 
-                ? 'hover:border-wave-300 dark:hover:border-brand-red hover:shadow-glow-red' 
-                : 'hover:border-leaf-300 dark:hover:border-brand-green hover:shadow-glow-green'
-            }`}
+            className="group relative rounded-3xl p-6 lg:p-8 transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(var(--color-bg-elevated))',
+              border: '1px solid rgb(var(--color-border-primary))',
+            }}
           >
             {/* Gradient Background on hover */}
             <div
-              className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${
-                feature.color === 'wave'
-                  ? 'bg-gradient-to-br from-wave-50 to-transparent dark:from-brand-red/10'
-                  : 'bg-gradient-to-br from-leaf-50 to-transparent dark:from-brand-green/10'
-              }`}
+              className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{
+                background: feature.color === 'wave'
+                  ? 'linear-gradient(135deg, rgb(var(--color-brand-red) / 0.06) 0%, transparent 60%)'
+                  : 'linear-gradient(135deg, rgb(var(--color-brand-green) / 0.06) 0%, transparent 60%)',
+              }}
             />
 
             <div className="relative">
               {/* Icon */}
-              <div className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl mb-4 transition-colors ${
-                feature.color === 'wave'
-                  ? 'bg-wave-50 text-wave-500 group-hover:bg-wave-100 dark:bg-brand-red/10 dark:text-brand-red dark:group-hover:bg-brand-red/20'
-                  : 'bg-leaf-50 text-leaf-500 group-hover:bg-leaf-100 dark:bg-brand-green/10 dark:text-brand-green dark:group-hover:bg-brand-green/20'
-              }`}>
+              <div
+                className="inline-flex items-center justify-center w-12 h-12 rounded-2xl mb-4 transition-colors"
+                style={{
+                  backgroundColor: feature.color === 'wave'
+                    ? 'rgb(var(--color-brand-red) / 0.10)'
+                    : 'rgb(var(--color-brand-green) / 0.10)',
+                  color: feature.color === 'wave'
+                    ? 'rgb(var(--color-brand-red))'
+                    : 'rgb(var(--color-brand-green))',
+                }}
+              >
                 {feature.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-[1.375rem] font-semibold text-charcoal-900 dark:text-primary mb-3">
+              <h3 className="text-[1.375rem] font-semibold mb-3" style={{ color: 'rgb(var(--color-text-primary))' }}>
                 {feature.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[1.0625rem] text-charcoal-600 dark:text-secondary leading-relaxed">
+              <p className="text-[1.0625rem] leading-relaxed" style={{ color: 'rgb(var(--color-text-secondary))' }}>
                 {feature.description}
               </p>
             </div>

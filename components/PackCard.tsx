@@ -23,7 +23,7 @@ function ScoreIndicator({ label, score, inverted = false }: { label: string; sco
   
   return (
     <div className="flex flex-col items-center">
-      <span className="text-xs text-tertiary dark:text-text-secondary mb-1">{label}</span>
+      <span className="text-xs mb-1" style={{ color: 'rgb(var(--color-text-tertiary))' }}>{label}</span>
       <div className="flex gap-0.5">
         {[1, 2, 3, 4, 5].map((i) => (
           <div
@@ -47,7 +47,11 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group relative elevation-2 dark:bg-secondary rounded-3xl p-6 hover:glow-red transition-all duration-300 border border-primary dark:border-primary"
+      className="group relative rounded-3xl p-6 transition-all duration-300"
+      style={{
+        backgroundColor: 'rgb(var(--color-bg-elevated))',
+        border: '1px solid rgb(var(--color-border-primary))',
+      }}
     >
       {/* Category Badge */}
       <div className="flex items-start justify-between mb-4">
@@ -58,12 +62,12 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-semibold text-primary dark:text-text-primary mb-2 group-hover:text-brand-red transition-colors">
+      <h3 className="text-xl font-semibold mb-2 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
         {pack.name}
       </h3>
 
       {/* Description */}
-      <p className="text-secondary dark:text-text-secondary text-sm leading-relaxed mb-4 line-clamp-2">
+      <p className="text-sm leading-relaxed mb-4 line-clamp-2" style={{ color: 'rgb(var(--color-text-secondary))' }}>
         {pack.description}
       </p>
 
@@ -83,26 +87,26 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       {/* Stats */}
       <div className="grid grid-cols-2 gap-4 mb-4">
         <div>
-          <span className="text-tertiary dark:text-text-tertiary text-xs uppercase tracking-wide">Capital</span>
-          <p className="text-primary dark:text-text-primary text-sm font-medium">
+          <span className="text-xs uppercase tracking-wide" style={{ color: 'rgb(var(--color-text-tertiary))' }}>Capital</span>
+          <p className="text-sm font-medium" style={{ color: 'rgb(var(--color-text-primary))' }}>
             {formatCapitalRange(pack.capitalRange.min, pack.capitalRange.max, pack.capitalRange.currency)}
           </p>
         </div>
         <div>
-          <span className="text-tertiary dark:text-text-tertiary text-xs uppercase tracking-wide">First Sale</span>
-          <p className="text-primary dark:text-text-primary text-sm font-medium">{pack.timeToFirstSale}</p>
+          <span className="text-xs uppercase tracking-wide" style={{ color: 'rgb(var(--color-text-tertiary))' }}>First Sale</span>
+          <p className="text-sm font-medium" style={{ color: 'rgb(var(--color-text-primary))' }}>{pack.timeToFirstSale}</p>
         </div>
       </div>
 
       {/* First 7 Actions Teaser */}
       <div className="mb-6">
-        <span className="text-tertiary dark:text-text-tertiary text-xs uppercase tracking-wide mb-2 block">
+        <span className="text-xs uppercase tracking-wide mb-2 block" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
           First 7 Actions Preview
         </span>
         <ul className="space-y-1">
           {pack.firstSevenActions.slice(0, 3).map((action, i) => (
-            <li key={i} className="text-secondary dark:text-text-secondary text-sm flex items-start gap-2">
-              <span className="text-brand-green dark:text-brand-red mt-1">
+            <li key={i} className="text-sm flex items-start gap-2" style={{ color: 'rgb(var(--color-text-secondary))' }}>
+              <span className="mt-1" style={{ color: 'rgb(var(--color-brand-red))' }}>
                 <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
