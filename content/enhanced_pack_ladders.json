@@ -1,0 +1,2428 @@
+{
+  "fruit-vending-mobile": {
+    "availableNext": [
+      {
+        "slug": "personal-event-catering",
+        "name": "Personal Event Catering",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "office-catering",
+        "name": "Office Catering",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "natural-juice-production-direct-sale",
+        "name": "Natural Juice Production (Direct Sale)",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "food",
+    "verticalProgression": "food:entry"
+  },
+  "barbershop-chair-rental": {
+    "availableNext": [
+      {
+        "slug": "residential-cleaning-services",
+        "name": "Residential Cleaning Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "professional-windscreen-wiper-service",
+        "name": "Professional Windscreen Wiper Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "tour-guide-operator-no-vehicle",
+        "name": "Tour Guide Operator (No Vehicle)",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "services",
+    "verticalProgression": "services:entry"
+  },
+  "phone-case-customization": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "basic-website-creation": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "cluster-lash-application-service": {
+    "availableNext": [
+      {
+        "slug": "on-location-beauty-express",
+        "name": "On Location Beauty Express",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "nail-tech-starter-mobile-services",
+        "name": "Nail Tech Starter Mobile Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Service Mastery",
+        "researchPrompt": "Advanced aesthetic services (microblading, advanced skincare) \u2014 research CIDESCO or similar certifications"
+      },
+      {
+        "direction": "Product Line",
+        "researchPrompt": "Launch your own beauty product line \u2014 research cosmetic formulation and JFDA regulations"
+      },
+      {
+        "direction": "Franchise",
+        "researchPrompt": "Franchise your beauty concept \u2014 research franchise development and operations manuals"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "beauty",
+    "verticalProgression": "beauty:entry"
+  },
+  "cluster-lash-product-resale": {
+    "availableNext": [
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Service Mastery",
+        "researchPrompt": "Advanced aesthetic services (microblading, advanced skincare) \u2014 research CIDESCO or similar certifications"
+      },
+      {
+        "direction": "Product Line",
+        "researchPrompt": "Launch your own beauty product line \u2014 research cosmetic formulation and JFDA regulations"
+      },
+      {
+        "direction": "Franchise",
+        "researchPrompt": "Franchise your beauty concept \u2014 research franchise development and operations manuals"
+      }
+    ],
+    "categoryStage": "product",
+    "progressionType": "beauty",
+    "verticalProgression": "beauty:product"
+  },
+  "custom-clothing-prints-heat-transfer": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "custom-clothing-prints-events": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "articles-translation-media-outlets": {
+    "availableNext": [
+      {
+        "slug": "translation-business",
+        "name": "Business Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-medical",
+        "name": "Medical Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-academic",
+        "name": "Academic Translation Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "translation",
+    "verticalProgression": "translation:entry"
+  },
+  "artisan-pack-production-union": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "baby-accessories": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "baby-shower-styling-services": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "events",
+    "verticalProgression": "events:advanced"
+  },
+  "backyard-vegetable-farming-direct-consumer": {
+    "availableNext": [
+      {
+        "slug": "vegetable-supply-grocery-stores-packaged-weekly",
+        "name": "Vegetable Supply to Grocery Stores (Packaged Weekly)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-food-processors-bulk-seasonal",
+        "name": "Vegetable Supply to Food Processors (Bulk Seasonal)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-export-bulk-seasonal",
+        "name": "Vegetable Supply Export Bulk Seasonal",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:entry"
+  },
+  "custom-clothing-prints-businesses-2": {
+    "availableNext": [
+      {
+        "slug": "custom-clothing-prints-events-2",
+        "name": "Custom Clothing Prints Events 2",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "custom-clothing-prints-heat-transfer",
+        "name": "Custom Clothing Prints Heat Transfer",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "custom-clothing-prints-dtg",
+        "name": "Custom Clothing Prints Dtg",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:entry"
+  },
+  "translation-academic": {
+    "availableNext": [
+      {
+        "slug": "translation-technical",
+        "name": "Technical Translation",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "scripts-translation-production",
+        "name": "Scripts Translation & Production",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "subtitles-translation-tv-film",
+        "name": "Subtitles Translation for TV & Film",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "translation",
+    "verticalProgression": "translation:mid"
+  },
+  "clown-services": {
+    "availableNext": [
+      {
+        "slug": "event-decoration-celebrations",
+        "name": "Event Decoration Celebrations",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "event-decoration-corporate",
+        "name": "Event Decoration Corporate",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "kids-party-entertainment",
+        "name": "Kids Party Entertainment",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "events",
+    "verticalProgression": "events:entry"
+  },
+  "translation-media": {
+    "availableNext": [
+      {
+        "slug": "translation-business",
+        "name": "Business Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-medical",
+        "name": "Medical Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-academic",
+        "name": "Academic Translation Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "translation",
+    "verticalProgression": "translation:entry"
+  },
+  "craft-sales-retail": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "event-decoration-celebrations": {
+    "availableNext": [
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "baby-shower-styling-services",
+        "name": "Baby Shower Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "events",
+    "verticalProgression": "events:mid"
+  },
+  "stoplight-convenience-sales": {
+    "availableNext": [
+      {
+        "slug": "residential-cleaning-services",
+        "name": "Residential Cleaning Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "professional-windscreen-wiper-service",
+        "name": "Professional Windscreen Wiper Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "tour-guide-operator-no-vehicle",
+        "name": "Tour Guide Operator (No Vehicle)",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "services",
+    "verticalProgression": "services:entry"
+  },
+  "squarespace-website-setup-service": {
+    "availableNext": [
+      {
+        "slug": "wix-website-setup-service",
+        "name": "Wix Website Setup Service",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "digital",
+    "verticalProgression": "digital:mid"
+  },
+  "backyard-vegetable-farming-wholesale": {
+    "availableNext": [
+      {
+        "slug": "vegetable-supply-grocery-stores-packaged-weekly",
+        "name": "Vegetable Supply to Grocery Stores (Packaged Weekly)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-food-processors-bulk-seasonal",
+        "name": "Vegetable Supply to Food Processors (Bulk Seasonal)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-export-bulk-seasonal",
+        "name": "Vegetable Supply Export Bulk Seasonal",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:entry"
+  },
+  "bounce-house-rentals": {
+    "availableNext": [
+      {
+        "slug": "event-decoration-celebrations",
+        "name": "Event Decoration Celebrations",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "event-decoration-corporate",
+        "name": "Event Decoration Corporate",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "kids-party-entertainment",
+        "name": "Kids Party Entertainment",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "events",
+    "verticalProgression": "events:entry"
+  },
+  "craft-union-membership-pack": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "custom-baby-clothes": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "custom-clothing-prints-dtg": {
+    "availableNext": [
+      {
+        "slug": "custom-clothing-prints-business-events",
+        "name": "Custom Clothing Prints Business Events",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "custom-clothing-prints-businesses",
+        "name": "Custom Clothing Prints Businesses",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:mid"
+  },
+  "custom-clothing-prints-events-2": {
+    "availableNext": [
+      {
+        "slug": "custom-clothing-prints-business-events",
+        "name": "Custom Clothing Prints Business Events",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "custom-clothing-prints-businesses",
+        "name": "Custom Clothing Prints Businesses",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:mid"
+  },
+  "custom-clothing-prints-individuals": {
+    "availableNext": [
+      {
+        "slug": "custom-clothing-prints-events-2",
+        "name": "Custom Clothing Prints Events 2",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "custom-clothing-prints-heat-transfer",
+        "name": "Custom Clothing Prints Heat Transfer",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "custom-clothing-prints-dtg",
+        "name": "Custom Clothing Prints Dtg",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:entry"
+  },
+  "custom-clothing-prints-screen-printing": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "screen",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:screen"
+  },
+  "event-decoration-corporate": {
+    "availableNext": [
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "baby-shower-styling-services",
+        "name": "Baby Shower Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "events",
+    "verticalProgression": "events:mid"
+  },
+  "food-processing-supply-vegetables": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "food",
+    "verticalProgression": "food:advanced"
+  },
+  "on-location-event-beauty-express": {
+    "availableNext": [
+      {
+        "slug": "on-location-beauty-express",
+        "name": "On Location Beauty Express",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "nail-tech-starter-mobile-services",
+        "name": "Nail Tech Starter Mobile Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Service Mastery",
+        "researchPrompt": "Advanced aesthetic services (microblading, advanced skincare) \u2014 research CIDESCO or similar certifications"
+      },
+      {
+        "direction": "Product Line",
+        "researchPrompt": "Launch your own beauty product line \u2014 research cosmetic formulation and JFDA regulations"
+      },
+      {
+        "direction": "Franchise",
+        "researchPrompt": "Franchise your beauty concept \u2014 research franchise development and operations manuals"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "beauty",
+    "verticalProgression": "beauty:entry"
+  },
+  "personal-event-catering": {
+    "availableNext": [
+      {
+        "slug": "natural-juice-production-wholesale",
+        "name": "Natural Juice Production Wholesale",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "food-processing-supply-vegetables",
+        "name": "Food Processing Supply Vegetables",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "food",
+    "verticalProgression": "food:mid"
+  },
+  "press-releases-translation-pr-corporate": {
+    "availableNext": [
+      {
+        "slug": "translation-business",
+        "name": "Business Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-medical",
+        "name": "Medical Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-academic",
+        "name": "Academic Translation Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "translation",
+    "verticalProgression": "translation:entry"
+  },
+  "small-business-cleaning-services": {
+    "availableNext": [
+      {
+        "slug": "residential-cleaning-services",
+        "name": "Residential Cleaning Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "professional-windscreen-wiper-service",
+        "name": "Professional Windscreen Wiper Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "tour-guide-operator-no-vehicle",
+        "name": "Tour Guide Operator (No Vehicle)",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "services",
+    "verticalProgression": "services:entry"
+  },
+  "on-location-beauty-express": {
+    "availableNext": [
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Service Mastery",
+        "researchPrompt": "Advanced aesthetic services (microblading, advanced skincare) \u2014 research CIDESCO or similar certifications"
+      },
+      {
+        "direction": "Product Line",
+        "researchPrompt": "Launch your own beauty product line \u2014 research cosmetic formulation and JFDA regulations"
+      },
+      {
+        "direction": "Franchise",
+        "researchPrompt": "Franchise your beauty concept \u2014 research franchise development and operations manuals"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "beauty",
+    "verticalProgression": "beauty:mid"
+  },
+  "patois-calibration-agent": {
+    "availableNext": [
+      {
+        "slug": "translation-business",
+        "name": "Business Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-medical",
+        "name": "Medical Translation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "translation-academic",
+        "name": "Academic Translation Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "translation",
+    "verticalProgression": "translation:entry"
+  },
+  "event-styling-services": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "events",
+    "verticalProgression": "events:advanced"
+  },
+  "kids-party-entertainment": {
+    "availableNext": [
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "baby-shower-styling-services",
+        "name": "Baby Shower Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "events",
+    "verticalProgression": "events:mid"
+  },
+  "nail-tech-starter-home-studio": {
+    "availableNext": [
+      {
+        "slug": "on-location-beauty-express",
+        "name": "On Location Beauty Express",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "nail-tech-starter-mobile-services",
+        "name": "Nail Tech Starter Mobile Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Service Mastery",
+        "researchPrompt": "Advanced aesthetic services (microblading, advanced skincare) \u2014 research CIDESCO or similar certifications"
+      },
+      {
+        "direction": "Product Line",
+        "researchPrompt": "Launch your own beauty product line \u2014 research cosmetic formulation and JFDA regulations"
+      },
+      {
+        "direction": "Franchise",
+        "researchPrompt": "Franchise your beauty concept \u2014 research franchise development and operations manuals"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "beauty",
+    "verticalProgression": "beauty:entry"
+  },
+  "nail-tech-starter-mobile-services": {
+    "availableNext": [
+      {
+        "slug": "event-styling-services",
+        "name": "Event Styling Services",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Service Mastery",
+        "researchPrompt": "Advanced aesthetic services (microblading, advanced skincare) \u2014 research CIDESCO or similar certifications"
+      },
+      {
+        "direction": "Product Line",
+        "researchPrompt": "Launch your own beauty product line \u2014 research cosmetic formulation and JFDA regulations"
+      },
+      {
+        "direction": "Franchise",
+        "researchPrompt": "Franchise your beauty concept \u2014 research franchise development and operations manuals"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "beauty",
+    "verticalProgression": "beauty:mid"
+  },
+  "social-media-stories-creation-short-form": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "phone-case-customization-pre-made-designs": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Scale vertically",
+        "researchPrompt": "Research advanced operations and team expansion for your specific industry"
+      }
+    ],
+    "categoryStage": "independent",
+    "progressionType": "custom"
+  },
+  "social-media-content-creation": {
+    "availableNext": [
+      {
+        "slug": "wix-website-setup-service",
+        "name": "Wix Website Setup Service",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "digital",
+    "verticalProgression": "digital:mid"
+  },
+  "tour-guide-operator-no-vehicle": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "services",
+    "verticalProgression": "services:advanced"
+  },
+  "residential-cleaning-services": {
+    "availableNext": [
+      {
+        "slug": "tour-guide-operator-no-vehicle",
+        "name": "Tour Guide Operator (No Vehicle)",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "tour-guide-operator-with-vehicle",
+        "name": "Tour Guide Operator (With Vehicle)",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "services",
+    "verticalProgression": "services:mid"
+  },
+  "party-equipment-rentals": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Full Planning",
+        "researchPrompt": "Full-service event planning \u2014 research wedding planning certification and luxury event management"
+      },
+      {
+        "direction": "Venue",
+        "researchPrompt": "Own event venue \u2014 research commercial real estate, venue licensing, and hospitality operations"
+      },
+      {
+        "direction": "Destination",
+        "researchPrompt": "Destination event management \u2014 research international logistics and luxury travel coordination"
+      }
+    ],
+    "categoryStage": "rentals",
+    "progressionType": "events",
+    "verticalProgression": "events:rentals"
+  },
+  "social-media-community-management": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "social-media-posts-creation-copywriting": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "phone-case-design-and-print-service": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "wordpress-template-website-setup": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "vegetable-supply-restaurants-fresh-daily": {
+    "availableNext": [
+      {
+        "slug": "vegetable-supply-grocery-stores-packaged-weekly",
+        "name": "Vegetable Supply to Grocery Stores (Packaged Weekly)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-food-processors-bulk-seasonal",
+        "name": "Vegetable Supply to Food Processors (Bulk Seasonal)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-export-bulk-seasonal",
+        "name": "Vegetable Supply Export Bulk Seasonal",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:entry"
+  },
+  "phone-case-printing-customer-design": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "social-media-video-creation-production": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "natural-juice-production-wholesale": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "food",
+    "verticalProgression": "food:advanced"
+  },
+  "stoplight-sales-specialist": {
+    "availableNext": [
+      {
+        "slug": "residential-cleaning-services",
+        "name": "Residential Cleaning Services",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "professional-windscreen-wiper-service",
+        "name": "Professional Windscreen Wiper Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "tour-guide-operator-no-vehicle",
+        "name": "Tour Guide Operator (No Vehicle)",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "services",
+    "verticalProgression": "services:entry"
+  },
+  "professional-windscreen-wiper-service": {
+    "availableNext": [
+      {
+        "slug": "tour-guide-operator-no-vehicle",
+        "name": "Tour Guide Operator (No Vehicle)",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "tour-guide-operator-with-vehicle",
+        "name": "Tour Guide Operator (With Vehicle)",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "services",
+    "verticalProgression": "services:mid"
+  },
+  "natural-juice-production-direct-sale": {
+    "availableNext": [
+      {
+        "slug": "natural-juice-production-wholesale",
+        "name": "Natural Juice Production Wholesale",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "food-processing-supply-vegetables",
+        "name": "Food Processing Supply Vegetables",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "food",
+    "verticalProgression": "food:mid"
+  },
+  "social-media-translation-brands-influencers": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "stoplight-snack-sales": {
+    "availableNext": [
+      {
+        "slug": "personal-event-catering",
+        "name": "Personal Event Catering",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "office-catering",
+        "name": "Office Catering",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "natural-juice-production-direct-sale",
+        "name": "Natural Juice Production (Direct Sale)",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "food",
+    "verticalProgression": "food:entry"
+  },
+  "phone-case-customization-custom-designs": {
+    "availableNext": [
+      {
+        "slug": "social-media-content-creation",
+        "name": "Social Media Content Creation",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "social-media-graphics-creation-design",
+        "name": "Social Media Graphics Creation & Design",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "squarespace-website-setup-service",
+        "name": "Squarespace Website Setup Service",
+        "relationship": "Scale to mid level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "digital",
+    "verticalProgression": "digital:entry"
+  },
+  "tour-guide-operator-with-vehicle": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Facility Management",
+        "researchPrompt": "Integrated facility management \u2014 research commercial contracts and service diversification"
+      },
+      {
+        "direction": "Franchise Chain",
+        "researchPrompt": "Multi-location service chain \u2014 research franchise development and operational standardization"
+      },
+      {
+        "direction": "B2B Contracts",
+        "researchPrompt": "Large B2B service contracts \u2014 research tender processes, SLA development, and account management"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "services",
+    "verticalProgression": "services:advanced"
+  },
+  "wix-website-setup-service": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "digital",
+    "verticalProgression": "digital:advanced"
+  },
+  "scripts-translation-production": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "translation",
+    "verticalProgression": "translation:advanced"
+  },
+  "social-media-graphics-creation-design": {
+    "availableNext": [
+      {
+        "slug": "wix-website-setup-service",
+        "name": "Wix Website Setup Service",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Custom Development",
+        "researchPrompt": "Custom web application development \u2014 research React, Node.js, or full-stack frameworks"
+      },
+      {
+        "direction": "Saas Product",
+        "researchPrompt": "Build a SaaS product \u2014 research product-market fit, MRR metrics, and scalable architecture"
+      },
+      {
+        "direction": "Ai Automation",
+        "researchPrompt": "AI-powered automation services \u2014 research LangChain, OpenAI API, and workflow automation"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "digital",
+    "verticalProgression": "digital:mid"
+  },
+  "translation-tourism": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "specialized",
+    "progressionType": "translation",
+    "verticalProgression": "translation:specialized"
+  },
+  "vegetable-supply-grocery-stores-packaged-weekly": {
+    "availableNext": [
+      {
+        "slug": "vegetable-supply-export-bulk-seasonal",
+        "name": "Vegetable Supply Export Bulk Seasonal",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:mid"
+  },
+  "office-catering": {
+    "availableNext": [
+      {
+        "slug": "natural-juice-production-wholesale",
+        "name": "Natural Juice Production Wholesale",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "food-processing-supply-vegetables",
+        "name": "Food Processing Supply Vegetables",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Restaurant",
+        "researchPrompt": "Open a brick-and-mortar restaurant \u2014 research restaurant operations, licensing, and location scouting"
+      },
+      {
+        "direction": "Food Manufacturing",
+        "researchPrompt": "Launch packaged food manufacturing \u2014 research HACCP certification and distribution channels"
+      },
+      {
+        "direction": "Export",
+        "researchPrompt": "Export Jamaican food products \u2014 research FDA/USDA requirements and international logistics"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "food",
+    "verticalProgression": "food:mid"
+  },
+  "subtitles-translation-tv-film": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "translation",
+    "verticalProgression": "translation:advanced"
+  },
+  "vegetable-supply-food-processors-bulk-seasonal": {
+    "availableNext": [
+      {
+        "slug": "vegetable-supply-export-bulk-seasonal",
+        "name": "Vegetable Supply Export Bulk Seasonal",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:mid"
+  },
+  "translation-diaspora-business": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "specialized",
+    "progressionType": "translation",
+    "verticalProgression": "translation:specialized"
+  },
+  "translation-technical": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "translation",
+    "verticalProgression": "translation:advanced"
+  },
+  "translation-legal": {
+    "availableNext": [
+      {
+        "slug": "translation-technical",
+        "name": "Technical Translation",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "scripts-translation-production",
+        "name": "Scripts Translation & Production",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "subtitles-translation-tv-film",
+        "name": "Subtitles Translation for TV & Film",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "translation",
+    "verticalProgression": "translation:mid"
+  },
+  "vegetable-supply-restaurants-bulk-weekly": {
+    "availableNext": [
+      {
+        "slug": "vegetable-supply-grocery-stores-packaged-weekly",
+        "name": "Vegetable Supply to Grocery Stores (Packaged Weekly)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-food-processors-bulk-seasonal",
+        "name": "Vegetable Supply to Food Processors (Bulk Seasonal)",
+        "relationship": "Scale to mid level",
+        "available": true
+      },
+      {
+        "slug": "vegetable-supply-export-bulk-seasonal",
+        "name": "Vegetable Supply Export Bulk Seasonal",
+        "relationship": "Scale to advanced level",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "entry",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:entry"
+  },
+  "translation-business": {
+    "availableNext": [
+      {
+        "slug": "translation-technical",
+        "name": "Technical Translation",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "scripts-translation-production",
+        "name": "Scripts Translation & Production",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "subtitles-translation-tv-film",
+        "name": "Subtitles Translation for TV & Film",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "translation",
+    "verticalProgression": "translation:mid"
+  },
+  "translation-medical": {
+    "availableNext": [
+      {
+        "slug": "translation-technical",
+        "name": "Technical Translation",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "scripts-translation-production",
+        "name": "Scripts Translation & Production",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      },
+      {
+        "slug": "subtitles-translation-tv-film",
+        "name": "Subtitles Translation for TV & Film",
+        "relationship": "Advance to advanced operations",
+        "available": true
+      }
+    ],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "mid",
+    "progressionType": "translation",
+    "verticalProgression": "translation:mid"
+  },
+  "translation-website": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Interpretation",
+        "researchPrompt": "Live interpretation services \u2014 research simultaneous interpretation equipment and certification"
+      },
+      {
+        "direction": "Localization",
+        "researchPrompt": "Software localization \u2014 research CAT tools, translation memory, and internationalization standards"
+      },
+      {
+        "direction": "Agency",
+        "researchPrompt": "Full-service translation agency \u2014 research project management tools and vendor networks"
+      }
+    ],
+    "categoryStage": "specialized",
+    "progressionType": "translation",
+    "verticalProgression": "translation:specialized"
+  },
+  "vegetable-supply-export-bulk-seasonal": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Commercial Farm",
+        "researchPrompt": "Commercial-scale farming operation \u2014 research mechanization, irrigation systems, and agronomy"
+      },
+      {
+        "direction": "Agtech",
+        "researchPrompt": "Agricultural technology solutions \u2014 research precision agriculture, IoT sensors, and farm management software"
+      },
+      {
+        "direction": "Export Specialist",
+        "researchPrompt": "Specialized export crops \u2014 research GlobalGAP certification, phytosanitary requirements, and cold chain logistics"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "agriculture",
+    "verticalProgression": "agriculture:advanced"
+  },
+  "custom-clothing-prints-business-events": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:advanced"
+  },
+  "custom-clothing-prints-businesses": {
+    "availableNext": [],
+    "researchPaths": [
+      {
+        "direction": "Manufacturing",
+        "researchPrompt": "Own manufacturing facility \u2014 research industrial printing equipment and factory operations"
+      },
+      {
+        "direction": "Brand",
+        "researchPrompt": "Launch original clothing brand \u2014 research fashion design, textile sourcing, and brand development"
+      },
+      {
+        "direction": "Wholesale",
+        "researchPrompt": "Wholesale to major retailers \u2014 research B2B sales, volume pricing, and retail compliance"
+      }
+    ],
+    "categoryStage": "advanced",
+    "progressionType": "clothing",
+    "verticalProgression": "clothing:advanced"
+  }
+}

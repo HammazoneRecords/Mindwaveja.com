@@ -1,0 +1,17 @@
+{
+  "method_name": "Bank Transfer",
+  "bank_name": "Scotiabank Jamaica",
+  "account_name": "Ovando Brown",
+  "account_number": "50575 000972844",
+  "account_type": "Savings",
+  "branch": "Jamaica",
+  "currency": "JMD",
+  "notes": [
+    "Transfer the exact amount listed for your product.",
+    "Take a screenshot of your payment confirmation.",
+    "Attach the screenshot to your reservation below.",
+    "Reservations are confirmed within 24–48 hours."
+  ],
+  "whatsapp_number": "+18768194109",
+  "contact_email": "payments@mindwavejamaica.com"
+}

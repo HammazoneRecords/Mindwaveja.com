@@ -1,0 +1,188 @@
+{
+  "documents": [
+    {
+      "id": "legal-001",
+      "slug": "terms-of-service",
+      "title": "Terms of Service",
+      "lastUpdated": "2026-01-17",
+      "sections": [
+        {
+          "heading": "1. Agreement to Terms",
+          "content": "By accessing and using the MindWave Jamaica website and services, you accept and agree to be bound by and comply with these terms and conditions. If you do not agree to abide by the above, please do not use this service."
+        },
+        {
+          "heading": "2. Use License",
+          "content": "Permission is granted to temporarily download one copy of the materials (information or software) on MindWave Jamaica's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:"
+        },
+        {
+          "heading": "3. Disclaimer",
+          "content": "The materials on MindWave Jamaica's website are provided on an 'as is' basis. MindWave Jamaica makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."
+        },
+        {
+          "heading": "4. Limitations",
+          "content": "In no event shall MindWave Jamaica or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on MindWave Jamaica's website."
+        },
+        {
+          "heading": "5. Accuracy of Materials",
+          "content": "The materials appearing on MindWave Jamaica's website could include technical, typographical, or photographic errors. MindWave Jamaica does not warrant that any of the materials on its website are accurate, complete, or current. MindWave Jamaica may make changes to the materials contained on its website at any time without notice."
+        },
+        {
+          "heading": "6. Links",
+          "content": "MindWave Jamaica has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by MindWave Jamaica of the site. Use of any such linked website is at the user's own risk."
+        }
+      ]
+    },
+    {
+      "id": "legal-002",
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "lastUpdated": "2026-01-17",
+      "sections": [
+        {
+          "heading": "1. Information We Collect",
+          "content": "We collect information you provide directly such as when you create an account, make a purchase, or contact us. This may include your name, email address, postal address, phone number, and payment information."
+        },
+        {
+          "heading": "2. How We Use Your Information",
+          "content": "We use the information we collect to provide, maintain, and improve our services, process transactions, send promotional communications, and comply with legal obligations. We do not sell your personal information to third parties."
+        },
+        {
+          "heading": "3. Data Security",
+          "content": "We implement appropriate technical and organizational measures designed to protect personal information against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or unauthorized access."
+        },
+        {
+          "heading": "4. Your Rights",
+          "content": "You have the right to access, correct, or delete your personal information at any time. You can update your account settings or contact us directly to request changes to your data."
+        },
+        {
+          "heading": "5. Cookies and Tracking",
+          "content": "We use cookies and similar technologies to track activity on our website and hold certain information. You can instruct your browser to refuse cookies or alert you when cookies are being sent."
+        },
+        {
+          "heading": "6. Contact Us",
+          "content": "If you have any questions about this Privacy Policy, please contact us at privacy@mindwaveja.com or through the contact form on our website."
+        }
+      ]
+    },
+    {
+      "id": "legal-003",
+      "slug": "artist-digital-territory-license-terms",
+      "title": "Artist Digital Territory License - Terms & Conditions",
+      "lastUpdated": "2026-01-17",
+      "sections": [
+        {
+          "heading": "1. License Grant",
+          "content": "This Artist Digital Territory License grants the licensee exclusive digital distribution rights within a specified territory. The licensee may distribute, reproduce, and monetize the licensed content within the defined geographic boundaries."
+        },
+        {
+          "heading": "2. Territory Definition",
+          "content": "Territories are defined by geographic region as specified in the license agreement. Each territory license is independent and non-overlapping. Multiple territories may be licensed by the same or different parties."
+        },
+        {
+          "heading": "3. Resale Protocol",
+          "content": "Licensed content may be resold or relicensed in accordance with the resale protocol. All resales must be reported and fees must be paid according to the fee structure outlined in this agreement."
+        },
+        {
+          "heading": "4. Fee Structure",
+          "content": "Initial licensing fee is JMD 8,000 per territory per year. Resale fees are calculated as a percentage of the resale price as defined in the Resale & Protocol Fee Rules document."
+        },
+        {
+          "heading": "5. Usage Rights and Restrictions",
+          "content": "Licensed content may be used for commercial purposes within the licensed territory. All use must comply with applicable laws. The licensor retains all intellectual property rights to the original content."
+        },
+        {
+          "heading": "6. Term and Termination",
+          "content": "This license is granted for a one-year term renewable annually. Either party may terminate with 30 days written notice. Upon termination, the licensee must cease distribution of the licensed content."
+        }
+      ]
+    },
+    {
+      "id": "legal-004",
+      "slug": "resale-protocol-fee-rules",
+      "title": "Resale & Protocol Fee Rules",
+      "lastUpdated": "2026-01-17",
+      "sections": [
+        {
+          "heading": "1. Resale Authorization",
+          "content": "All resales of licensed content must be authorized and reported to MindWave Jamaica. Unauthorized resale is a violation of the license agreement and may result in legal action."
+        },
+        {
+          "heading": "2. Fee Calculation",
+          "content": "Resale fees are calculated as follows: 15% on sales up to JMD 50,000, 12% on sales JMD 50,001 - JMD 200,000, and 10% on sales over JMD 200,000. Fees are due within 30 days of resale completion."
+        },
+        {
+          "heading": "3. Reporting Requirements",
+          "content": "Licensees must submit monthly resale reports detailing all sales, resales, and redistribution. Reports should include transaction date, amount, territory, and resale recipient information."
+        },
+        {
+          "heading": "4. Revenue Sharing",
+          "content": "For collaborative projects, revenue is shared according to the terms agreed upon between parties. MindWave Jamaica retains a 5% platform fee on all shared revenue transactions."
+        },
+        {
+          "heading": "5. Territory Management",
+          "content": "Territory ownership is determined by the original licensee. Territory transfers require written agreement from all parties and must be registered with MindWave Jamaica. A transfer fee of JMD 2,000 applies."
+        },
+        {
+          "heading": "6. Dispute Resolution",
+          "content": "All disputes regarding resale fees or protocol violations will be resolved through mediation. If mediation fails, disputes will be submitted to binding arbitration under Jamaican law."
+        }
+      ]
+    },
+    {
+      "id": "legal-005",
+      "slug": "intellectual-property",
+      "title": "Intellectual Property Rights",
+      "lastUpdated": "2026-01-17",
+      "sections": [
+        {
+          "heading": "1. Ownership",
+          "content": "All content on the MindWave Jamaica website, including text, graphics, logos, images, and software, is the property of MindWave Jamaica or its content suppliers and is protected by international copyright laws."
+        },
+        {
+          "heading": "2. Limited License",
+          "content": "MindWave Jamaica grants you a limited, non-exclusive, non-transferable license to access and use the website for lawful purposes only. You may not reproduce, distribute, transmit, display, or perform any content without prior written permission."
+        },
+        {
+          "heading": "3. User-Generated Content",
+          "content": "If you submit content to our website, you retain ownership but grant MindWave Jamaica a worldwide, non-exclusive, royalty-free license to use, reproduce, and distribute your content."
+        },
+        {
+          "heading": "4. Trademarks",
+          "content": "MindWave Jamaica's name, logo, and all related names, logos, product and service names are trademarks of MindWave Jamaica. Unauthorized use of these trademarks is prohibited."
+        },
+        {
+          "heading": "5. Digital Rights Management",
+          "content": "All digital products sold through our marketplace are protected by digital rights management. Circumvention of DRM technologies is prohibited by law and our terms."
+        }
+      ]
+    },
+    {
+      "id": "legal-006",
+      "slug": "cookie-policy",
+      "title": "Cookie Policy",
+      "lastUpdated": "2026-01-17",
+      "sections": [
+        {
+          "heading": "1. What Are Cookies",
+          "content": "Cookies are small files stored on your device that help us recognize you and store information about your preferences. They enable personalized experiences and help us analyze website usage."
+        },
+        {
+          "heading": "2. Types of Cookies We Use",
+          "content": "Essential cookies necessary for site function, performance cookies to analyze usage, functional cookies to remember preferences, and advertising cookies to deliver relevant content."
+        },
+        {
+          "heading": "3. Cookie Consent",
+          "content": "By using our website, you consent to our use of cookies as described in this policy. You can control cookie settings through your browser, though some site functionality may be limited."
+        },
+        {
+          "heading": "4. Third-Party Cookies",
+          "content": "Some cookies are placed by third-party services for analytics and advertising purposes. These are governed by the privacy policies of those third parties."
+        },
+        {
+          "heading": "5. How to Manage Cookies",
+          "content": "You can manage cookies through your browser settings. Most browsers allow you to refuse cookies or alert you when a cookie is being sent. Disabling cookies may affect your experience."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "products": [
+    {
+      "id": "prod-005",
+      "slug": "book-to-my-son",
+      "name": "Book to My Son",
+      "category": "Books",
+      "tags": ["book", "personal", "legacy", "solobility", "print"],
+      "description": "A personal legacy document written from father to son. Printed and bound — a physical artefact meant to be held, not scrolled. Available in standard and premium print, both JAD-bound.",
+      "price": "JMD 12,000",
+      "priceNote": "Standard (regular paper) · JMD 17,100 premium paper · Both JAD-bound",
+      "availableDate": "August 7, 2026",
+      "comingSoon": true,
+      "features": [
+        "Physical printed book",
+        "JAD binder binding — both editions",
+        "Standard edition: regular print paper",
+        "Premium edition: premium paper stock",
+        "Personalised artefact — not a digital file"
+      ],
+      "included": [
+        "Printed & bound copy",
+        "JAD binder",
+        "Standard: JMD 12,000 (≈ USD $77)",
+        "Premium: JMD 17,100 (≈ USD $110)"
+      ],
+      "featured": true
+    },
+    {
+      "id": "prod-002",
+      "slug": "black-espionage",
+      "name": "Black Espionage",
+      "category": "Books",
+      "tags": ["book", "espionage", "business intelligence"],
+      "description": "Master competitive intelligence and market surveillance. Ethical strategies for understanding your competition and staying ahead in the digital economy.",
+      "price": "JMD 6,500",
+      "priceNote": "Digital download",
+      "availableDate": "August 7, 2026",
+      "comingSoon": true,
+      "features": [
+        "Complete digital edition",
+        "Intelligence gathering frameworks",
+        "Ethical compliance guide",
+        "Jamaican market insights",
+        "Digital tools recommendations"
+      ],
+      "included": [
+        "Black Espionage (PDF/ePub)",
+        "Intelligence Templates",
+        "Framework Guides",
+        "Resources Directory"
+      ],
+      "featured": true
+    },
+    {
+      "id": "prod-003",
+      "slug": "ophones-and-iclones",
+      "name": "oPhones & iClones",
+      "category": "Books",
+      "tags": ["book", "technology", "digital platforms"],
+      "description": "Navigate the digital ecosystem of proprietary platforms and their alternatives. Build your business on a foundation of digital literacy and platform independence.",
+      "price": "JMD 4,500",
+      "priceNote": "Digital download",
+      "availableDate": "August 7, 2026",
+      "comingSoon": true,
+      "features": [
+        "Complete digital edition",
+        "Platform comparison guide",
+        "Digital independence strategies",
+        "Tool alternatives database",
+        "Cost optimization guide"
+      ],
+      "included": [
+        "oPhones & iClones (PDF/ePub)",
+        "Platform Comparison Charts",
+        "Alternative Tools List",
+        "Migration Guides"
+      ],
+      "featured": true
+    },
+    {
+      "id": "prod-004",
+      "slug": "artist-digital-territory-license",
+      "name": "Artist Digital Territory License",
+      "category": "Licenses",
+      "tags": ["license", "artist", "digital", "territory"],
+      "description": "Secure your digital territory as a creative artist. License framework for protecting and monetizing digital content across territories with clear usage rights.",
+      "price": "JMD 8,000",
+      "priceNote": "Per territory per year",
+      "availableDate": "August 7, 2026",
+      "comingSoon": true,
+      "features": [
+        "Territory rights definition",
+        "Usage rights documentation",
+        "Resale protocol included",
+        "Fee structure templates",
+        "Legal compliance guide"
+      ],
+      "included": [
+        "Artist Territory License Template",
+        "Rights & Restrictions Framework",
+        "Fee Schedule Template",
+        "Enforcement Guide"
+      ],
+      "featured": true
+    }
+  ]
+}

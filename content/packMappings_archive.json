@@ -1,0 +1,219 @@
+{
+  "archived_at": "2026-04-11",
+  "mappings": {
+    "phone-case-customization-custom-designs": {
+      "id": "pp-004",
+      "name": "Phone Case Customization (Custom Designs)",
+      "slug": "phone-case-customization-custom-designs",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "zip": "phone-case-customization-custom-designs.zip"
+    },
+    "craft-union-membership-pack": {
+      "id": "pp-023",
+      "name": "Craft Union Membership Pack",
+      "slug": "craft-union-membership-pack"
+    },
+    "small-business-cleaning-services": {
+      "id": "pp-029",
+      "name": "Small Business Cleaning Services",
+      "slug": "small-business-cleaning-services"
+    },
+    "baby-shower-styling-services": {
+      "id": "pp-030",
+      "name": "Baby Shower Styling Services",
+      "slug": "baby-shower-styling-services",
+      "status": "ready",
+      "qa_passed": true
+    },
+    "craft-sales-retail": {
+      "id": "pp-064",
+      "name": "Craft Sales Retail",
+      "slug": "craft-sales-retail",
+      "category": "Creative & Retail",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T08:00:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "artisan-pack-production-union": {
+      "id": "pp-062",
+      "name": "Artisan Pack Production Union",
+      "slug": "artisan-pack-production-union",
+      "category": "Services & Manufacturing",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T07:30:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "custom-baby-clothes": {
+      "id": "pp-034",
+      "name": "Custom Baby Clothes",
+      "slug": "custom-baby-clothes",
+      "category": "Fashion & Gifting",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T11:40:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "baby-accessories": {
+      "id": "pp-035",
+      "name": "Baby Accessories",
+      "slug": "baby-accessories",
+      "status": "ready",
+      "qa_passed": true
+    },
+    "event-decoration-corporate": {
+      "id": "pp-072",
+      "name": "Event Decoration (Corporate)",
+      "slug": "event-decoration-corporate",
+      "category": "Events & Decor",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T09:15:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "social-media-community-management": {
+      "id": "pp-048",
+      "name": "Social Media Community Management",
+      "slug": "social-media-community-management",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "zip": "social-media-community-management.zip"
+    },
+    "office-catering": {
+      "id": "pp-051",
+      "name": "Office Catering",
+      "slug": "office-catering",
+      "category": "Food & Beverage",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T15:00:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "personal-event-catering": {
+      "id": "pp-050",
+      "name": "Personal Event Catering",
+      "slug": "personal-event-catering",
+      "category": "Food & Beverage",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T11:50:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "translation-media": {
+      "id": "pp-051",
+      "name": "Translation for Media",
+      "slug": "translation-media",
+      "status": "ready",
+      "qa_passed": true
+    },
+    "clown-services": {
+      "id": "pp-015",
+      "name": "Clown Services",
+      "slug": "clown-services",
+      "category": "Events & Entertainment",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T07:15:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "custom-clothing-prints-heat-transfer": {
+      "id": "pp-035",
+      "name": "Custom Clothing Prints (Heat Transfer)",
+      "slug": "custom-clothing-prints-heat-transfer",
+      "category": "Printing & Apparel",
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T14:55:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14
+    },
+    "articles-translation-media-outlets": {
+      "status": "ready",
+      "qa_passed": true,
+      "name": "Articles Translation for Media Outlets",
+      "category": "Language Services",
+      "capital_range": "Low",
+      "time_to_first_sale": "1‑2 weeks"
+    },
+    "phone-case-customization": {
+      "zipPath": "/pack-zips/phone-case-customization.zip",
+      "canonPath": "/pack-deliverables/phone-case-customization/canon",
+      "status": "ready",
+      "version": "2.0"
+    },
+    "social-media-stories-creation-short-form": {
+      "slug": "social-media-stories-creation-short-form",
+      "name": "Social Media Stories Creation (Short‑Form)",
+      "category": "Digital Services",
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "social-media-stories-creation-short-form.zip",
+      "canon_count": 14,
+      "pack_specific_files": []
+    },
+    "social-media-posts-creation-copywriting": {
+      "slug": "social-media-posts-creation-copywriting",
+      "name": "Social Media Posts Creation & Copywriting",
+      "category": "Digital Services",
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "social-media-posts-creation-copywriting.zip",
+      "canon_count": 14,
+      "pack_specific_files": []
+    },
+    "phone-case-design-and-print-service": {
+      "slug": "phone-case-design-and-print-service",
+      "name": "Phone Case Design & Print Service",
+      "category": "Digital Services",
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "phone-case-design-and-print-service.zip",
+      "canon_count": 14,
+      "pack_specific_files": []
+    },
+    "stoplight-sales-specialist": {
+      "slug": "stoplight-sales-specialist",
+      "name": "Stoplight Sales Specialist",
+      "category": "Sales & Retail",
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "stoplight-sales-specialist.zip",
+      "canon_count": 14,
+      "pack_specific_files": []
+    },
+    "scripts-translation-production": {
+      "slug": "scripts-translation-production",
+      "name": "Scripts Translation & Production",
+      "category": "Translation & Media",
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "scripts-translation-production.zip",
+      "canon_count": 14,
+      "pack_specific_files": []
+    }
+  }
+}

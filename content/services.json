@@ -1,0 +1,226 @@
+{
+  "services": [
+    {
+      "id": "wave-1",
+      "slug": "spark-session",
+      "wave": 1,
+      "name": "Wave 1: Spark Session",
+      "subtitle": "Clarity in 90 minutes",
+      "description": "A focused session to refine your raw idea into a clear concept. We identify your unique angle, target market, and immediate next steps. You leave with direction, not confusion.",
+      "whoItsFor": [
+        "First-time entrepreneurs with an idea but no clear path",
+        "Side-hustlers ready to get serious",
+        "Anyone stuck in the 'thinking about it' phase"
+      ],
+      "outputs": [
+        "Idea Clarity Document (1-page)",
+        "Target Market Profile",
+        "3 Immediate Action Items",
+        "Resource Checklist",
+        "1 Explainer Video (included)"
+      ],
+      "basePrice": 15000,
+      "price": "JMD 15,000",
+      "priceNote": "Standard delivery",
+      "duration": "90 minutes session + 5-day delivery",
+      "featured": true,
+      "includedExplainerVideos": 1,
+      "additionalVideoPrice": 5000,
+      "deliveryOptions": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "description": "Regular turnaround time",
+          "duration": "5 business days",
+          "priceMultiplier": 1,
+          "priceAdd": 0
+        },
+        {
+          "id": "detailed",
+          "name": "Detailed",
+          "description": "More comprehensive analysis and documentation",
+          "duration": "7 business days",
+          "priceMultiplier": 1.5,
+          "priceAdd": 0
+        },
+        {
+          "id": "rush-48hr",
+          "name": "48-Hour Rush",
+          "description": "Priority processing with expedited delivery",
+          "duration": "48 hours",
+          "priceMultiplier": 4,
+          "priceAdd": 0
+        }
+      ]
+    },
+    {
+      "id": "wave-2",
+      "slug": "blueprint-build",
+      "wave": 2,
+      "name": "Wave 2: Blueprint Build",
+      "subtitle": "Your business on paper",
+      "description": "Transform your validated idea into a complete business blueprint. We map out operations, pricing, marketing channels, and create your 90-day launch plan. This is where ideas become executable.",
+      "whoItsFor": [
+        "Entrepreneurs with a validated concept",
+        "Existing businesses needing structure",
+        "Anyone preparing for funding or partnership"
+      ],
+      "outputs": [
+        "Complete Business Blueprint (15-20 pages)",
+        "Financial Projections Template",
+        "90-Day Launch Timeline",
+        "Marketing Channel Strategy",
+        "Operations Workflow Map",
+        "1 Explainer Video (included)"
+      ],
+      "basePrice": 45000,
+      "price": "JMD 45,000",
+      "priceNote": "Standard 2-week delivery",
+      "duration": "2 weeks",
+      "featured": true,
+      "includedExplainerVideos": 1,
+      "additionalVideoPrice": 5000,
+      "deliveryOptions": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "description": "Regular turnaround time",
+          "duration": "2 weeks",
+          "priceMultiplier": 1,
+          "priceAdd": 0
+        },
+        {
+          "id": "detailed",
+          "name": "Detailed",
+          "description": "Extended blueprint with deeper market research and competitor analysis",
+          "duration": "3 weeks",
+          "priceMultiplier": 1.75,
+          "priceAdd": 0
+        },
+        {
+          "id": "rush-48hr",
+          "name": "48-Hour Rush",
+          "description": "Priority processing with expedited delivery",
+          "duration": "48 hours",
+          "priceMultiplier": 4,
+          "priceAdd": 0
+        }
+      ]
+    },
+    {
+      "id": "wave-3",
+      "slug": "launch-engine",
+      "wave": 3,
+      "name": "Wave 3: Launch Engine",
+      "subtitle": "Execution support",
+      "description": "Hands-on guidance through your first 90 days of operation. Weekly check-ins, problem-solving sessions, and access to our network. We help you navigate the chaos of early business.",
+      "whoItsFor": [
+        "Businesses in their first year",
+        "Entrepreneurs facing launch challenges",
+        "Anyone who needs accountability and guidance"
+      ],
+      "outputs": [
+        "Weekly Strategy Calls (12 sessions)",
+        "Priority Email Support",
+        "Network Introductions",
+        "Crisis Response Support",
+        "Monthly Progress Reports",
+        "2 Explainer Videos (included)"
+      ],
+      "basePrice": 120000,
+      "price": "JMD 120,000",
+      "priceNote": "3-month program",
+      "duration": "3 months",
+      "featured": false,
+      "includedExplainerVideos": 2,
+      "additionalVideoPrice": 5000,
+      "deliveryOptions": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "description": "Regular 3-month engagement",
+          "duration": "3 months",
+          "priceMultiplier": 1,
+          "priceAdd": 0
+        },
+        {
+          "id": "intensive",
+          "name": "Intensive",
+          "description": "Bi-weekly calls with extended support hours and additional resources",
+          "duration": "3 months",
+          "priceMultiplier": 1.5,
+          "priceAdd": 0
+        },
+        {
+          "id": "accelerated",
+          "name": "Accelerated",
+          "description": "Compressed timeline with daily check-ins for rapid launch",
+          "duration": "6 weeks",
+          "priceMultiplier": 2.5,
+          "priceAdd": 0
+        }
+      ]
+    },
+    {
+      "id": "wave-4",
+      "slug": "expansion-wave",
+      "wave": 4,
+      "name": "Wave 4: Expansion Wave",
+      "subtitle": "Scale with strategy",
+      "description": "For established businesses ready to grow. We analyze your operations, identify expansion opportunities, and build your scaling roadmap. Includes funding preparation and team structure planning.",
+      "whoItsFor": [
+        "Profitable businesses ready to scale",
+        "Entrepreneurs seeking investment",
+        "Businesses expanding to new markets or products"
+      ],
+      "outputs": [
+        "Expansion Strategy Document",
+        "Funding Pitch Deck",
+        "Team Structure Blueprint",
+        "Systems & Automation Plan",
+        "6-Month Scaling Timeline",
+        "Investor/Partner Introductions",
+        "3 Explainer Videos (included)"
+      ],
+      "basePrice": 250000,
+      "price": "JMD 250,000",
+      "priceNote": "6-month engagement",
+      "duration": "6 months",
+      "featured": false,
+      "includedExplainerVideos": 3,
+      "additionalVideoPrice": 5000,
+      "deliveryOptions": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "description": "Regular 6-month strategic engagement",
+          "duration": "6 months",
+          "priceMultiplier": 1,
+          "priceAdd": 0
+        },
+        {
+          "id": "comprehensive",
+          "name": "Comprehensive",
+          "description": "Deep-dive analysis with extended investor prep and multiple pitch iterations",
+          "duration": "8 months",
+          "priceMultiplier": 1.75,
+          "priceAdd": 0
+        },
+        {
+          "id": "fast-track",
+          "name": "Fast-Track",
+          "description": "Accelerated expansion planning with priority resource allocation",
+          "duration": "3 months",
+          "priceMultiplier": 3,
+          "priceAdd": 0
+        }
+      ]
+    }
+  ],
+  "pricingNotes": {
+    "additionalExplainerVideo": 5000,
+    "currency": "JMD",
+    "rushMultiplier": 4,
+    "detailedMultiplierRange": [1.5, 1.75]
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "cluster-lash-application-service": {
+    "id": "pp-001",
+    "category": "Beauty & Personal Care",
+    "displayName": "Cluster Lash Application Service",
+    "folder": "cluster-lash-application-service",
+    "zipFile": "cluster-lash-application-service.zip",
+    "status": "ready",
+    "lastUpdated": "2026-01-25 22:34:19",
+    "version": "2.0",
+    "hasEnhancedContent": true,
+    "hasPackSpecificFiles": true,
+    "fileCount": 19
+  },
+  "fruit-vending-mobile": {
+    "id": "pp-077",
+    "name": "Fruit Vending (Mobile)",
+    "slug": "fruit-vending-mobile",
+    "category": "Food & Beverage",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T09:45:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "basic-website-creation": {
+    "id": "pp-006",
+    "name": "Basic Website Creation",
+    "slug": "basic-website-creation",
+    "category": "Digital Services",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T06:40:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "patois-calibration-agent": {
+    "id": "pp-013",
+    "name": "Patois Calibration Agent",
+    "slug": "patois-calibration-agent"
+  },
+  "tour-guide-operator-with-vehicle": {
+    "id": "pp-020",
+    "name": "Tour Guide Operator – With Vehicle",
+    "slug": "tour-guide-operator-with-vehicle",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "tour-guide-operator-with-vehicle.zip"
+  },
+  "tour-guide-operator-no-vehicle": {
+    "id": "pp-021",
+    "name": "Tour Guide Operator – No Vehicle",
+    "slug": "tour-guide-operator-no-vehicle",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "tour-guide-operator-no-vehicle.zip"
+  },
+  "professional-windscreen-wiper-service": {
+    "id": "pp-024",
+    "name": "Professional Windscreen Wiper Service",
+    "slug": "professional-windscreen-wiper-service",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "professional-windscreen-wiper-service.zip"
+  },
+  "stoplight-snack-sales": {
+    "id": "pp-025",
+    "name": "Stoplight Snack Sales",
+    "slug": "stoplight-snack-sales",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "stoplight-snack-sales.zip"
+  },
+  "cluster-lash-product-resale": {
+    "id": "pp-026",
+    "name": "Resale of cluster lash products (lashes, adhesive, tools) for the Jamaican market — low startup capital, repeatable sales, and minimal skill requirement.",
+    "slug": "cluster-lash-product-resale",
+    "category": "beauty",
+    "subcategory": "lash-products",
+    "tags": [
+      "beauty",
+      "resale",
+      "jamaica",
+      "cluster-lashes",
+      "makeup"
+    ],
+    "capital_range": "low",
+    "time_to_first_sale": "1-2 weeks",
+    "difficulty": "beginner",
+    "market_size": "medium",
+    "last_updated": "2026-01-26T01:05:36Z"
+  },
+  "residential-cleaning-services": {
+    "id": "pp-028",
+    "name": "Residential Cleaning Services",
+    "slug": "residential-cleaning-services",
+    "category": "Services",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T06:00:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14,
+    "zip": "residential-cleaning-services.zip"
+  },
+  "event-styling-services": {
+    "id": "pp-071",
+    "name": "Event Styling Services",
+    "slug": "event-styling-services",
+    "category": "Events & Decor",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T11:00:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "natural-juice-production-wholesale": {
+    "id": "pp-040",
+    "name": "Natural Juice Production – Wholesale",
+    "slug": "natural-juice-production-wholesale",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "natural-juice-production-wholesale.zip"
+  },
+  "nail-tech-starter-mobile-services": {
+    "id": "pp-041",
+    "name": "Nail Tech Starter – Mobile Services",
+    "slug": "nail-tech-starter-mobile-services",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "nail-tech-starter-mobile-services.zip"
+  },
+  "event-decoration-celebrations": {
+    "id": "pp-043",
+    "name": "Event Decoration (Celebrations)",
+    "slug": "event-decoration-celebrations",
+    "category": "Events & Decor",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T11:15:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "backyard-vegetable-farming-wholesale": {
+    "id": "pp-063",
+    "name": "Backyard Vegetable Farming (Wholesale)",
+    "slug": "backyard-vegetable-farming-wholesale",
+    "category": "Agriculture & Supply",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T07:45:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "social-media-content-creation": {
+    "id": "pp-047",
+    "name": "Social Media Content Creation",
+    "slug": "social-media-content-creation",
+    "category": "Digital Services",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T06:12:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14,
+    "zip": "social-media-content-creation.zip"
+  },
+  "translation-tourism": {
+    "id": "pp-052",
+    "name": "Translation for Tourism",
+    "slug": "translation-tourism",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "translation-tourism.zip"
+  },
+  "translation-diaspora-business": {
+    "id": "pp-053",
+    "name": "Translation for Diaspora Business",
+    "slug": "translation-diaspora-business",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "translation-diaspora-business.zip"
+  },
+  "phone-case-customization-pre-made-designs": {
+    "id": "pp-054",
+    "name": "Phone Case Customization (Pre-made Designs)",
+    "slug": "phone-case-customization-pre-made-designs",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "zip": "phone-case-customization-pre-made-designs.zip"
+  },
+  "stoplight-convenience-sales": {
+    "id": "pp-055",
+    "name": "Stoplight Convenience Sales",
+    "slug": "stoplight-convenience-sales"
+  },
+  "custom-clothing-prints-businesses-2": {
+    "id": "pp-09dd5dcb",
+    "name": "Custom Clothing Prints for Businesses",
+    "slug": "custom-clothing-prints-businesses-2",
+    "status": "ready",
+    "qa_passed": true
+  },
+  "party-equipment-rentals": {
+    "id": "pp-500e5446",
+    "name": "Party Equipment Rentals",
+    "slug": "party-equipment-rentals",
+    "category": "Events & Rentals",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T10:45:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "custom-clothing-prints-dtg": {
+    "id": "pp-065",
+    "name": "Custom Clothing Prints (DTG)",
+    "slug": "custom-clothing-prints-dtg",
+    "category": "Printing & Apparel",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T08:15:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "custom-clothing-prints-screen-printing": {
+    "id": "pp-070",
+    "name": "Custom Clothing Prints (Screen Printing)",
+    "slug": "custom-clothing-prints-screen-printing",
+    "category": "Printing & Apparel",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T09:00:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  },
+  "vegetable-supply-restaurants-fresh-daily": {
+    "slug": "vegetable-supply-restaurants-fresh-daily",
+    "name": "Vegetable Supply Restaurants Fresh Daily",
+    "category": "Agriculture",
+    "status": "ready",
+    "version": "2.0",
+    "enhanced": true,
+    "zip": "vegetable-supply-restaurants-fresh-daily.zip",
+    "canon_count": 14,
+    "pack_specific_files": []
+  },
+  "vegetable-supply-grocery-stores-packaged-weekly": {
+    "slug": "vegetable-supply-grocery-stores-packaged-weekly",
+    "name": "Vegetable Supply to Grocery Stores (Packaged Weekly)",
+    "category": "Agriculture & Supply",
+    "status": "ready",
+    "version": "2.0",
+    "enhanced": true,
+    "zip": "vegetable-supply-grocery-stores-packaged-weekly.zip",
+    "canon_count": 14,
+    "pack_specific_files": []
+  },
+  "custom-clothing-prints-business-events": {
+    "id": "pp-080",
+    "name": "Custom Clothing Prints (Business Events)",
+    "slug": "custom-clothing-prints-business-events",
+    "category": "Printing & Apparel",
+    "status": "ready",
+    "enhanced": true,
+    "version": "2.0",
+    "lastUpdated": "2026-02-21T11:30:00Z",
+    "hasEnhancedContent": true,
+    "canon_count": 14
+  }
+}

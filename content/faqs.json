@@ -1,0 +1,76 @@
+{
+  "faqs": [
+    {
+      "id": "faq-001",
+      "question": "What exactly is MindWave Jamaica?",
+      "answer": "At its core, MindWave Jamaica is a civilization project designed to transition Jamaica and the wider Caribbean from being mere consumers of imported technology to becoming the creators of infrastructure and frameworks that the world adopts.\n\nWe recognize that true progress requires building new foundations rather than innovating on shaky ground. We focus on the 'Triangle of Institutions':\n• Legacy-First Education: Treating curriculum as an archive rather than a schedule.\n• Sovereign Infrastructure: Advocating for independence in utilities and digital data.\n• Rooted Innovation: Treating documentation, memory, and patents as infrastructure to ensure Caribbean ingenuity takes root.\n\nOperating on the core axiom 'The Mirror is Not the Source', we believe that tools and AI are merely mirrors, while humanity—deeply rooted in cultural truth—will always be the Source. We don't shout for attention; we signal for alignment.",
+      "category": "General"
+    },
+    {
+      "id": "faq-002",
+      "question": "I have an idea but no business experience. Can you help?",
+      "answer": "Absolutely. Our Wave 1 Spark Session and Phase Packs are specifically designed for first-time entrepreneurs. We break down complex business concepts into actionable steps anyone can follow.",
+      "category": "Getting Started"
+    },
+    {
+      "id": "faq-003",
+      "question": "What is a Phase Pack?",
+      "answer": "A Phase Pack is a complete business blueprint for a specific venture type. It includes everything from startup costs and first actions to common pitfalls and expansion paths. Think of it as a tested roadmap from someone who has already walked the path.",
+      "category": "Phase Packs"
+    },
+    {
+      "id": "faq-004",
+      "question": "How much capital do I need to start?",
+      "answer": "It depends on your chosen venture. Our Phase Packs range from JMD 5,000 to JMD 150,000 in startup capital. We have options for nearly every budget level, and we help you maximize what you have.",
+      "category": "Getting Started"
+    },
+    {
+      "id": "faq-005",
+      "question": "Do you provide funding?",
+      "answer": "We do not provide direct funding. However, our Wave 4 Expansion Wave service includes funding preparation, pitch deck development, and introductions to potential investors and lending institutions.",
+      "category": "Services"
+    },
+    {
+      "id": "faq-006",
+      "question": "What makes MindWave different from other business consultants?",
+      "answer": "We focus on practical, Jamaica-specific guidance. Our Phase Packs are built from real local business experience, not generic templates. We also emphasize action over theory, with clear daily minimums and measurable milestones.",
+      "category": "General"
+    },
+    {
+      "id": "faq-007",
+      "question": "Can I get a refund if the business does not work out?",
+      "answer": "Our services and products are non-refundable as they involve significant intellectual property and personalized guidance. However, we work with you to pivot and adjust strategies when initial approaches need refinement.",
+      "category": "Policies"
+    },
+    {
+      "id": "faq-008",
+      "question": "How long before I see results?",
+      "answer": "Timeline varies by venture type. Some Phase Packs can generate first sales within days, others take weeks to establish. We provide realistic timeframes for each pack and service.",
+      "category": "Getting Started"
+    },
+    {
+      "id": "faq-009",
+      "question": "Do you work with existing businesses?",
+      "answer": "Yes. Our Wave 2 Blueprint Build helps structure existing operations, and Wave 4 Expansion Wave is specifically for established businesses ready to scale.",
+      "category": "Services"
+    },
+    {
+      "id": "faq-010",
+      "question": "Is everything online or do you meet in person?",
+      "answer": "Most services are delivered virtually for accessibility across Jamaica. However, certain Wave 3 and Wave 4 engagements may include in-person sessions in the Kingston area.",
+      "category": "Services"
+    },
+    {
+      "id": "faq-011",
+      "question": "What industries do you specialize in?",
+      "answer": "We work across sectors including Beauty, Food, Services, Digital, Retail, Events, and Agriculture. Our Phase Packs cover specific ventures within each category.",
+      "category": "General"
+    },
+    {
+      "id": "faq-012",
+      "question": "How do I get started?",
+      "answer": "Click 'Start Your Idea' to complete our intake form. Tell us about your idea, constraints, and goals. We will review and recommend the best path forward within 48 hours.",
+      "category": "Getting Started"
+    }
+  ]
+}

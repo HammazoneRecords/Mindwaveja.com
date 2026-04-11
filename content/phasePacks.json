@@ -1,0 +1,1902 @@
+{
+  "phasePacks": [
+    {
+      "id": "pp-002",
+      "slug": "fruit-vending-mobile",
+      "name": "Mobile Fruit Vending",
+      "category": "Food",
+      "capitalRange": {
+        "min": 40000,
+        "max": 80000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "7-14 days",
+      "skillLevel": "Beginner",
+      "description": "A high-frequency mobile retail model providing fresh, chilled, and pre-sliced Jamaican fruits to urban workers and commuters.",
+      "featured": true,
+      "whatThisIs": "A mobile food vending operation selling fresh, hygienically prepared cut fruits in cups or bags. Targets office workers, students, and pedestrians in busy areas.",
+      "whatYouNeed": [
+        "Cooler with ice packs",
+        "Cutting board and sharp knives",
+        "Food-grade containers and cups",
+        "Disposable forks/toothpicks",
+        "Hand sanitizer and gloves",
+        "Small folding table or cart",
+        "Cash box",
+        "Umbrella for shade"
+      ],
+      "firstSevenActions": [
+        "Scout 3 potential locations (bus stops, plazas, schools)",
+        "Visit Coronation Market early morning for wholesale fruit prices",
+        "Buy initial fruit stock (pineapple, mango, watermelon, papaya)",
+        "Prepare fruit cups at home the night before",
+        "Set up at chosen location by 7 AM",
+        "Price cups at JMD 200-400 based on size",
+        "Collect customer feedback on preferred fruits"
+      ],
+      "waitingTimeTasks": [
+        "Research food handler permit requirements",
+        "Design simple menu board",
+        "Find backup fruit suppliers",
+        "Calculate profit margins per fruit type",
+        "Plan weekly fruit rotation based on season"
+      ],
+      "starterFolderContents": [
+        "Fruit cost calculator spreadsheet",
+        "Daily sales tracker",
+        "Supplier contact list template",
+        "Food safety checklist",
+        "Location scouting criteria"
+      ],
+      "valueAddMenu": [
+        "Fruit salad bowls (+JMD 100)",
+        "Add condensed milk or honey drizzle (+JMD 50)",
+        "Large party platters (pre-order)",
+        "Weekly subscription for offices",
+        "Juice blends (requires blender)"
+      ],
+      "salesMode": "Cash sales at location. Build regulars through consistent quality and timing. Take pre-orders via WhatsApp for offices.",
+      "dailyMinimum": "Sell 30 cups at JMD 300 average = JMD 9,000 daily revenue. After costs, expect JMD 4,500-5,500 profit per day.",
+      "commonFailurePoints": [
+        "Inconsistent location or timing",
+        "Poor fruit quality or overripe stock",
+        "Not keeping fruit cold in sun",
+        "Ignoring hygiene (customers notice)",
+        "Buying too much stock that spoils"
+      ],
+      "exitExpandPaths": [
+        "Add second location with helper",
+        "Expand to juice bar",
+        "Supply fruits to restaurants",
+        "Franchise the concept",
+        "Add healthy snacks line"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T09:45:00Z",
+      "packScore": {
+        "demandScore": 5,
+        "capitalDifficulty": 1,
+        "timeToFirstSale": 5,
+        "skillRequired": 2
+      },
+      "packLadder": {
+        "nextPacks": [
+          "pp-007",
+          "pp-012"
+        ],
+        "reason": "Scale from fruit vending to juice production or expand into full catering services"
+      },
+      "packIndex": {
+        "categoryTags": [
+          "low-capital",
+          "quick-start",
+          "mobile"
+        ],
+        "recommendedFor": [
+          "students",
+          "early-risers",
+          "health-conscious",
+          "high-traffic-access"
+        ]
+      },
+      "scaleGrid": [],
+      "ethicalCommunityRules": [],
+      "enhanced": true,
+      "hasEnhancedContent": true,
+      "canon_count": 14,
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-006",
+      "slug": "basic-website-creation",
+      "name": "Basic Website Creation",
+      "category": "Digital",
+      "capitalRange": {
+        "min": 5000,
+        "max": 20000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "5-10 days",
+      "skillLevel": "Intermediate",
+      "description": "Build simple websites for small businesses using no-code tools. High demand, low overhead, scalable.",
+      "featured": false,
+      "whatThisIs": "A web design service creating professional websites for small businesses using platforms like Wix, Squarespace, WordPress, Google AI Studio, or Bolt.new — no advanced coding required.",
+      "whatYouNeed": [
+        "Laptop with reliable internet",
+        "Wix / Squarespace / WordPress account",
+        "Google AI Studio (free — AI-assisted site building)",
+        "Bolt.new (free — AI generates full sites from prompts)",
+        "Canva for graphics",
+        "Portfolio website (your own)",
+        "Contract template",
+        "Invoice system"
+      ],
+      "firstSevenActions": [
+        "Try Bolt.new — type a business description and generate a full site in minutes",
+        "Explore Google AI Studio for AI-assisted design and content generation",
+        "Complete platform tutorials (Wix or Squarespace) as your fallback",
+        "Build your own portfolio website using whichever tool you prefer",
+        "Create 2 demo sites for different industries",
+        "Document your process and packages",
+        "Price services (JMD 25,000-60,000 per site)",
+        "Reach out to 10 local businesses without websites",
+        "Offer first client a discount for testimonial"
+      ],
+      "waitingTimeTasks": [
+        "Learn SEO basics",
+        "Practice Bolt.new prompts for different business types",
+        "Explore what Google AI Studio can generate for layout and copy",
+        "Study successful small business websites",
+        "Create website questionnaire for clients",
+        "Build template library",
+        "Get platform certifications"
+      ],
+      "starterFolderContents": [
+        "Client questionnaire template",
+        "Website project contract",
+        "Pricing packages document",
+        "Website launch checklist",
+        "Maintenance agreement template"
+      ],
+      "valueAddMenu": [
+        "AI-generated copy and images (+JMD 5,000)",
+        "Logo design (+JMD 10,000)",
+        "Monthly maintenance (+JMD 5,000/month)",
+        "SEO setup (+JMD 8,000)",
+        "Social media integration (+JMD 3,000)",
+        "E-commerce setup (+JMD 15,000)"
+      ],
+      "salesMode": "Direct outreach to businesses, referrals, social media presence. Target businesses you personally patronize.",
+      "dailyMinimum": "Complete 2 websites per month at JMD 40,000 average = JMD 80,000 monthly. Scale with maintenance contracts.",
+      "commonFailurePoints": [
+        "Scope creep without additional charges",
+        "Not getting content from clients on time",
+        "Underpricing services",
+        "No contract leading to disputes",
+        "Not collecting deposit upfront"
+      ],
+      "exitExpandPaths": [
+        "Learn coding for custom development",
+        "Build agency with team",
+        "Create website templates for sale",
+        "Offer digital marketing services",
+        "Specialize in specific industry"
+      ],
+      "status": "ready",
+      "enhanced": true,
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T06:40:00Z",
+      "hasEnhancedContent": true,
+      "canon_count": 14,
+      "packScore": {
+        "demandScore": 4,
+        "capitalDifficulty": 1,
+        "timeToFirstSale": 3,
+        "skillRequired": 4
+      },
+      "packLadder": {
+        "nextPacks": [
+          "pp-011",
+          "pp-005"
+        ],
+        "reason": "Add social media management services or create digital products to sell alongside websites"
+      },
+      "packIndex": {
+        "categoryTags": [
+          "low-capital",
+          "recurring-revenue",
+          "scalable"
+        ],
+        "recommendedFor": [
+          "students",
+          "tech-savvy",
+          "remote-workers",
+          "problem-solvers"
+        ]
+      },
+      "scaleGrid": [],
+      "ethicalCommunityRules": [],
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-001",
+      "slug": "cluster-lash-application-service",
+      "name": "Cluster Lash Application (Service)",
+      "category": "Beauty",
+      "capitalRange": {
+        "min": 15000,
+        "max": 35000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "3-5 days",
+      "skillLevel": "Beginner",
+      "description": "Mobile cluster lash application service eliminating salon travel and waiting time for clients in Jamaica. Provides fast lash enhancement with on-location convenience. Now includes complete operational documentation, enhanced 14-lens structure, and Jamaica-specific forms and templates.",
+      "featured": true,
+      "status": "ready",
+      "available": true,
+      "version": "2.0",
+      "lastUpdated": "2026-01-28T21:11:27.062472",
+      "features": [
+        "Mobile service delivery",
+        "Jamaica-specific pricing (JMD)",
+        "Complete operational documentation",
+        "Enhanced 14-lens structure",
+        "Pack-specific forms and templates",
+        "Patois translations for local market"
+      ],
+      "hasZip": true,
+      "zipSize": 56264,
+      "packScore": {
+        "demandScore": 4,
+        "capitalDifficulty": 2,
+        "timeToFirstSale": 5,
+        "skillRequired": 2
+      },
+      "packLadder": {
+        "nextPacks": [
+          "pp-008",
+          "pp-005"
+        ],
+        "reason": "Natural progression from mobile beauty to full beauty services or expand to beauty product sales"
+      },
+      "packIndex": {
+        "categoryTags": [
+          "low-capital",
+          "quick-start",
+          "weekend-hustle",
+          "mobile"
+        ],
+        "recommendedFor": [
+          "students",
+          "side-hustle",
+          "beauty-enthusiasts",
+          "mobile-workers"
+        ]
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Cluster Lash Application (Service), aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "whatThisIs": "A robust Jamaican beauty business focused on Cluster Lash Application (Service). Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "enhanced": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-013",
+      "slug": "cluster-lash-product-resale",
+      "name": "Resale of cluster lash products (lashes, adhesive, tools) for the Jamaican market — low startup capital, repeatable sales, and minimal skill requirement.",
+      "category": "Beauty",
+      "capitalRange": {
+        "min": 15000,
+        "max": 35000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "description": "Resale of cluster lash products (lashes, adhesive, tools) for the Jamaican market — low startup capital, repeatable sales, and minimal skill requirement.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican beauty business focused on Resale of cluster lash products (lashes, adhesive, tools) for the Jamaican market — low startup capital, repeatable sales, and minimal skill requirement.. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires inventory management",
+        "Competitive market",
+        "Import duties apply"
+      ],
+      "because": [
+        "Low startup capital",
+        "Repeatable sales model",
+        "Growing beauty market in Jamaica"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "jamaica_focus": true,
+      "canon_files": 14,
+      "pack_specific_files": 13,
+      "last_updated": "2026-01-26T01:07:58Z",
+      "zip_available": true,
+      "qa_passed": true,
+      "qa_summary": "Manual QA check passed: All 14 lens files present, no generic markers, 9/14 files with Jamaica references",
+      "zip_size": 27776,
+      "lastUpdated": "2026-01-28T21:13:20.217170",
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Resale of cluster lash products (lashes, adhesive, tools) for the Jamaican market — low startup capital, repeatable sales, and minimal skill requirement., aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "tier": "free"
+    },
+    {
+      "slug": "custom-clothing-prints-businesses-2",
+      "name": "Custom Clothing Prints for Businesses",
+      "category": "Printing & Design",
+      "capital_range": "Medium",
+      "time_to_first_sale": "2-4 weeks",
+      "status": "ready",
+      "qa_passed": true,
+      "version": "2.0",
+      "features": [
+        "Jamaica‑focused",
+        "Complete operational docs"
+      ],
+      "zip_url": "/pack-zips/custom-clothing-prints-businesses-2.zip",
+      "last_updated": "2026-01-28T20:17:14Z",
+      "id": "pp-011",
+      "packScore": {
+        "demandScore": 4,
+        "capitalDifficulty": 1,
+        "timeToFirstSale": 3,
+        "skillRequired": 3
+      },
+      "packLadder": {
+        "nextPacks": [
+          "pp-006",
+          "pp-004"
+        ],
+        "reason": "Offer website creation to clients or help e-commerce clients with product photography and branding"
+      },
+      "packIndex": {
+        "categoryTags": [
+          "low-capital",
+          "recurring-revenue",
+          "scalable"
+        ],
+        "recommendedFor": [
+          "students",
+          "remote-workers",
+          "social-media-natives",
+          "multi-taskers"
+        ]
+      },
+      "capitalRange": {
+        "min": 10000,
+        "max": 50000,
+        "currency": "JMD"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Custom Clothing Prints for Businesses, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "description": "A Jamaica-focused business model.",
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "whatThisIs": "A robust Jamaican printing & design business focused on Custom Clothing Prints for Businesses. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "enhanced": true,
+      "tier": "free"
+    },
+    {
+      "slug": "event-decoration-celebrations",
+      "name": "Event Decoration Celebrations",
+      "category": "Events",
+      "status": "ready",
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T11:15:00Z",
+      "description": "A festive, service-oriented model providing setups for personal milestones like birthdays and reunions using balloons, fabrics, and themed elements.",
+      "id": "pp-018",
+      "packScore": {
+        "demandScore": 5,
+        "capitalDifficulty": 2,
+        "timeToFirstSale": 4,
+        "skillRequired": 3
+      },
+      "capitalRange": {
+        "min": 80000,
+        "max": 150000,
+        "currency": "JMD"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Event Decoration Celebrations, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "enhanced": true,
+      "hasEnhancedContent": true,
+      "canon_count": 14,
+      "timeToFirstSale": "14-21 days",
+      "skillLevel": "Beginner",
+      "whatThisIs": "A robust Jamaican events business focused on Event Decoration Celebrations. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "slug": "stoplight-convenience-sales",
+      "name": "Stoplight Convenience Sales",
+      "category": "Services",
+      "status": "ready",
+      "version": "2.0",
+      "lastUpdated": "2026-01-28T20:42:30.504865",
+      "description": "Stoplight convenience sales service.",
+      "id": "pp-019",
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "capitalRange": {
+        "min": 10000,
+        "max": 50000,
+        "currency": "JMD"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Stoplight Convenience Sales, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "whatThisIs": "A robust Jamaican services business focused on Stoplight Convenience Sales. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "enhanced": true,
+      "tier": "free"
+    },
+    {
+      "slug": "custom-clothing-prints-dtg",
+      "name": "Custom Clothing Prints Dtg",
+      "category": "Clothing",
+      "status": "ready",
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T08:15:00Z",
+      "description": "A high-resolution direct-to-garment digital printing model allowing for no-minimum, full-color photographic apparel production.",
+      "id": "pp-025",
+      "packScore": {
+        "demandScore": 5,
+        "capitalDifficulty": 5,
+        "timeToFirstSale": 3,
+        "skillRequired": 5
+      },
+      "capitalRange": {
+        "min": 1800000,
+        "max": 3500000,
+        "currency": "JMD"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Custom Clothing Prints Dtg, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "enhanced": true,
+      "hasEnhancedContent": true,
+      "canon_count": 14,
+      "timeToFirstSale": "14-21 days",
+      "skillLevel": "Advanced",
+      "whatThisIs": "A robust Jamaican clothing business focused on Custom Clothing Prints Dtg. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "premium",
+      "price": {
+        "amount": 5000,
+        "currency": "JMD",
+        "display": "JMD 5,000"
+      }
+    },
+    {
+      "id": "pp-046",
+      "slug": "event-styling-services",
+      "name": "Event Styling Services",
+      "category": "Events & Services",
+      "capitalRange": {
+        "min": 150000,
+        "max": 300000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "21-45 days",
+      "skillLevel": "Advanced",
+      "description": "A high-end creative direction and visual execution model transforming spaces into themed experiences for Jamaican social and corporate events.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican events & services business focused on Event Styling Services. Designed for high margins and low overhead in the local market.",
+      "status": "ready",
+      "version": "2.0",
+      "lastUpdated": "2026-02-21T11:00:00Z",
+      "features": [
+        "Mobile event styling service for Jamaican celebrations",
+        "14 enhanced lens files with IS/IS NOT/BECAUSE/WARNINGS",
+        "Jamaica‑specific pricing and supplier networks",
+        "Complete operational documentation"
+      ],
+      "packScore": {
+        "demandScore": 4,
+        "capitalDifficulty": 4,
+        "timeToFirstSale": 3,
+        "skillRequired": 5
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Event Styling Services, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "enhanced": true,
+      "hasEnhancedContent": true,
+      "canon_count": 14,
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "premium",
+      "price": {
+        "amount": 5000,
+        "currency": "JMD",
+        "display": "JMD 5,000"
+      }
+    },
+    {
+      "id": "pp-049",
+      "slug": "nail-tech-starter-mobile-services",
+      "name": "Nail Tech Starter Mobile Services",
+      "category": "Beauty & Personal Care",
+      "capitalRange": {
+        "min": 20000,
+        "max": 50000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "description": "Mobile nail tech service for on‑location manicures, pedicures, and nail art across Jamaica.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican beauty & personal care business focused on Nail Tech Starter Mobile Services. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires reliable transportation and mobile setup",
+        "Must comply with Jamaican health and safety regulations",
+        "Initial client acquisition may take 1‑2 weeks"
+      ],
+      "because": [
+        "Jamaican clients value convenience and personalized service",
+        "Mobile beauty services eliminate travel time and waiting",
+        "Low startup cost with high‑margin repeat business"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "nail-tech-starter-mobile-services.zip",
+      "features": [
+        "Mobile service delivery",
+        "Jamaica‑specific pricing (JMD)",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Nail Tech Starter Mobile Services, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-052",
+      "slug": "social-media-content-creation",
+      "name": "Social Media Content Creation",
+      "category": "Digital Services",
+      "capitalRange": {
+        "min": 5000,
+        "max": 20000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "3-7 days",
+      "skillLevel": "Beginner",
+      "description": "Create engaging social media content (posts, carousels, reels) for Jamaican brands and personal brands, focusing on local culture and trends.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican digital services business focused on Social Media Content Creation. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires deep understanding of Jamaican slang, humor, and trending topics",
+        "Content must be culturally appropriate and avoid stereotypes",
+        "Client expectations for virality may be unrealistic"
+      ],
+      "because": [
+        "Jamaican brands need culturally relevant content to connect with local audiences",
+        "Low startup cost with high demand from local businesses",
+        "Content creation can be scaled to multiple clients"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "social-media-content-creation.zip",
+      "features": [
+        "Jamaica‑specific content templates",
+        "Focus on posts, carousels, reels",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Social Media Content Creation, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-053",
+      "slug": "tour-guide-operator-no-vehicle",
+      "name": "Tour Guide Operator (No Vehicle)",
+      "category": "Tourism",
+      "capitalRange": {
+        "min": 10000,
+        "max": 30000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "5-14 days",
+      "skillLevel": "Beginner",
+      "description": "Offer guided walking tours in Jamaican cities and cultural sites without owning a vehicle, focusing on local history, food, and culture.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican tourism business focused on Tour Guide Operator (No Vehicle). Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires deep knowledge of local history and culture",
+        "Weather‑dependent; rain can cancel tours",
+        "Safety concerns in certain areas must be addressed"
+      ],
+      "because": [
+        "Tourists seek authentic, local‑led experiences",
+        "Low startup cost with high‑margin potential",
+        "Growing demand for sustainable, vehicle‑free tourism"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "tour-guide-operator-no-vehicle.zip",
+      "features": [
+        "Jamaica‑specific tour scripts",
+        "Focus on walking tours",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Tour Guide Operator (No Vehicle), aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-054",
+      "slug": "residential-cleaning-services",
+      "name": "Residential Cleaning Services",
+      "category": "Cleaning & Maintenance",
+      "capitalRange": {
+        "min": 20000,
+        "max": 40000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "description": "Removes homeowner time/energy constraints by providing reliable, recurring residential cleaning (weekly/biweekly) with structured pricing and SOPs.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican cleaning & maintenance business focused on Residential Cleaning Services. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires physical stamina and attention to detail",
+        "Client cancellations can affect income stability",
+        "Supplies must be replenished regularly"
+      ],
+      "because": [
+        "Homeowners value time savings and reliability",
+        "Recurring revenue model provides predictable income",
+        "Low startup cost with high demand in urban areas"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "residential-cleaning-services.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on recurring residential cleaning",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Residential Cleaning Services, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-055",
+      "slug": "party-equipment-rentals",
+      "name": "Party Equipment Rentals",
+      "category": "Events & Entertainment",
+      "capitalRange": {
+        "min": 350000,
+        "max": 650000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "14-30 days",
+      "skillLevel": "Beginner",
+      "description": "A logistics-driven asset rental model providing chairs, tables, and tents for local Jamaican events, birthdays, and community gatherings.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican events & entertainment business focused on Party Equipment Rentals. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires physical stamina and attention to detail",
+        "Client cancellations can affect income stability",
+        "Supplies must be replenished regularly"
+      ],
+      "because": [
+        "Homeowners value time savings and reliability",
+        "Recurring revenue model provides predictable income",
+        "Low startup cost with high demand in urban areas"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "party-equipment-rentals.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on recurring residential cleaning",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 5,
+        "capitalDifficulty": 4,
+        "timeToFirstSale": 3,
+        "skillRequired": 2
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Party Equipment Rentals, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "hasEnhancedContent": true,
+      "lastUpdated": "2026-02-21T10:45:00Z",
+      "canon_count": 14,
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-060",
+      "slug": "vegetable-supply-restaurants-fresh-daily",
+      "name": "Vegetable Supply Restaurants Fresh Daily",
+      "category": "Agriculture",
+      "capitalRange": {
+        "min": 2000,
+        "max": 5000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "description": "Supply fresh vegetables to restaurant owners through a reliable delivery model.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican agriculture business focused on Vegetable Supply Restaurants Fresh Daily. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires physical stamina and attention to detail",
+        "Client cancellations can affect income stability",
+        "Supplies must be replenished regularly"
+      ],
+      "because": [
+        "Homeowners value time savings and reliability",
+        "Recurring revenue model provides predictable income",
+        "Low startup cost with high demand in urban areas"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "vegetable-supply-restaurants-fresh-daily.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on recurring residential cleaning",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Vegetable Supply Restaurants Fresh Daily, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-063",
+      "slug": "natural-juice-production-wholesale",
+      "name": "Natural Juice Production Wholesale",
+      "category": "Food & Beverage",
+      "capitalRange": {
+        "min": 20000,
+        "max": 50000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-2 weeks",
+      "skillLevel": "Beginner",
+      "description": "Produce fresh, natural fruit juices and health drinks for wholesale to shops, restaurants, and hospitality businesses.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican food & beverage business focused on Natural Juice Production Wholesale. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires physical stamina and attention to detail",
+        "Client cancellations can affect income stability",
+        "Supplies must be replenished regularly"
+      ],
+      "because": [
+        "Homeowners value time savings and reliability",
+        "Recurring revenue model provides predictable income",
+        "Low startup cost with high demand in urban areas"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "natural-juice-production-wholesale.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on recurring residential cleaning",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Natural Juice Production Wholesale, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-065",
+      "slug": "professional-windscreen-wiper-service",
+      "name": "Professional Windscreen Wiper Service",
+      "category": "Automotive Services",
+      "capitalRange": {
+        "min": 5000,
+        "max": 15000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-3 days",
+      "skillLevel": "Beginner",
+      "description": "Formalizing informal windscreen‑wiper labor into a regulated, consistent service.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican automotive services business focused on Professional Windscreen Wiper Service. Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires physical stamina and attention to detail",
+        "Client cancellations can affect income stability",
+        "Supplies must be replenished regularly"
+      ],
+      "because": [
+        "Homeowners value time savings and reliability",
+        "Recurring revenue model provides predictable income",
+        "Low startup cost with high demand in urban areas"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "professional-windscreen-wiper-service.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on recurring residential cleaning",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Professional Windscreen Wiper Service, aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "free"
+    },
+    {
+      "id": "pp-070",
+      "slug": "tour-guide-operator-with-vehicle",
+      "name": "Tour Guide Operator (With Vehicle)",
+      "category": "Tourism & Travel",
+      "capitalRange": {
+        "min": 5000,
+        "max": 15000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-3 days",
+      "skillLevel": "Beginner",
+      "description": "A tour guide service providing guided tours to tourists and visitors, using your own vehicle.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican tourism & travel business focused on Tour Guide Operator (With Vehicle). Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires physical stamina and attention to detail",
+        "Client cancellations can affect income stability",
+        "Supplies must be replenished regularly"
+      ],
+      "because": [
+        "Homeowners value time savings and reliability",
+        "Recurring revenue model provides predictable income",
+        "Low startup cost with high demand in urban areas"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "tour-guide-operator-with-vehicle.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on recurring residential cleaning",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Tour Guide Operator (With Vehicle), aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "premium",
+      "price": {
+        "amount": 5000,
+        "currency": "JMD",
+        "display": "JMD 5,000"
+      }
+    },
+    {
+      "id": "pp-075",
+      "slug": "vegetable-supply-grocery-stores-packaged-weekly",
+      "name": "Vegetable Supply to Grocery Stores (Packaged Weekly)",
+      "category": "Agriculture & Supply",
+      "capitalRange": {
+        "min": 5000,
+        "max": 15000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "1-3 days",
+      "skillLevel": "Beginner",
+      "description": "A service that supplies packaged vegetables to grocery stores on a weekly basis.",
+      "featured": false,
+      "whatThisIs": "A robust Jamaican agriculture & supply business focused on Vegetable Supply to Grocery Stores (Packaged Weekly). Designed for high margins and low overhead in the local market.",
+      "whatThisIsNot": "Not a franchise. Not a get-rich-quick scheme. Requires consistent effort and excellent customer service.",
+      "warnings": [
+        "Requires reliable transportation and storage",
+        "Seasonal supply fluctuations",
+        "Client cancellations can affect income stability"
+      ],
+      "because": [
+        "Grocery stores need consistent vegetable supply",
+        "High demand for fresh produce",
+        "Low startup cost with high profit margins"
+      ],
+      "status": "ready",
+      "version": "2.0",
+      "enhanced": true,
+      "zip": "vegetable-supply-grocery-stores-packaged-weekly.zip",
+      "features": [
+        "Jamaica‑specific pricing and SOPs",
+        "Focus on weekly packaged supply",
+        "Complete operational documentation",
+        "14 enhanced lens files",
+        "QA‑compliant content"
+      ],
+      "packScore": {
+        "demandScore": 50,
+        "timeToFirstSale": 30,
+        "packLadder": "Beginner"
+      },
+      "firstSevenActions": [
+        "Research the local competition in your parish and identify a gap.",
+        "Create your business name and secure social media handles.",
+        "Source your initial supplies from local wholesalers or online.",
+        "Set up a WhatsApp Business catalog with clear JMD pricing.",
+        "Create 3-5 piece of sample work/products and photograph them well.",
+        "Announce your launch to immediate friends and family to get first clients.",
+        "Post your first piece of content on social media with local hashtags."
+      ],
+      "waitingTimeTasks": [
+        "Draft templates for customer inquiries and FAQs.",
+        "Research advanced techniques or trends on YouTube.",
+        "Build a list of 20 potential B2B or high-value clients.",
+        "Design basic branding (logo, business cards) on Canva."
+      ],
+      "dailyMinimum": "To sustain Vegetable Supply to Grocery Stores (Packaged Weekly), aim for at least 2-3 transactions per day or 1 high-ticket client per week, ensuring daily gross revenue exceeds JMD 5,000.",
+      "scaleGrid": [],
+      "commonFailurePoints": [
+        "Undercutting prices and working at a loss.",
+        "Poor communication and late deliveries.",
+        "Mixing personal and business finances.",
+        "Inconsistent social media posting."
+      ],
+      "ethicalCommunityRules": [],
+      "exitExpandPaths": [
+        "Hire an assistant to handle basic tasks.",
+        "Expand product/service line.",
+        "Open a physical storefront or dedicated studio.",
+        "Transition to teaching or consulting others in the field."
+      ],
+      "whatYouNeed": [
+        "Smartphone with good camera and WhatsApp Business",
+        "Basic toolkit or equipment specific to your trade",
+        "Initial inventory or supplies (JMD 10,000 - 20,000 worth)",
+        "Branded social media presence (Instagram/TikTok)",
+        "Reliable transportation or delivery partner (e.g., local bearer)",
+        "Notebook for tracking income and expenses"
+      ],
+      "valueAddMenu": [
+        "Expedited/Rush Service (+JMD 1,500)",
+        "Premium Packaging/Presentation (+JMD 800)",
+        "Monthly Retainer or Subscription package (15% discount)"
+      ],
+      "starterFolderContents": [],
+      "packIndex": {
+        "recommendedFor": []
+      },
+      "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
+      "qa_passed": true,
+      "tier": "premium",
+      "price": {
+        "amount": 5000,
+        "currency": "JMD",
+        "display": "JMD 5,000"
+      }
+    },
+    {
+      "id": "pp-080",
+      "slug": "personal-fitness-training-mobile",
+      "name": "Personal Fitness Training (Mobile)",
+      "category": "Health & Wellness",
+      "tier": "premium",
+      "price": {
+        "amount": 5000,
+        "currency": "JMD",
+        "display": "JMD 5,000"
+      },
+      "capitalRange": {
+        "min": 15000,
+        "max": 45000,
+        "currency": "JMD"
+      },
+      "timeToFirstSale": "7-14 days",
+      "skillLevel": "Intermediate",
+      "description": "A mobile personal training business serving clients at home, in parks, or at their workplace. Recurring session-based income with zero rent overhead.",
+      "featured": true,
+      "whatThisIs": "You go to the client. No gym needed. Offer structured fitness sessions — weight loss, strength, flexibility — to individuals or small groups. Build a recurring client base that pays weekly or monthly.",
+      "whatYouNeed": [
+        "Fitness certification or proven training experience",
+        "Resistance bands and basic portable equipment",
+        "Measuring tape and weight scale",
+        "Client intake forms",
+        "WhatsApp Business for scheduling",
+        "Professional workout gear",
+        "Session tracking notebook or app"
+      ],
+      "firstSevenActions": [
+        "Define your niche — weight loss, strength, postnatal, seniors",
+        "Offer 3 free trial sessions to build testimonials",
+        "Set session rates (JMD 2,500-5,000 per session or monthly packages)",
+        "Create a simple before/after tracking template for clients",
+        "Post your services in community WhatsApp groups and Facebook",
+        "Map out 3 nearby parks or open spaces for outdoor sessions",
+        "Design a 4-week starter programme for new clients"
+      ],
+      "waitingTimeTasks": [
+        "Study nutrition basics to add value beyond just exercise",
+        "Research group session pricing vs 1-on-1",
+        "Design a referral discount system",
+        "Create a monthly transformation challenge concept",
+        "Research fitness certification options (NCSF, ACE online)"
+      ],
+      "starterFolderContents": [
+        "Client intake and health assessment form",
+        "Weekly session planner template",
+        "Progress tracking sheet (weight, measurements, reps)",
+        "4-week beginner programme PDF",
+        "Pricing and package guide",
+        "Referral card template"
+      ],
+      "valueAddMenu": [
+        "Monthly transformation package (JMD 18,000)",
+        "Couples training (+50% per extra person)",
+        "Nutrition guidance add-on (JMD 3,000/month)",
+        "Corporate workplace wellness sessions",
+        "Online check-in and accountability WhatsApp support"
+      ],
+      "salesMode": "Referral-driven. Start with your network — friends, family, church, community. Every client who gets a result refers two more. Instagram before/after posts are your strongest marketing asset.",
+      "dailyMinimum": "3 sessions per day at JMD 3,000 each = JMD 9,000 daily. Monthly package clients (8 sessions) at JMD 18,000 = stable recurring income.",
+      "commonFailurePoints": [
+        "No-shows without a cancellation policy",
+        "Undercharging out of fear — price your value",
+        "Taking every client — niche down first",
+        "Skipping the intake form — liability risk",
+        "Burning out from too many 1-on-1s without packages"
+      ],
+      "exitExpandPaths": [
+        "Run group bootcamp sessions (5-10 people, same time block)",
+        "Launch a 30-day transformation challenge online",
+        "Partner with a nutritionist for bundled packages",
+        "Open a small outdoor training space",
+        "Build a YouTube/Instagram fitness brand"
+      ],
+      "status": "ready",
+      "version": "1.0",
+      "lastUpdated": "2026-04-11T00:00:00Z",
+      "packScore": {
+        "demandScore": 5,
+        "capitalDifficulty": 1,
+        "timeToFirstSale": 4,
+        "skillRequired": 3
+      },
+      "packLadder": {
+        "nextPacks": [
+          "pp-046",
+          "pp-070"
+        ],
+        "reason": "Scale from mobile training to event wellness services or tourism fitness experiences"
+      },
+      "packIndex": {
+        "categoryTags": [
+          "recurring-income",
+          "mobile",
+          "health",
+          "low-capital"
+        ],
+        "recommendedFor": [
+          "fitness-enthusiasts",
+          "active-people",
+          "certified-trainers",
+          "side-hustlers"
+        ]
+      }
+    }
+  ]
+}
