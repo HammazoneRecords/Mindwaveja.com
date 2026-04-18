@@ -89,6 +89,8 @@
       "priceNote": "Per territory per year",
       "availableDate": "August 7, 2026",
       "comingSoon": true,
+      "ctaLabel": "Reserve Your License",
+      "ctaHref": "/marketplace/artist-digital-territory-license",
       "features": [
         "Territory rights definition",
         "Usage rights documentation",

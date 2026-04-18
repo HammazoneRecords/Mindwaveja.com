@@ -108,7 +108,18 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       </div>
 
       {/* CTA */}
-      {product.comingSoon ? (
+      {product.comingSoon && product.ctaHref ? (
+        <Link
+          href={product.ctaHref}
+          className="w-full py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90 block text-center"
+          style={{
+            backgroundColor: 'rgb(var(--color-brand-red))',
+            color: '#fff',
+          }}
+        >
+          {product.ctaLabel ?? 'Reserve Your Copy'}
+        </Link>
+      ) : product.comingSoon ? (
         <button
           onClick={() => setModalOpen(true)}
           className="w-full py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90"

@@ -113,6 +113,8 @@ export interface Product {
   featured?: boolean;
   comingSoon?: boolean;
   availableDate?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
 }
 
 // FAQ Types
