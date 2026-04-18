@@ -10,10 +10,10 @@ import { Button } from './Button';
 import { ThemeToggle } from './ThemeToggle';
 
 const navLinks = [
+  { label: 'Opportunities', href: '/opportunities' },
   { label: 'Phase Packs', href: '/phase-packs' },
   { label: 'Marketplace', href: '/marketplace' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Opportunities', href: '/opportunities' },
   { label: 'Community', href: '/community', isComingSoon: true },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },

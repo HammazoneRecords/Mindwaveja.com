@@ -11,6 +11,8 @@ import {
   Trophy,
   TrendingUp,
   Users,
+  Gift,
+  Sparkles,
 } from "lucide-react";
 
 const voucherRewards = [
@@ -21,8 +23,18 @@ const voucherRewards = [
   { icon: <Fuel className="w-6 h-6" />, label: "Gas Station Credits" },
   { icon: <Film className="w-6 h-6" />, label: "Movie Tickets" },
   { icon: <Wifi className="w-6 h-6" />, label: "Digicel / FLOW Top-Up" },
-  { icon: <Music className="w-6 h-6" />, label: "Spotify / YouTube Premium" },
+  { icon: <Music className="w-6 h-6" />, label: "Spotify / YouTube Premium Gift Codes" },
+  { icon: <Gift className="w-6 h-6" />, label: "Amazon Gift Cards" },
   { icon: <ShoppingBag className="w-6 h-6" />, label: "MindWave Store Credit" },
+];
+
+const newUserPerks = [
+  {
+    icon: <Sparkles className="w-7 h-7" />,
+    title: "New Transcriber Welcome",
+    description:
+      "Brand new? Start with 1–2 short videos (under 3 minutes) per day while you get your footing. Build your accuracy score, then unlock the full job board.",
+  },
 ];
 
 const growthPerks = [
@@ -112,6 +124,45 @@ export function Rewards() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* New User Perk */}
+        <div className="mb-16">
+          {newUserPerks.map((perk) => (
+            <motion.div
+              key={perk.title}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col sm:flex-row items-center gap-6 p-8 rounded-2xl border text-center sm:text-left"
+              style={{
+                backgroundColor: "rgba(var(--color-brand-green), 0.06)",
+                borderColor: "rgba(var(--color-brand-green), 0.3)",
+              }}
+            >
+              <div
+                className="flex-shrink-0"
+                style={{ color: "rgb(var(--color-brand-green))" }}
+              >
+                {perk.icon}
+              </div>
+              <div>
+                <h4
+                  className="text-lg font-bold mb-1"
+                  style={{ color: "rgb(var(--color-text-primary))" }}
+                >
+                  {perk.title}
+                </h4>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: "rgb(var(--color-text-secondary))" }}
+                >
+                  {perk.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
         {/* Growth Perks */}
         <div className="text-center mb-10">

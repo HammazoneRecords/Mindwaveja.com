@@ -33,6 +33,14 @@ const faqs = [
     q: "What does 'next tier starts after 30 seconds' mean?",
     a: "If a video is 10 minutes and 25 seconds, it still counts as the 3–10 minute tier. The higher rate only kicks in after 10 minutes and 30 seconds.",
   },
+  {
+    q: "What are the long video bonus rewards?",
+    a: "Videos over 40 minutes earn a bonus reward on top of the base JMD payout — you pick one from the reward list (voucher, gift card, top-up, etc.). Videos over 60 minutes get even better: you pick one reward AND receive a second surprise random reward.",
+  },
+  {
+    q: "I'm new — how many videos can I do per day?",
+    a: "New transcribers start with 1–2 short videos (under 3 minutes) per day. This helps you build your accuracy score at a comfortable pace. Once you've established a track record, the full job board opens up.",
+  },
 ];
 
 export function OpportunitiesFAQ() {

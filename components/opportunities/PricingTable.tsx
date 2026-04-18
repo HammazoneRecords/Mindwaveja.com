@@ -3,11 +3,29 @@
 import { motion } from "framer-motion";
 
 const tiers = [
-  { duration: "Under 3 minutes", pay: "200", note: "Quick clips, reels, shorts" },
-  { duration: "3 – 10 minutes", pay: "500", note: "Standard social media videos" },
-  { duration: "10 – 20 minutes", pay: "900", note: "Interviews, vlogs, tutorials" },
-  { duration: "20 – 45 minutes", pay: "1,380", note: "Podcasts, deep dives" },
-  { duration: "45 – 70 minutes", pay: "3,500", note: "Full lectures, documentaries" },
+  { duration: "Under 3 minutes", pay: "200", note: "Quick clips, reels, shorts", addon: null },
+  { duration: "3 – 10 minutes", pay: "500", note: "Standard social media videos", addon: null },
+  { duration: "10 – 20 minutes", pay: "900", note: "Interviews, vlogs, tutorials", addon: null },
+  { duration: "20 – 45 minutes", pay: "1,380", note: "Podcasts, deep dives", addon: null },
+  {
+    duration: "45 – 70 minutes",
+    pay: "3,500",
+    note: "Full lectures, documentaries",
+    addon: { label: "40 min+ add-on", description: "Choose 1 bonus reward (voucher or gift card)" },
+  },
+];
+
+const longVideoAddons = [
+  {
+    threshold: "Over 40 minutes",
+    reward: "Add-on reward of your choice",
+    emoji: "🎁",
+  },
+  {
+    threshold: "Over 60 minutes",
+    reward: "1 reward you choose + 1 surprise random reward",
+    emoji: "🎁✨",
+  },
 ];
 
 const contractorInfo = {
@@ -96,6 +114,60 @@ export function PricingTable() {
               </span>
             </div>
           ))}
+        </motion.div>
+
+        {/* Long Video Add-on Rewards */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="rounded-2xl border p-6 mb-12"
+          style={{
+            borderColor: "rgba(var(--color-brand-green), 0.4)",
+            backgroundColor: "rgba(var(--color-brand-green), 0.05)",
+          }}
+        >
+          <h3
+            className="text-lg font-bold mb-4"
+            style={{ color: "rgb(var(--color-text-primary))" }}
+          >
+            Long Video Bonus Rewards
+          </h3>
+          <div className="space-y-3">
+            {longVideoAddons.map((addon) => (
+              <div
+                key={addon.threshold}
+                className="flex items-start gap-4 p-4 rounded-xl border"
+                style={{
+                  backgroundColor: "rgb(var(--color-bg-primary))",
+                  borderColor: "rgb(var(--color-border-primary))",
+                }}
+              >
+                <span className="text-2xl flex-shrink-0">{addon.emoji}</span>
+                <div>
+                  <p
+                    className="font-semibold text-sm"
+                    style={{ color: "rgb(var(--color-brand-green))" }}
+                  >
+                    {addon.threshold}
+                  </p>
+                  <p
+                    className="text-sm"
+                    style={{ color: "rgb(var(--color-text-secondary))" }}
+                  >
+                    {addon.reward}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p
+            className="text-xs mt-3"
+            style={{ color: "rgb(var(--color-text-tertiary))" }}
+          >
+            Bonus rewards stack on top of the base JMD payout — not a replacement.
+          </p>
         </motion.div>
 
         {/* Contractor Card */}
