@@ -19,7 +19,7 @@ export function OpportunitiesHero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse at 30% 20%, rgba(var(--color-brand-green), 0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgba(var(--color-brand-red), 0.06) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 30% 20%, rgb(var(--color-brand-green) / 0.08) 0%, transparent 60%), radial-gradient(ellipse at 70% 80%, rgb(var(--color-brand-red) / 0.06) 0%, transparent 60%)",
         }}
       />
 
@@ -67,7 +67,7 @@ export function OpportunitiesHero() {
               key={h.text}
               className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium"
               style={{
-                backgroundColor: "rgba(var(--color-brand-green), 0.1)",
+                backgroundColor: "rgb(var(--color-brand-green) / 0.1)",
                 color: "rgb(var(--color-brand-green))",
               }}
             >

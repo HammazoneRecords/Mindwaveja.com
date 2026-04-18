@@ -136,8 +136,8 @@ export function Rewards() {
               transition={{ duration: 0.5 }}
               className="flex flex-col sm:flex-row items-center gap-6 p-8 rounded-2xl border text-center sm:text-left"
               style={{
-                backgroundColor: "rgba(var(--color-brand-green), 0.06)",
-                borderColor: "rgba(var(--color-brand-green), 0.3)",
+                backgroundColor: "rgb(var(--color-brand-green) / 0.06)",
+                borderColor: "rgb(var(--color-brand-green) / 0.3)",
               }}
             >
               <div

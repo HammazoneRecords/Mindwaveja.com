@@ -91,7 +91,7 @@ export function PricingTable() {
                 backgroundColor:
                   i % 2 === 0
                     ? "transparent"
-                    : "rgba(var(--color-bg-primary), 0.5)",
+                    : "rgb(var(--color-bg-primary) / 0.5)",
               }}
             >
               <span
@@ -124,8 +124,8 @@ export function PricingTable() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="rounded-2xl border p-6 mb-12"
           style={{
-            borderColor: "rgba(var(--color-brand-green), 0.4)",
-            backgroundColor: "rgba(var(--color-brand-green), 0.05)",
+            borderColor: "rgb(var(--color-brand-green) / 0.4)",
+            backgroundColor: "rgb(var(--color-brand-green) / 0.05)",
           }}
         >
           <h3
