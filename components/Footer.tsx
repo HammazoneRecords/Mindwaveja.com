@@ -8,6 +8,7 @@ const footerLinks = {
     { label: 'Phase Packs', href: '/phase-packs' },
     { label: 'Marketplace', href: '/marketplace' },
     { label: 'Projects', href: '/projects' },
+    { label: 'Opportunities', href: '/opportunities' },
   ],
   company: [
     { label: 'About', href: '/about' },
