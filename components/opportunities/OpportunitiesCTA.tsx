@@ -33,7 +33,9 @@ export function OpportunitiesCTA() {
           interview. No resume. Just show up and deliver.
         </p>
         <a
-          href="/intake"
+          href="https://earn.mindwaveja.com/signup"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-base transition-all hover:scale-105"
           style={{
             backgroundColor: "rgb(var(--color-brand-red))",

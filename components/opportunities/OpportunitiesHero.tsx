@@ -83,7 +83,9 @@ export function OpportunitiesHero() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <a
-            href="#how-it-works"
+            href="https://earn.mindwaveja.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-base transition-all hover:scale-105"
             style={{
               backgroundColor: "rgb(var(--color-brand-red))",
