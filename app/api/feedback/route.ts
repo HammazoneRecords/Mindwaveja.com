@@ -3,8 +3,6 @@ import { Resend } from 'resend';
 import fs from 'fs';
 import path from 'path';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const PRODUCTS = [
   'MindWave Phase Packs',
   'Patois Calibration Agent',
@@ -68,6 +66,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Send email notification
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const notifyEmail = process.env.NOTIFY_EMAIL ?? 'ovandobrown@gmail.com';
     const fromEmail = process.env.EMAIL_FROM ?? 'onboarding@resend.dev';
 

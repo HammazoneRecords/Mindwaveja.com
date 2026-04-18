@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { resend, ADMIN_EMAIL } from '@/lib/email';
+import { getResend, ADMIN_EMAIL } from '@/lib/email';
 import { OrderNotificationEmail } from '@/emails/order-notification';
 import { CustomerConfirmationEmail } from '@/emails/customer-confirmation';
 import packMappings from '@/content/packMappings.json';
@@ -36,6 +36,7 @@ export async function POST(request: NextRequest) {
             }
         }
         const downloadLink = `https://mindwaveja.com/media/${packSlug}.zip`;
+        const resend = getResend();
         // Send email to admin
         await resend.emails.send({
             from: 'MindWave Jamaica <orders@mindwaveja.com>',
