@@ -43,7 +43,7 @@ export function NavBar() {
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'backdrop-blur-xl border-b shadow-soft'
+          ? 'backdrop-blur-xl shadow-soft'
           : 'bg-transparent'
       )}
       style={isScrolled ? {
@@ -79,7 +79,9 @@ export function NavBar() {
                   'px-4 py-2 text-sm font-medium rounded-xl transition-colors relative',
                   pathname === link.href
                     ? 'text-wave-500'
-                    : 'text-charcoal-700 hover:text-charcoal-900 hover:bg-charcoal-50'
+                    : isScrolled
+                      ? 'text-charcoal-700 hover:text-charcoal-900 hover:bg-charcoal-50 dark:text-charcoal-200 dark:hover:text-white dark:hover:bg-white/10'
+                      : 'text-white/90 hover:text-white hover:bg-white/10'
                 )}
               >
                 {link.label}
@@ -103,7 +105,12 @@ export function NavBar() {
             <ThemeToggle />
             <button
               type="button"
-              className="p-2 text-charcoal-700 hover:text-charcoal-900 transition-colors"
+              className={clsx(
+                'p-2 transition-colors',
+                isScrolled
+                  ? 'text-charcoal-700 hover:text-charcoal-900 dark:text-charcoal-200 dark:hover:text-white'
+                  : 'text-white/90 hover:text-white'
+              )}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle navigation menu"
@@ -137,7 +144,7 @@ export function NavBar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden backdrop-blur-xl border-b"
+            className="lg:hidden backdrop-blur-xl"
             style={{
               backgroundColor: 'rgb(var(--color-bg-primary) / 0.98)',
               borderColor: 'rgb(var(--color-border-primary))',
