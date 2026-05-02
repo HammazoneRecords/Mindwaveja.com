@@ -109,7 +109,7 @@ export default function ArtistDigitalTerritoryPage() {
             <h2 style={{ fontSize: 16, fontWeight: 800, margin: 0 }}>{WAVE_LABELS[wave].label}</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 14 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
             {(byWave[wave] ?? []).map((a) => (
               <div
                 key={a.domain}
