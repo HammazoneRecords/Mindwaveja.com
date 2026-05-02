@@ -18,9 +18,9 @@ interface ArtistLicense {
 
 const ARTISTS: ArtistLicense[] = [
   // Wave 1 — priority builds
-  { domain: 'skengdon.com', artist: 'Skeng', genre: 'Dancehall', notes: 'One of the hottest artists in Jamaica right now. Massive streaming.', wave: 1 },
+  { domain: 'skengdon.com', artist: 'Skeng', genre: 'Dancehall', notes: 'One of the hottest artists in Jamaica right now. Massive streaming.', wave: 1, url: 'https://skengdon.com' },
   { domain: 'chroniclawmusic.com', artist: 'Chronic Law', genre: 'Dancehall', notes: '#1 most-streamed dancehall artist in Jamaica (Spotify 2025).', wave: 1 },
-  { domain: 'tarrusrileyja.com', artist: 'Tarrus Riley', genre: 'Reggae', notes: 'Professional team, international reach, legacy brand.', wave: 1 },
+  { domain: 'tarrusrileyja.com', artist: 'Tarrus Riley', genre: 'Reggae', notes: 'Professional team, international reach, legacy brand.', wave: 1, url: 'https://tarrusrileyja.com' },
   // Wave 2
   { domain: 'officialalkaline.com', artist: 'Alkaline', genre: 'Dancehall', notes: 'New Rules era. Cleanest official domain of three held.', wave: 2 },
   { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 2 },
@@ -65,14 +65,14 @@ export default function ArtistDigitalTerritoryPage() {
           fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase',
           color: 'rgb(var(--color-brand-red, 236 50 55))', marginBottom: 12, display: 'block',
         }}>
-          Artist Digital Territory License · JMD 8,000 / year
+          Artist Digital Territory License · From $5,200 USD
         </span>
         <h1 style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
           Claim Your Digital Territory.
         </h1>
         <p style={{ fontSize: 16, lineHeight: 1.7, maxWidth: 620, color: 'var(--color-text-secondary, #888)' }}>
-          Every artist below has a domain owned and ready. MindWave JA builds a bespoke site, hosts it on our
-          VPS, and hands the keys to the artist. One flat license per territory, per year.
+          Every artist below has a domain owned and ready. MindWave JA builds a bespoke site on an owned domain
+          and hands the full package to the artist or their team. One flat license per territory — yours to own.
         </p>
       </div>
 
@@ -84,8 +84,8 @@ export default function ArtistDigitalTerritoryPage() {
       }}>
         {[
           { n: '01', title: 'Domain Owned', desc: 'We already hold the domain — no squatting, no delay.' },
-          { n: '02', title: 'Site Built', desc: 'Bespoke artist site on our infrastructure. Fast, dark, clean.' },
-          { n: '03', title: 'Handed Over', desc: 'Artist or team gets credentials. Full ownership after year 1.' },
+          { n: '02', title: 'Site Built', desc: 'Bespoke artist site. Vite + React, deployed to Vercel. Fast, branded, clean.' },
+          { n: '03', title: 'Full Transfer', desc: 'GitHub repo transfer + Vercel import + DNS update. Full ownership from day one.' },
         ].map((s) => (
           <div key={s.n}>
             <span style={{ fontSize: 11, fontWeight: 700, color: 'rgba(164,207,76,0.7)', letterSpacing: '0.08em' }}>{s.n}</span>
@@ -145,9 +145,14 @@ export default function ArtistDigitalTerritoryPage() {
                 )}
 
                 <div style={{ marginTop: 'auto', paddingTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontSize: 13, fontWeight: 700, color: WAVE_LABELS[a.wave].color }}>
-                    JMD 8,000 / yr
-                  </span>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                    <span style={{ fontSize: 14, fontWeight: 800, color: WAVE_LABELS[a.wave].color }}>
+                      $5,200 USD
+                    </span>
+                    <span style={{ fontSize: 11, color: 'var(--color-text-tertiary, #555)', fontWeight: 600 }}>
+                      ≈ JMD 820,000
+                    </span>
+                  </div>
                   {a.url ? (
                     <a
                       href={a.url}
