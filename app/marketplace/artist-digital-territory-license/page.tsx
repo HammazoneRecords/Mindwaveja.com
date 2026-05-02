@@ -1,6 +1,13 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+// Exchange rate policy: use Bank of Jamaica Dec 31 closing rate for the prior year.
+// Update ANNUAL_JMD_RATE each Jan 1 with the BOJ Dec 31 rate from boj.org.jm
+// Dec 31 2025 BOJ rate: 160.09 JMD/USD → $5,200 × 160.09 = JMD 832,468
+const ADTL_USD = 5_200;
+const ANNUAL_JMD_RATE = 160.09; // BOJ Dec 31 2025 — next update: Jan 1 2027
+const ADTL_JMD = Math.round(ADTL_USD * ANNUAL_JMD_RATE).toLocaleString('en-JM');
+
 export const metadata: Metadata = {
   title: 'Artist Digital Territory License | MindWave Jamaica',
   description:
@@ -65,7 +72,7 @@ export default function ArtistDigitalTerritoryPage() {
           fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase',
           color: 'rgb(var(--color-brand-red, 236 50 55))', marginBottom: 12, display: 'block',
         }}>
-          Artist Digital Territory License · From $5,200 USD
+          Artist Digital Territory License · ${ADTL_USD.toLocaleString()} USD / JMD {ADTL_JMD}
         </span>
         <h1 style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
           Claim Your Digital Territory.
@@ -147,10 +154,10 @@ export default function ArtistDigitalTerritoryPage() {
                 <div style={{ marginTop: 'auto', paddingTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                     <span style={{ fontSize: 14, fontWeight: 800, color: WAVE_LABELS[a.wave].color }}>
-                      $5,200 USD
+                      ${ADTL_USD.toLocaleString()} USD
                     </span>
                     <span style={{ fontSize: 11, color: 'var(--color-text-tertiary, #555)', fontWeight: 600 }}>
-                      ≈ JMD 820,000
+                      JMD {ADTL_JMD}
                     </span>
                   </div>
                   {a.url ? (
