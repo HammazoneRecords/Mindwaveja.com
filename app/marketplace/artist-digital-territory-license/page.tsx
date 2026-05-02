@@ -38,7 +38,7 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'busysignalturf.com', artist: 'Busy Signal', genre: 'Reggae/Dancehall', notes: 'Veteran with international reach.', wave: 3 },
   { domain: 'dingdongravers.com', artist: 'Ding Dong', genre: 'Dancehall', notes: 'Dancer/artist. Ravers Claquez brand.', wave: 3 },
   { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 3 },
-  { domain: 'officialjashiimusic.com', artist: 'Jahshii', genre: 'Dancehall', notes: 'Conscious dancehall. Grant\'s Pen to the world.', wave: 3, url: 'https://officialjashiimusic.com' },
+  { domain: 'officialjashiimusic.com', artist: 'Jahshii', genre: 'Dancehall', notes: 'Conscious dancehall. Grant\'s Pen to the world.', wave: 1, url: 'https://officialjashiimusic.com' },
   { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 3 },
   { domain: 'realjahvinci.com', artist: 'Jah Vinci', genre: 'Reggae/Dancehall', notes: '', wave: 3 },
   { domain: 'rajahwildofficial.com', artist: 'Rajah Wild', genre: 'Dancehall', notes: '', wave: 3 },
