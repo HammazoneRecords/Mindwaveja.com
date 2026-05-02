@@ -52,7 +52,7 @@ export function NavBar() {
       } : undefined}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
           <Link
             href="/"
@@ -64,7 +64,7 @@ export function NavBar() {
               alt="MindWave Jamaica"
               width={100}
               height={50}
-              className="h-10 w-auto group-hover:opacity-90 transition-opacity"
+              className="h-7 w-auto group-hover:opacity-90 transition-opacity"
               priority
             />
           </Link>
@@ -76,7 +76,7 @@ export function NavBar() {
                 key={link.href}
                 href={link.href}
                 className={clsx(
-                  'px-4 py-2 text-sm font-medium rounded-xl transition-colors relative',
+                  'px-3 py-1.5 text-sm font-medium rounded-xl transition-colors relative',
                   pathname === link.href
                     ? 'text-wave-500'
                     : isScrolled

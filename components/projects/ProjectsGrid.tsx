@@ -22,12 +22,12 @@ interface Project {
 }
 
 const typeIcons: Record<string, React.ReactNode> = {
-  "Educational App": <Smartphone className="w-6 h-6" />,
-  "Accounting Tool": <Code2 className="w-6 h-6" />,
-  "Workplace Tool": <Code2 className="w-6 h-6" />,
-  "Innovation Network": <TrendingUp className="w-6 h-6" />,
-  "Advanced System": <Zap className="w-6 h-6" />,
-  "Ecosystem Platform": <Globe2 className="w-6 h-6" />,
+  "Educational App": <Smartphone className="w-4 h-4" />,
+  "Accounting Tool": <Code2 className="w-4 h-4" />,
+  "Workplace Tool": <Code2 className="w-4 h-4" />,
+  "Innovation Network": <TrendingUp className="w-4 h-4" />,
+  "Advanced System": <Zap className="w-4 h-4" />,
+  "Ecosystem Platform": <Globe2 className="w-4 h-4" />,
 };
 
 export function ProjectsGrid() {
@@ -75,7 +75,7 @@ export function ProjectsGrid() {
   const ProjectCard = ({ project }: { project: Project }) => (
     <motion.div
       variants={itemVariants}
-      className={`group relative elevation-2 rounded-3xl p-6 transition-all duration-300 border ${
+      className={`group relative elevation-2 rounded-2xl p-4 transition-all duration-300 border ${
         project.featured ? 'md:col-span-1 lg:col-span-1 ring-2' : ''
       }`}
       style={{
@@ -100,9 +100,9 @@ export function ProjectsGrid() {
       )}
 
       {/* Icon and Type */}
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex items-center gap-2 mb-3">
         <div
-          className="p-3 rounded-xl"
+          className="p-2 rounded-lg"
           style={{
             backgroundColor: 'rgba(var(--color-brand-red), 0.1)',
           }}
@@ -112,7 +112,7 @@ export function ProjectsGrid() {
               color: 'rgb(var(--color-brand-red))',
             }}
           >
-            {typeIcons[project.type] || <Zap className="w-6 h-6" />}
+            {typeIcons[project.type] || <Zap className="w-4 h-4" />}
           </div>
         </div>
         <div>
@@ -137,7 +137,7 @@ export function ProjectsGrid() {
 
       {/* Project Name */}
       <h3
-        className="text-[1.5625rem] font-bold mb-2"
+        className="text-base font-bold mb-1.5"
         style={{
           color: 'rgb(var(--color-text-primary))',
         }}
@@ -147,7 +147,7 @@ export function ProjectsGrid() {
 
       {/* Description */}
       <p
-        className="text-[1rem] leading-relaxed mb-4"
+        className="text-xs leading-relaxed mb-3 line-clamp-2"
         style={{
           color: 'rgb(var(--color-text-secondary))',
         }}
@@ -156,7 +156,7 @@ export function ProjectsGrid() {
       </p>
 
       {/* Tags */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-1 mb-3">
         {project.tags.slice(0, 3).map((tag) => (
           <span
             key={tag}
@@ -172,7 +172,7 @@ export function ProjectsGrid() {
       </div>
 
       {/* Price/Access */}
-      <div className="mb-6 pb-6 border-t" style={{ borderColor: 'rgb(var(--color-border-primary))' }}>
+      <div className="mb-3 pb-3 border-t" style={{ borderColor: 'rgb(var(--color-border-primary))' }}>
         <p
           className="text-sm font-semibold mb-1"
           style={{
@@ -192,17 +192,17 @@ export function ProjectsGrid() {
       </div>
 
       {/* Features */}
-      <div className="mb-6">
+      <div className="mb-3">
         <p
-          className="text-xs font-semibold mb-3"
+          className="text-xs font-semibold mb-2"
           style={{
             color: 'rgb(var(--color-text-tertiary))',
           }}
         >
           Key Features
         </p>
-        <ul className="space-y-2">
-          {project.features.slice(0, 3).map((feature, idx) => (
+        <ul className="space-y-1">
+          {project.features.slice(0, 2).map((feature, idx) => (
             <li key={idx} className="flex gap-2">
               <span
                 style={{
@@ -243,17 +243,17 @@ export function ProjectsGrid() {
 
   return (
     <section
-      className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8"
+      className="py-8 md:py-12 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundColor: 'rgb(var(--color-bg-primary))',
       }}
     >
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-10">
         {/* Active Projects */}
         <div>
-          <div className="mb-12">
+          <div className="mb-6">
             <h2
-              className="text-[3.1875rem] font-bold mb-4"
+              className="text-2xl font-bold mb-2"
               style={{
                 color: 'rgb(var(--color-text-primary))',
               }}
@@ -261,7 +261,7 @@ export function ProjectsGrid() {
               Active Projects
             </h2>
             <p
-              className="text-[1.3125rem]"
+              className="text-sm"
               style={{
                 color: 'rgb(var(--color-text-secondary))',
               }}
@@ -271,7 +271,7 @@ export function ProjectsGrid() {
           </div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -285,16 +285,16 @@ export function ProjectsGrid() {
 
         {/* Research Projects */}
         <div>
-          <div className="mb-12">
+          <div className="mb-6">
             <div className="flex items-center gap-3 mb-2">
               <BookOpen
-                className="w-8 h-8"
+                className="w-5 h-5"
                 style={{
                   color: 'rgb(var(--color-brand-red))',
                 }}
               />
               <h2
-                className="text-[3.1875rem] font-bold"
+                className="text-2xl font-bold"
                 style={{
                   color: 'rgb(var(--color-text-primary))',
                 }}
@@ -303,7 +303,7 @@ export function ProjectsGrid() {
               </h2>
             </div>
             <p
-              className="text-[1.3125rem]"
+              className="text-sm"
               style={{
                 color: 'rgb(var(--color-text-secondary))',
               }}
@@ -313,7 +313,7 @@ export function ProjectsGrid() {
           </div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"

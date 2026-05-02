@@ -29,14 +29,14 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group relative rounded-3xl p-6 transition-all duration-300 flex flex-col"
+      className="group relative rounded-2xl p-4 transition-all duration-300 flex flex-col"
       style={{
         backgroundColor: 'rgb(var(--color-bg-elevated))',
         border: '1px solid rgb(var(--color-border-primary))',
       }}
     >
       {/* Category + badges */}
-      <div className="flex items-start justify-between mb-4 gap-2 flex-wrap">
+      <div className="flex items-start justify-between mb-3 gap-2 flex-wrap">
         <Badge variant="default">{product.category}</Badge>
         <div className="flex gap-2">
           {product.comingSoon && (
@@ -57,17 +57,17 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-semibold mb-2 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
+      <h3 className="text-sm font-semibold mb-1.5 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
         {product.name}
       </h3>
 
       {/* Description */}
-      <p className="text-sm leading-relaxed mb-4 line-clamp-2 flex-grow" style={{ color: 'rgb(var(--color-text-secondary))' }}>
+      <p className="text-xs leading-relaxed mb-3 line-clamp-2 flex-grow" style={{ color: 'rgb(var(--color-text-secondary))' }}>
         {product.description}
       </p>
 
       {/* Tags */}
-      <div className="flex flex-wrap gap-1 mb-4">
+      <div className="flex flex-wrap gap-1 mb-3">
         {product.tags.slice(0, 3).map((tag) => (
           <span
             key={tag}
@@ -95,7 +95,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           </div>
         ) : (
           <>
-            <span className="text-2xl font-bold" style={{ color: 'rgb(var(--color-brand-green))' }}>
+            <span className="text-lg font-bold" style={{ color: 'rgb(var(--color-brand-green))' }}>
               {product.price}
             </span>
             {product.priceNote && (
