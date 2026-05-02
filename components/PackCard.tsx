@@ -47,7 +47,7 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group relative rounded-3xl p-6 transition-all duration-300"
+      className="group relative rounded-2xl p-4 transition-all duration-300 flex flex-col h-full"
       style={{
         backgroundColor: 'rgb(var(--color-bg-elevated))',
         border: '1px solid rgb(var(--color-border-primary))',
@@ -62,7 +62,7 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       </div>
 
       {/* Title */}
-      <h3 className="text-xl font-semibold mb-2 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
+      <h3 className="text-sm font-semibold mb-2 line-clamp-1 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
         {pack.name}
       </h3>
 
@@ -99,7 +99,7 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       </div>
 
       {/* First 7 Actions Teaser */}
-      <div className="mb-6">
+      <div className="mb-4 flex-1">
         <span className="text-xs uppercase tracking-wide mb-2 block" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
           First 7 Actions Preview
         </span>
@@ -121,7 +121,7 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       {/* CTA */}
       <Link
         href={`/phase-packs/${pack.slug}`}
-        className="block"
+        className="block mt-auto"
       >
         <Button variant="outline" className="w-full" size="sm">
           View Full Pack

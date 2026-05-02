@@ -117,13 +117,13 @@ export default function ArtistDigitalTerritoryPage() {
                   background: WAVE_LABELS[a.wave].bg,
                   border: `1px solid ${WAVE_LABELS[a.wave].color}40`,
                   borderLeft: `3px solid ${WAVE_LABELS[a.wave].color}`,
-                  borderRadius: 12, padding: '18px 20px',
-                  display: 'flex', flexDirection: 'column', gap: 8,
+                  borderRadius: 12, padding: '14px 16px',
+                  display: 'flex', flexDirection: 'column', gap: 6, height: '100%',
                 }}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
                   <div>
-                    <p style={{ fontWeight: 800, fontSize: 15, marginBottom: 2 }}>{a.artist}</p>
+                    <p style={{ fontWeight: 800, fontSize: 13, marginBottom: 2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 120 }}>{a.artist}</p>
                     <p style={{ fontSize: 11, color: 'var(--color-text-secondary, #888)', fontWeight: 600 }}>{a.genre}</p>
                   </div>
                   <span style={{
@@ -146,7 +146,7 @@ export default function ArtistDigitalTerritoryPage() {
                 </code>
 
                 {a.notes && (
-                  <p style={{ fontSize: 12, color: 'var(--color-text-tertiary, #666)', lineHeight: 1.5, marginTop: 2 }}>
+                  <p style={{ fontSize: 11, color: 'var(--color-text-tertiary, #666)', lineHeight: 1.4, marginTop: 2, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {a.notes}
                   </p>
                 )}

@@ -29,7 +29,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group relative rounded-2xl p-4 transition-all duration-300 flex flex-col"
+      className="group relative rounded-2xl p-4 transition-all duration-300 flex flex-col h-full"
       style={{
         backgroundColor: 'rgb(var(--color-bg-elevated))',
         border: '1px solid rgb(var(--color-border-primary))',
@@ -57,7 +57,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       </div>
 
       {/* Title */}
-      <h3 className="text-sm font-semibold mb-1.5 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
+      <h3 className="text-sm font-semibold mb-1.5 line-clamp-1 transition-colors" style={{ color: 'rgb(var(--color-text-primary))' }}>
         {product.name}
       </h3>
 

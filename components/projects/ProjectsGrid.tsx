@@ -75,7 +75,7 @@ export function ProjectsGrid() {
   const ProjectCard = ({ project }: { project: Project }) => (
     <motion.div
       variants={itemVariants}
-      className={`group relative elevation-2 rounded-2xl p-4 transition-all duration-300 border ${
+      className={`group relative elevation-2 rounded-2xl p-4 transition-all duration-300 border flex flex-col h-full ${
         project.featured ? 'md:col-span-1 lg:col-span-1 ring-2' : ''
       }`}
       style={{
@@ -137,7 +137,7 @@ export function ProjectsGrid() {
 
       {/* Project Name */}
       <h3
-        className="text-base font-bold mb-1.5"
+        className="text-base font-bold mb-1.5 line-clamp-1"
         style={{
           color: 'rgb(var(--color-text-primary))',
         }}
@@ -229,7 +229,7 @@ export function ProjectsGrid() {
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all hover:gap-3"
+        className="mt-auto inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all hover:gap-3"
         style={{
           backgroundColor: 'rgb(var(--color-brand-red))',
           color: '#ffffff',
