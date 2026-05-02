@@ -26,7 +26,7 @@ interface ArtistLicense {
 const ARTISTS: ArtistLicense[] = [
   // Wave 1 — priority builds
   { domain: 'skengdon.com', artist: 'Skeng', genre: 'Dancehall', notes: 'One of the hottest artists in Jamaica right now. Massive streaming.', wave: 1, url: 'https://skengdon.com' },
-  { domain: 'chroniclawmusic.com', artist: 'Chronic Law', genre: 'Dancehall', notes: '#1 most-streamed dancehall artist in Jamaica (Spotify 2025).', wave: 1 },
+  { domain: 'chroniclawmusic.com', artist: 'Chronic Law', genre: 'Dancehall', notes: '#1 most-streamed dancehall artist in Jamaica (Spotify 2025).', wave: 1, url: 'https://chroniclawmusic.com' },
   { domain: 'tarrusrileyja.com', artist: 'Tarrus Riley', genre: 'Reggae', notes: 'Professional team, international reach, legacy brand.', wave: 1, url: 'https://tarrusrileyja.com' },
   // Wave 2
   { domain: 'officialalkaline.com', artist: 'Alkaline', genre: 'Dancehall', notes: 'New Rules era. Cleanest official domain of three held.', wave: 2 },
@@ -38,7 +38,7 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'busysignalturf.com', artist: 'Busy Signal', genre: 'Reggae/Dancehall', notes: 'Veteran with international reach.', wave: 3 },
   { domain: 'dingdongravers.com', artist: 'Ding Dong', genre: 'Dancehall', notes: 'Dancer/artist. Ravers Claquez brand.', wave: 3 },
   { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 3 },
-  { domain: 'officialjashiimusic.com', artist: 'Jashii', genre: 'Dancehall', notes: '', wave: 3 },
+  { domain: 'officialjashiimusic.com', artist: 'Jahshii', genre: 'Dancehall', notes: 'Conscious dancehall. Grant\'s Pen to the world.', wave: 3, url: 'https://officialjashiimusic.com' },
   { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 3 },
   { domain: 'realjahvinci.com', artist: 'Jah Vinci', genre: 'Reggae/Dancehall', notes: '', wave: 3 },
   { domain: 'rajahwildofficial.com', artist: 'Rajah Wild', genre: 'Dancehall', notes: '', wave: 3 },
@@ -57,7 +57,7 @@ export default function ArtistDigitalTerritoryPage() {
   }, {});
 
   return (
-    <main style={{ maxWidth: 900, margin: '0 auto', padding: '60px 24px' }}>
+    <main style={{ maxWidth: 900, margin: '0 auto', padding: '100px 24px 60px' }}>
       {/* Back */}
       <Link
         href="/marketplace"
@@ -91,8 +91,8 @@ export default function ArtistDigitalTerritoryPage() {
       }}>
         {[
           { n: '01', title: 'Domain Owned', desc: 'We already hold the domain — no squatting, no delay.' },
-          { n: '02', title: 'Site Built', desc: 'Bespoke artist site. Vite + React, deployed to Vercel. Fast, branded, clean.' },
-          { n: '03', title: 'Full Transfer', desc: 'GitHub repo transfer + Vercel import + DNS update. Full ownership from day one.' },
+          { n: '02', title: 'Site Built', desc: 'Bespoke artist site. Vite + React, live on the owned domain. Fast, branded, clean.' },
+          { n: '03', title: 'Full Transfer', desc: 'GitHub repo + DNS handover. Full ownership from day one — no lock-in.' },
         ].map((s) => (
           <div key={s.n}>
             <span style={{ fontSize: 11, fontWeight: 700, color: 'rgba(164,207,76,0.7)', letterSpacing: '0.08em' }}>{s.n}</span>

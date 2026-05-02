@@ -84,25 +84,26 @@
       "name": "Artist Digital Territory License",
       "category": "Licenses",
       "tags": ["license", "artist", "digital", "territory"],
-      "description": "Secure your digital territory as a creative artist. License framework for protecting and monetizing digital content across territories with clear usage rights.",
-      "price": "JMD 8,000",
-      "priceNote": "Per territory per year",
-      "availableDate": "August 7, 2026",
+      "description": "Own your digital ground. We hold domains for 20 Jamaican artists — one flat license gets you a bespoke artist site, built and transferred to you with full ownership on an owned domain.",
+      "price": "$5,200 USD",
+      "priceNote": "JMD 832,468 · one-time",
+      "availableDate": "Available Now",
       "comingSoon": true,
-      "ctaLabel": "Reserve Your License",
+      "ctaLabel": "View Available Sites",
       "ctaHref": "/marketplace/artist-digital-territory-license",
       "features": [
-        "Territory rights definition",
-        "Usage rights documentation",
-        "Resale protocol included",
-        "Fee structure templates",
-        "Legal compliance guide"
+        "Bespoke Vite + React artist website",
+        "Built on an owned artist domain",
+        "Linked Printify merch store",
+        "Full GitHub repo transfer",
+        "DNS handover — you own everything"
       ],
       "included": [
-        "Artist Territory License Template",
-        "Rights & Restrictions Framework",
-        "Fee Schedule Template",
-        "Enforcement Guide"
+        "Custom artist website (built & deployed)",
+        "Domain transfer to buyer",
+        "GitHub repository",
+        "Printify merch store setup",
+        "30-day post-transfer support"
       ],
       "featured": true
     }
