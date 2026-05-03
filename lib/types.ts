@@ -69,7 +69,8 @@ export interface PhasePack {
   skillLevel: SkillLevel;
   description: string;
   featured?: boolean;
-  
+  price?: number; // JMD — 0 = free, >0 = premium
+
   // Phase Pack Anatomy
   whatThisIs: string;
   whatYouNeed: string[];

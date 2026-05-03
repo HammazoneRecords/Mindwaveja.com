@@ -1,12 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Section } from '../Section';
 import { Button } from '../Button';
 import { Badge } from '../Badge';
-import { PurchaseRequestModal } from '../PurchaseRequestModal';
+import { WiPayPackButton } from '../WiPayButton';
 import { PackCard } from '../PackCard';
 import type { PhasePack } from '@/lib/types';
 import { formatCapitalRange, getSkillLevelColor } from '@/utils/format';
@@ -18,8 +17,6 @@ interface PhasePackDetailProps {
 }
 
 export function PhasePackDetail({ pack }: PhasePackDetailProps) {
-  const [showCheckout, setShowCheckout] = useState(false);
-
   // Get recommended next packs from enhanced ladder
   const enhancedLadder = getEnhancedLadder(pack.slug);
   const nextPacks = enhancedLadder 
@@ -92,13 +89,14 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={() => setShowCheckout(true)}
-                size="lg"
-              >
-                Get This Phase Pack
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-sm">
+              {pack.price === 0 ? (
+                <span className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm bg-leaf-500/20 text-leaf-400 border border-leaf-500/30">
+                  Free Pack
+                </span>
+              ) : (
+                <WiPayPackButton packPrice={pack.price ?? 1450} packName={pack.name} />
+              )}
               <Button
                 href={`/intake?pack=${pack.slug}`}
                 variant="outline"
@@ -388,13 +386,14 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
           <p className="text-fog-300 mb-8 max-w-xl mx-auto">
             Get the complete {pack.name} Phase Pack with all resources, templates, and step-by-step guidance.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={() => setShowCheckout(true)}
-              size="lg"
-            >
-              Get This Phase Pack
-            </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            {pack.price === 0 ? (
+              <span className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm bg-leaf-500/20 text-leaf-400 border border-leaf-500/30">
+                Free Pack — No Payment Needed
+              </span>
+            ) : (
+              <WiPayPackButton packPrice={pack.price ?? 1450} packName={pack.name} className="sm:w-auto min-w-[220px]" />
+            )}
             <Button href="/phase-packs" variant="ghost" size="lg">
               Browse Other Packs
             </Button>
@@ -402,14 +401,6 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
         </div>
       </section>
 
-      {/* Purchase Request Modal */}
-      <PurchaseRequestModal
-        isOpen={showCheckout}
-        onClose={() => setShowCheckout(false)}
-        itemName={pack.name}
-        itemPrice="TBD - Contact for pricing"
-        itemType="pack"
-      />
     </>
   );
 }

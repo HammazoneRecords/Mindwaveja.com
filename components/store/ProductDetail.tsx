@@ -1,12 +1,10 @@
 'use client';
-
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Section } from '../Section';
 import { Button } from '../Button';
 import { Badge } from '../Badge';
-import { BankTransferCheckout } from '../BankTransferCheckout';
+import { WiPayButton } from '../WiPayButton';
 import type { Product } from '@/lib/types';
 
 interface ProductDetailProps {
@@ -14,11 +12,6 @@ interface ProductDetailProps {
 }
 
 export function ProductDetail({ product }: ProductDetailProps) {
-  const [showCheckout, setShowCheckout] = useState(false);
-  
-  // Parse price if it's a number
-  const priceMatch = product.price.match(/\$?([\d,]+)/);
-  const priceJmd = priceMatch ? priceMatch[1].replace(/,/g, '') : product.price;
 
   return (
     <>
@@ -84,24 +77,20 @@ export function ProductDetail({ product }: ProductDetailProps) {
                     )}
                   </div>
 
-                  <Button 
-                    onClick={() => setShowCheckout(true)}
-                    className="w-full mb-4"
-                  >
-                    Purchase via Bank Transfer
-                  </Button>
-                  
-                  <Button 
+                  <WiPayButton
+                    price={product.price}
+                    priceNote={product.priceNote}
+                    description={product.name}
+                    className="mb-4"
+                  />
+
+                  <Button
                     href={`/intake?product=${product.slug}`}
                     variant="outline"
-                    className="w-full mb-4"
+                    className="w-full"
                   >
                     Request Consultation
                   </Button>
-
-                  <p className="text-fog-500 text-xs text-center">
-                    Checkout not available yet. Submit request and we will contact you.
-                  </p>
                 </div>
               </div>
             </div>
@@ -167,13 +156,13 @@ export function ProductDetail({ product }: ProductDetailProps) {
           <p className="text-fog-300 mb-8 max-w-xl mx-auto">
             Purchase this product via bank transfer or request a consultation.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={() => setShowCheckout(true)}
-              size="lg"
-            >
-              Purchase Now
-            </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <WiPayButton
+              price={product.price}
+              priceNote={product.priceNote}
+              description={product.name}
+              className="sm:w-auto min-w-[220px]"
+            />
             <Button href="/store" variant="ghost" size="lg">
               Browse More Products
             </Button>
@@ -181,16 +170,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
         </div>
       </section>
 
-      {/* Bank Transfer Checkout Modal */}
-      {showCheckout && (
-        <BankTransferCheckout
-          itemType="product"
-          itemId={product.id}
-          itemName={product.name}
-          priceJmd={priceJmd}
-          onClose={() => setShowCheckout(false)}
-        />
-      )}
     </>
   );
 }
