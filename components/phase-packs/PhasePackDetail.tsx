@@ -95,7 +95,7 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
                   Free Pack
                 </span>
               ) : (
-                <WiPayPackButton packPrice={pack.price ?? 1450} packName={pack.name} />
+                <WiPayPackButton packPrice={pack.price ?? 1450} />
               )}
               <Button
                 href={`/intake?pack=${pack.slug}`}
@@ -392,7 +392,7 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
                 Free Pack — No Payment Needed
               </span>
             ) : (
-              <WiPayPackButton packPrice={pack.price ?? 1450} packName={pack.name} className="sm:w-auto min-w-[220px]" />
+              <WiPayPackButton packPrice={pack.price ?? 1450} className="sm:w-auto min-w-[220px]" />
             )}
             <Button href="/phase-packs" variant="ghost" size="lg">
               Browse Other Packs
