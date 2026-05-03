@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Badge } from './Badge';
 import { Button } from './Button';
 import { ReservationModal } from './ReservationModal';
+import { WiPayButton } from './WiPayButton';
 import type { Product } from '@/lib/types';
 
 interface ProductCardProps {
@@ -131,11 +132,18 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
           Reserve Your Copy
         </button>
       ) : (
-        <Link href={`/marketplace/${product.slug}`} className="block">
-          <Button variant="secondary" className="w-full" size="sm">
-            View Details
-          </Button>
-        </Link>
+        <>
+          <Link href={`/marketplace/${product.slug}`} className="block mb-2">
+            <Button variant="secondary" className="w-full" size="sm">
+              View Details
+            </Button>
+          </Link>
+          <WiPayButton
+            price={product.price}
+            priceNote={product.priceNote}
+            className="mt-1"
+          />
+        </>
       )}
     </motion.article>
     </>
