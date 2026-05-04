@@ -34,12 +34,12 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 2 },
   // Wave 3
   { domain: 'mavadogullyside.com', artist: 'Mavado', genre: 'Dancehall', notes: 'Legend. Gully Side brand.', wave: 3 },
-  { domain: 'aidonia4thgenna.com', artist: 'Aidonia', genre: 'Dancehall', notes: 'Veteran. 4th Genna brand strong.', wave: 3 },
+  { domain: 'aidonia4thgenna.com', artist: 'Aidonia', genre: 'Dancehall', notes: 'Veteran. 4th Genna brand strong.', wave: 3, url: 'https://aidonia4thgenna.com' },
   { domain: 'busysignalturf.com', artist: 'Busy Signal', genre: 'Reggae/Dancehall', notes: 'Veteran with international reach.', wave: 3 },
   { domain: 'dingdongravers.com', artist: 'Ding Dong', genre: 'Dancehall', notes: 'Dancer/artist. Ravers Claquez brand.', wave: 3 },
   { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 3 },
   { domain: 'officialjashiimusic.com', artist: 'Jahshii', genre: 'Dancehall', notes: 'Conscious dancehall. Grant\'s Pen to the world.', wave: 1, url: 'https://officialjashiimusic.com' },
-  { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 3 },
+  { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 3, url: 'https://skattaburrell.com' },
   { domain: 'realjahvinci.com', artist: 'Jah Vinci', genre: 'Reggae/Dancehall', notes: '', wave: 3 },
   { domain: 'rajahwildofficial.com', artist: 'Rajah Wild', genre: 'Dancehall', notes: '', wave: 3 },
 ];
@@ -57,7 +57,14 @@ export default function ArtistDigitalTerritoryPage() {
   }, {});
 
   return (
-    <main style={{ maxWidth: 900, margin: '0 auto', padding: '100px 24px 60px' }}>
+    <main className="max-w-[900px] mx-auto px-4 sm:px-6 pt-20 pb-16">
+      <style>{`
+        .adtl-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+        @media (min-width: 480px) { .adtl-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 900px) { .adtl-grid { grid-template-columns: repeat(4, 1fr); } }
+        .adtl-steps { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media (min-width: 600px) { .adtl-steps { grid-template-columns: repeat(3, 1fr); } }
+      `}</style>
       {/* Back */}
       <Link
         href="/marketplace"
@@ -84,10 +91,9 @@ export default function ArtistDigitalTerritoryPage() {
       </div>
 
       {/* How it works */}
-      <div style={{
+      <div className="adtl-steps" style={{
         background: 'rgba(164,207,76,0.06)', border: '1px solid rgba(164,207,76,0.2)',
         borderRadius: 16, padding: '24px 28px', marginBottom: 48,
-        display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 20,
       }}>
         {[
           { n: '01', title: 'Domain Owned', desc: 'We already hold the domain — no squatting, no delay.' },
@@ -109,7 +115,7 @@ export default function ArtistDigitalTerritoryPage() {
             <h2 style={{ fontSize: 16, fontWeight: 800, margin: 0 }}>{WAVE_LABELS[wave].label}</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+          <div className="adtl-grid">
             {(byWave[wave] ?? []).map((a) => (
               <div
                 key={a.domain}
