@@ -30,8 +30,8 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'tarrusrileyja.com', artist: 'Tarrus Riley', genre: 'Reggae', notes: 'Professional team, international reach, legacy brand.', wave: 1, url: 'https://tarrusrileyja.com' },
   // Wave 2
   { domain: 'officialalkaline.com', artist: 'Alkaline', genre: 'Dancehall', notes: 'New Rules era. Cleanest official domain of three held.', wave: 2 },
-  { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 2 },
-  { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 2 },
+  { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 2, url: 'https://officialbountykiller.com' },
+  { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 2, url: 'https://jadakingdommusic.com' },
   // Wave 3
   { domain: 'mavadogullyside.com', artist: 'Mavado', genre: 'Dancehall', notes: 'Legend. Gully Side brand.', wave: 3 },
   { domain: 'aidonia4thgenna.com', artist: 'Aidonia', genre: 'Dancehall', notes: 'Veteran. 4th Genna brand strong.', wave: 3, url: 'https://aidonia4thgenna.com' },
@@ -60,10 +60,11 @@ export default function ArtistDigitalTerritoryPage() {
     <main className="max-w-[900px] mx-auto px-4 sm:px-6 pt-20 pb-16">
       <style>{`
         .adtl-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-        @media (min-width: 480px) { .adtl-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 600px) { .adtl-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (min-width: 900px) { .adtl-grid { grid-template-columns: repeat(4, 1fr); } }
         .adtl-steps { display: grid; grid-template-columns: 1fr; gap: 20px; }
         @media (min-width: 600px) { .adtl-steps { grid-template-columns: repeat(3, 1fr); } }
+        .adtl-card-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
       `}</style>
       {/* Back */}
       <Link
@@ -81,7 +82,7 @@ export default function ArtistDigitalTerritoryPage() {
         }}>
           Artist Digital Territory License · ${ADTL_USD.toLocaleString()} USD / JMD {ADTL_JMD}
         </span>
-        <h1 style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
+        <h1 style={{ fontSize: 'clamp(22px, 6vw, 36px)', fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
           Claim Your Digital Territory.
         </h1>
         <p style={{ fontSize: 16, lineHeight: 1.7, maxWidth: 620, color: 'var(--color-text-secondary, #888)' }}>
@@ -93,7 +94,7 @@ export default function ArtistDigitalTerritoryPage() {
       {/* How it works */}
       <div className="adtl-steps" style={{
         background: 'rgba(164,207,76,0.06)', border: '1px solid rgba(164,207,76,0.2)',
-        borderRadius: 16, padding: '24px 28px', marginBottom: 48,
+        borderRadius: 16, padding: '20px 16px', marginBottom: 48,
       }}>
         {[
           { n: '01', title: 'Domain Owned', desc: 'We already hold the domain — no squatting, no delay.' },
@@ -128,8 +129,8 @@ export default function ArtistDigitalTerritoryPage() {
                 }}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
-                  <div>
-                    <p style={{ fontWeight: 800, fontSize: 13, marginBottom: 2, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 120 }}>{a.artist}</p>
+                  <div style={{ minWidth: 0, flex: 1 }}>
+                    <p style={{ fontWeight: 800, fontSize: 13, marginBottom: 2, wordBreak: 'break-word' }}>{a.artist}</p>
                     <p style={{ fontSize: 11, color: 'var(--color-text-secondary, #888)', fontWeight: 600 }}>{a.genre}</p>
                   </div>
                   <span style={{
@@ -157,7 +158,7 @@ export default function ArtistDigitalTerritoryPage() {
                   </p>
                 )}
 
-                <div style={{ marginTop: 'auto', paddingTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div className="adtl-card-bottom" style={{ marginTop: 'auto', paddingTop: 12 }}>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                     <span style={{ fontSize: 14, fontWeight: 800, color: WAVE_LABELS[a.wave].color }}>
                       ${ADTL_USD.toLocaleString()} USD
