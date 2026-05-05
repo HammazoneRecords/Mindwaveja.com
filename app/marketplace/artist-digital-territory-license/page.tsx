@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 
 interface ArtistLicense {
   domain: string;
+  altDomain?: string; // second domain held for same artist
   artist: string;
   genre: string;
   notes: string;
@@ -30,8 +31,7 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'tarrusrileyja.com', artist: 'Tarrus Riley', genre: 'Reggae', notes: 'Professional team, international reach, legacy brand.', wave: 1, url: 'https://tarrusrileyja.com' },
   // Wave 2
   { domain: 'officialalkaline.com', artist: 'Alkaline', genre: 'Dancehall', notes: 'New Rules era. Cleanest official domain of three held.', wave: 2 },
-  { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 1, url: 'https://officialbountykiller.com' },
-  { domain: 'grunggaadzilla.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Grung Gaad Zilla — the Warlord\'s street alias domain. Second territory.', wave: 2 },
+  { domain: 'officialbountykiller.com', altDomain: 'grunggaadzilla.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 1, url: 'https://officialbountykiller.com' },
   { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 1, url: 'https://jadakingdommusic.com' },
   // Wave 3
   { domain: 'mavadogullyside.com', artist: 'Mavado', genre: 'Dancehall', notes: 'Legend. Gully Side brand.', wave: 3 },
@@ -152,6 +152,15 @@ export default function ArtistDigitalTerritoryPage() {
                 }}>
                   {a.domain}
                 </code>
+                {a.altDomain && (
+                  <code style={{
+                    fontSize: 12, color: 'var(--color-text-secondary, #888)',
+                    background: 'rgba(255,255,255,0.04)', padding: '3px 8px', borderRadius: 4,
+                    display: 'block', marginTop: 4,
+                  }}>
+                    {a.altDomain}
+                  </code>
+                )}
 
                 {a.notes && (
                   <p style={{ fontSize: 11, color: 'var(--color-text-tertiary, #666)', lineHeight: 1.4, marginTop: 2, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
