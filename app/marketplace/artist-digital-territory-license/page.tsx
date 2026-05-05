@@ -37,7 +37,7 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'aidonia4thgenna.com', artist: 'Aidonia', genre: 'Dancehall', notes: 'Veteran. 4th Genna brand strong.', wave: 3, url: 'https://aidonia4thgenna.com' },
   { domain: 'busysignalturf.com', artist: 'Busy Signal', genre: 'Reggae/Dancehall', notes: 'Veteran with international reach.', wave: 3 },
   { domain: 'dingdongravers.com', artist: 'Ding Dong', genre: 'Dancehall', notes: 'Dancer/artist. Ravers Claquez brand.', wave: 3 },
-  { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 3 },
+  { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 3, url: 'https://maliedonnmusic.com' },
   { domain: 'officialjashiimusic.com', artist: 'Jahshii', genre: 'Dancehall', notes: 'Conscious dancehall. Grant\'s Pen to the world.', wave: 1, url: 'https://officialjashiimusic.com' },
   { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 3, url: 'https://skattaburrell.com' },
   { domain: 'realjahvinci.com', artist: 'Jah Vinci', genre: 'Reggae/Dancehall', notes: '', wave: 3 },
@@ -136,11 +136,11 @@ export default function ArtistDigitalTerritoryPage() {
                   <span style={{
                     fontSize: 10, fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase',
                     padding: '3px 8px', borderRadius: 4,
-                    background: a.wave === 1 ? 'rgba(164,207,76,0.15)' : 'rgba(255,255,255,0.05)',
-                    color: WAVE_LABELS[a.wave].color,
+                    background: a.url ? 'rgba(164,207,76,0.15)' : 'rgba(255,255,255,0.05)',
+                    color: a.url ? '#a4cf4c' : WAVE_LABELS[a.wave].color,
                     whiteSpace: 'nowrap',
                   }}>
-                    {a.wave === 1 ? 'Available' : 'Coming Soon'}
+                    {a.url ? 'Live' : 'Coming Soon'}
                   </span>
                 </div>
 
