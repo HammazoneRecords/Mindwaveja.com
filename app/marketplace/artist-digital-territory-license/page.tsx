@@ -31,6 +31,7 @@ const ARTISTS: ArtistLicense[] = [
   // Wave 2
   { domain: 'officialalkaline.com', artist: 'Alkaline', genre: 'Dancehall', notes: 'New Rules era. Cleanest official domain of three held.', wave: 2 },
   { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 1, url: 'https://officialbountykiller.com' },
+  { domain: 'grunggaadzilla.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Grung Gaad Zilla — the Warlord\'s street alias domain. Second territory.', wave: 2 },
   { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 1, url: 'https://jadakingdommusic.com' },
   // Wave 3
   { domain: 'mavadogullyside.com', artist: 'Mavado', genre: 'Dancehall', notes: 'Legend. Gully Side brand.', wave: 3 },
@@ -45,7 +46,7 @@ const ARTISTS: ArtistLicense[] = [
 ];
 
 const WAVE_LABELS: Record<number, { label: string; color: string; bg: string }> = {
-  1: { label: 'Live — Available Now', color: '#a4cf4c', bg: 'rgba(164,207,76,0.08)' },
+  1: { label: 'Completed — Live Now', color: '#a4cf4c', bg: 'rgba(164,207,76,0.08)' },
   2: { label: 'Coming Soon — In Build', color: '#f0a500', bg: 'rgba(240,165,0,0.08)' },
   3: { label: 'On Deck — Available for Pre-Order', color: '#4a5168', bg: 'rgba(74,81,104,0.08)' },
 };
