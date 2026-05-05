@@ -221,7 +221,7 @@
       "ethicalCommunityRules": [],
       "qa_passed": true,
       "tier": "free",
-      "price": 1450
+      "price": 0
     },
     {
       "id": "pp-001",
@@ -407,7 +407,7 @@
       "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
       "qa_passed": true,
       "tier": "free",
-      "price": 1450
+      "price": 0
     },
     {
       "id": "pp-049",
@@ -501,7 +501,7 @@
       "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
       "qa_passed": true,
       "tier": "free",
-      "price": 1450
+      "price": 0
     },
     {
       "id": "pp-052",
@@ -689,7 +689,7 @@
       "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
       "qa_passed": true,
       "tier": "free",
-      "price": 1450
+      "price": 0
     },
     {
       "id": "pp-054",
@@ -877,7 +877,7 @@
       "salesMode": "Highly visual social media marketing on Instagram and TikTok, driving traffic to WhatsApp Business for closing sales and taking deposits.",
       "qa_passed": true,
       "tier": "free",
-      "price": 1450
+      "price": 0
     }
   ]
 }
