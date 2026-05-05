@@ -30,24 +30,24 @@ const ARTISTS: ArtistLicense[] = [
   { domain: 'tarrusrileyja.com', artist: 'Tarrus Riley', genre: 'Reggae', notes: 'Professional team, international reach, legacy brand.', wave: 1, url: 'https://tarrusrileyja.com' },
   // Wave 2
   { domain: 'officialalkaline.com', artist: 'Alkaline', genre: 'Dancehall', notes: 'New Rules era. Cleanest official domain of three held.', wave: 2 },
-  { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 2, url: 'https://officialbountykiller.com' },
-  { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 2, url: 'https://jadakingdommusic.com' },
+  { domain: 'officialbountykiller.com', artist: 'Bounty Killer', genre: 'Dancehall', notes: 'Legend. The Warlord. A co-sign that opens every door.', wave: 1, url: 'https://officialbountykiller.com' },
+  { domain: 'jadakingdommusic.com', artist: 'Jada Kingdom', genre: 'Dancehall/R&B', notes: 'Female artist, strong crossover demographic.', wave: 1, url: 'https://jadakingdommusic.com' },
   // Wave 3
   { domain: 'mavadogullyside.com', artist: 'Mavado', genre: 'Dancehall', notes: 'Legend. Gully Side brand.', wave: 3 },
-  { domain: 'aidonia4thgenna.com', artist: 'Aidonia', genre: 'Dancehall', notes: 'Veteran. 4th Genna brand strong.', wave: 3, url: 'https://aidonia4thgenna.com' },
+  { domain: 'aidonia4thgenna.com', artist: 'Aidonia', genre: 'Dancehall', notes: 'Veteran. 4th Genna brand strong.', wave: 1, url: 'https://aidonia4thgenna.com' },
   { domain: 'busysignalturf.com', artist: 'Busy Signal', genre: 'Reggae/Dancehall', notes: 'Veteran with international reach.', wave: 3 },
   { domain: 'dingdongravers.com', artist: 'Ding Dong', genre: 'Dancehall', notes: 'Dancer/artist. Ravers Claquez brand.', wave: 3 },
-  { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 3, url: 'https://maliedonnmusic.com' },
+  { domain: 'maliedonnmusic.com', artist: 'Malie Donn', genre: 'Dancehall', notes: 'Rising artist.', wave: 1, url: 'https://maliedonnmusic.com' },
   { domain: 'officialjashiimusic.com', artist: 'Jahshii', genre: 'Dancehall', notes: 'Conscious dancehall. Grant\'s Pen to the world.', wave: 1, url: 'https://officialjashiimusic.com' },
-  { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 3, url: 'https://skattaburrell.com' },
+  { domain: 'skattaburrell.com', artist: 'Skatta Burrell', genre: 'Producer/Industry', notes: 'Producer legend, A&R, radio personality.', wave: 1, url: 'https://skattaburrell.com' },
   { domain: 'realjahvinci.com', artist: 'Jah Vinci', genre: 'Reggae/Dancehall', notes: '', wave: 3 },
   { domain: 'rajahwildofficial.com', artist: 'Rajah Wild', genre: 'Dancehall', notes: '', wave: 3 },
 ];
 
 const WAVE_LABELS: Record<number, { label: string; color: string; bg: string }> = {
-  1: { label: 'Wave 1 — Priority Build', color: '#a4cf4c', bg: 'rgba(164,207,76,0.08)' },
-  2: { label: 'Wave 2 — Next Up', color: '#f0a500', bg: 'rgba(240,165,0,0.08)' },
-  3: { label: 'Wave 3 — Hold / Evaluate', color: '#4a5168', bg: 'rgba(74,81,104,0.08)' },
+  1: { label: 'Live — Available Now', color: '#a4cf4c', bg: 'rgba(164,207,76,0.08)' },
+  2: { label: 'Coming Soon — In Build', color: '#f0a500', bg: 'rgba(240,165,0,0.08)' },
+  3: { label: 'On Deck — Available for Pre-Order', color: '#4a5168', bg: 'rgba(74,81,104,0.08)' },
 };
 
 export default function ArtistDigitalTerritoryPage() {
