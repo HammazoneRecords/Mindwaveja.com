@@ -83,6 +83,16 @@ export function Footer() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6 pt-6 border-t" style={{ borderColor: 'rgb(var(--color-border-primary))' }}>
+              <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'rgb(var(--color-text-tertiary))' }}>Urgent Requests</p>
+              <a
+                href="mailto:skygovament@gmail.com"
+                className="text-sm hover:text-brand-green transition-colors break-all"
+                style={{ color: 'rgb(var(--color-text-secondary))' }}
+              >
+                skygovament@gmail.com
+              </a>
+            </div>
           </div>
 
         </div>
