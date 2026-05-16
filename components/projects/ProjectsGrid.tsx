@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Zap, Globe2, Code2, Smartphone, TrendingUp, BookOpen } from "lucide-react";
+import { ExternalLink, Zap, Globe2, Code2, Smartphone, TrendingUp, BookOpen, FlaskConical } from "lucide-react";
 import projectsData from "@/content/projects.json";
 import Link from "next/link";
 
@@ -28,6 +28,7 @@ const typeIcons: Record<string, React.ReactNode> = {
   "Innovation Network": <TrendingUp className="w-4 h-4" />,
   "Advanced System": <Zap className="w-4 h-4" />,
   "Ecosystem Platform": <Globe2 className="w-4 h-4" />,
+  "Research Paper": <FlaskConical className="w-4 h-4" />,
 };
 
 export function ProjectsGrid() {

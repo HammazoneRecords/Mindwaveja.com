@@ -102,90 +102,35 @@
         "Admin Dashboard"
       ],
       "featured": true,
-      "link": "https://mindwaveja.com/projects/work-time-app"
+      "link": "https://timecheck.mindwaveja.com"
     }
   ],
   "researchProjects": [
     {
       "id": "research-001",
-      "slug": "mw-synapse",
-      "name": "MW Synapse",
-      "type": "Innovation Network",
-      "status": "Research",
-      "tags": ["synapse", "network", "innovation", "research"],
-      "description": "MindWave's core innovation network connecting entrepreneurs, investors, and creators. Synergistic platform for collaborative projects and cross-border opportunities.",
-      "price": "Contact for details",
-      "priceNote": "Partnership-based access",
+      "slug": "9-model-ai-comparison",
+      "name": "9-Model AI Comparison Study",
+      "type": "Research Paper",
+      "status": "Published",
+      "tags": ["AI", "LLM", "research", "benchmarking", "Solobic"],
+      "description": "MindWave JA tested 9 leading AI models against the Solobic framework — a Caribbean-grounded intelligence standard. Models ranked on cultural fluency, reasoning depth, and alignment with indigenous knowledge systems.",
+      "price": "Free to Read",
+      "priceNote": "Open research — MindWave JA",
       "features": [
-        "Entrepreneur network access",
-        "Investor connections",
-        "Project collaboration tools",
-        "Opportunity marketplace",
-        "Revenue sharing models"
+        "9 models tested: GPT-4o, Claude Sonnet 4, Gemini 2.5 Pro, Grok 3, DeepSeek-V3, Llama 4, Mistral, Perplexity, Solobic GPT",
+        "Evaluated against the Solobic intelligence framework",
+        "Caribbean cultural alignment scoring",
+        "Reasoning depth and nuance analysis",
+        "Full results per model documented"
       ],
       "included": [
-        "Network Portal Access",
-        "Profile Creation",
-        "Project Listings",
-        "Collaboration Suite",
-        "Support Team"
+        "Full comparison report",
+        "Per-model breakdown",
+        "Solobic scoring methodology",
+        "Raw test results"
       ],
       "featured": true,
-      "link": "https://mindwaveja.com/research/mw-synapse"
-    },
-    {
-      "id": "research-002",
-      "slug": "raas-experimental-protocol",
-      "name": "RAAS - Experimental Protocol",
-      "type": "Advanced System",
-      "status": "Research",
-      "tags": ["RAAS", "experimental", "protocol", "AI", "research"],
-      "description": "Resource Allocation and Aggregation System - An experimental protocol for intelligent resource distribution and network synergy. Limited access beta for selected partners.",
-      "price": "Contact for pricing",
-      "priceNote": "Experimental - Research Access Only",
-      "features": [
-        "Resource allocation algorithms",
-        "Network aggregation tools",
-        "Real-time monitoring dashboard",
-        "Protocol documentation",
-        "Beta support & feedback loop"
-      ],
-      "included": [
-        "RAAS Protocol Access",
-        "Technical Documentation",
-        "Integration Support",
-        "Research Community",
-        "Direct Support Channel"
-      ],
-      "featured": false,
-      "link": "https://mindwaveja.com/research/raas"
-    },
-    {
-      "id": "research-003",
-      "slug": "mw-external-innovation-synapse",
-      "name": "MW External Innovation Synapse",
-      "type": "Ecosystem Platform",
-      "status": "Research",
-      "tags": ["innovation", "synapse", "external", "network", "research"],
-      "description": "Connect with MindWave's extended innovation ecosystem. Access to cross-border projects, international partner network, and global opportunity marketplace.",
-      "price": "Contact for pricing",
-      "priceNote": "Partnership-based research",
-      "features": [
-        "International project access",
-        "Global partner network",
-        "Cross-border opportunity matching",
-        "Collaboration tools",
-        "Revenue sharing agreements"
-      ],
-      "included": [
-        "External Network Portal",
-        "Global Project Listings",
-        "International Partner Directory",
-        "Deal Support Services",
-        "Legal & Compliance Support"
-      ],
-      "featured": false,
-      "link": "https://mindwaveja.com/research/mw-external-innovation-synapse"
+      "link": "https://mindwaveja.com/projects"
     }
   ]
 }

@@ -14,7 +14,6 @@ const navLinks = [
   { label: 'Phase Packs', href: '/phase-packs' },
   { label: 'Marketplace', href: '/marketplace' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Systems', href: '/systems' },
   { label: 'Community', href: '/community', isComingSoon: true },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
