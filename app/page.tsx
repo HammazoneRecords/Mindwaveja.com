@@ -1,9 +1,9 @@
 import { HeroSection } from '@/components/home/HeroSection';
 import { HowItWorksSection } from '@/components/home/HowItWorksSection';
-import { FeaturesSection } from '@/components/home/FeaturesSection';
 import { PhasePacksHighlight } from '@/components/home/PhasePacksHighlight';
+import { FeaturesSection } from '@/components/home/FeaturesSection';
 import { StoreHighlight } from '@/components/home/StoreHighlight';
-import { CommunityPreview } from '@/components/home/CommunityPreview';
+import { EmailCapture } from '@/components/home/EmailCapture';
 import { FAQSection } from '@/components/home/FAQSection';
 import { CTABand } from '@/components/home/CTABand';
 
@@ -12,10 +12,10 @@ export default function HomePage() {
     <>
       <HeroSection />
       <HowItWorksSection />
-      <FeaturesSection />
       <PhasePacksHighlight />
+      <FeaturesSection />
       <StoreHighlight />
-      <CommunityPreview />
+      <EmailCapture />
       <FAQSection />
       <CTABand />
     </>

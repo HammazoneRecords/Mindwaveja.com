@@ -10,12 +10,10 @@ import { Button } from './Button';
 import { ThemeToggle } from './ThemeToggle';
 
 const navLinks = [
-  { label: 'Opportunities', href: '/opportunities' },
   { label: 'Phase Packs', href: '/phase-packs' },
+  { label: 'Opportunities', href: '/opportunities' },
   { label: 'Marketplace', href: '/marketplace' },
-  { label: 'ADTL', href: '/marketplace/artist-digital-territory-license' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Community', href: '/community', isComingSoon: true },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -86,9 +84,6 @@ export function NavBar() {
                 )}
               >
                 {link.label}
-                {link.isComingSoon && (
-                  <span className="absolute -top-1 -right-1 w-2 h-2 bg-leaf-400 rounded-full" />
-                )}
               </Link>
             ))}
           </div>
@@ -164,11 +159,6 @@ export function NavBar() {
                   )}
                 >
                   {link.label}
-                  {link.isComingSoon && (
-                    <span className="text-xs text-leaf-600 bg-leaf-100 px-2 py-0.5 rounded-full">
-                      Soon
-                    </span>
-                  )}
                 </Link>
               ))}
               <div className="pt-4">

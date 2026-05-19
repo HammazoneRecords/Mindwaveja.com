@@ -30,13 +30,16 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/intake" size="lg">
+            <Button href="/phase-packs" size="lg">
+              Browse Free Packs
+            </Button>
+            <Button href="/intake" size="lg" variant="outline">
               Start Your Idea
             </Button>
-            <Button href="/phase-packs" variant="outline" size="lg">
-              Explore Phase Packs
-            </Button>
           </div>
+          <p className="mt-4 text-sm" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
+            20+ business blueprints built for Jamaica. Free to download.
+          </p>
         </motion.div>
       </div>
     </section>
