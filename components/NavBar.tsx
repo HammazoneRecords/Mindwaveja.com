@@ -13,6 +13,7 @@ const navLinks = [
   { label: 'Opportunities', href: '/opportunities' },
   { label: 'Phase Packs', href: '/phase-packs' },
   { label: 'Marketplace', href: '/marketplace' },
+  { label: 'ADTL', href: '/marketplace/artist-digital-territory-license' },
   { label: 'Projects', href: '/projects' },
   { label: 'Community', href: '/community', isComingSoon: true },
   { label: 'About', href: '/about' },

@@ -1,13 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import Link from 'next/link';
 import { Section } from '../Section';
 import { Button } from '../Button';
 import { Badge } from '../Badge';
 import { WiPayPackButton } from '../WiPayButton';
 import { PackCard } from '../PackCard';
-import type { PhasePack } from '@/lib/types';
+import type { PhasePack, DailyMinimumDetail } from '@/lib/types';
 import { formatCapitalRange, getSkillLevelColor } from '@/utils/format';
 import { getEnhancedLadder, getAvailableNextPacks, getResearchPaths, getCategoryStage } from '@/utils/enhancedLadder';
 import phasePacks from '@/content/phasePacks.json';
@@ -16,7 +17,12 @@ interface PhasePackDetailProps {
   pack: PhasePack;
 }
 
+function isDailyMinimumDetail(val: string | DailyMinimumDetail): val is DailyMinimumDetail {
+  return typeof val === 'object' && val !== null;
+}
+
 export function PhasePackDetail({ pack }: PhasePackDetailProps) {
+  const [ruralMode, setRuralMode] = useState(false);
   // Get recommended next packs from enhanced ladder
   const enhancedLadder = getEnhancedLadder(pack.slug);
   const nextPacks = enhancedLadder 
@@ -105,6 +111,30 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
                 Request Consultation
               </Button>
             </div>
+
+            {/* Rural context toggle */}
+            {pack.ruralVariant && (
+              <div className="mt-6">
+                <button
+                  onClick={() => setRuralMode(v => !v)}
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold border transition-all duration-200 ${
+                    ruralMode
+                      ? 'bg-leaf-500/20 text-leaf-300 border-leaf-500/50 shadow-[0_0_12px_rgba(132,204,22,0.2)]'
+                      : 'bg-navy-800/60 text-fog-400 border-navy-600 hover:border-leaf-500/40 hover:text-leaf-400'
+                  }`}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {ruralMode ? 'Showing: Rural Context' : 'Switch to Rural Context'}
+                </button>
+                {ruralMode && (
+                  <p className="text-xs text-leaf-500/70 mt-2 ml-1">
+                    Showing parish-specific guidance for rural operators
+                  </p>
+                )}
+              </div>
+            )}
           </motion.div>
         </div>
       </section>
@@ -123,26 +153,30 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
                 description="How much people need this"
                 icon="📈"
               />
-              <ScoreCard
-                title="Capital Ease"
-                score={6 - pack.packScore.capitalDifficulty}
-                description="How affordable to start"
-                icon="💰"
-                inverted
-              />
+              {pack.packScore.capitalDifficulty != null && (
+                <ScoreCard
+                  title="Capital Ease"
+                  score={6 - pack.packScore.capitalDifficulty}
+                  description="How affordable to start"
+                  icon="💰"
+                  inverted
+                />
+              )}
               <ScoreCard
                 title="Speed to Sale"
                 score={pack.packScore.timeToFirstSale}
                 description="How fast you can earn"
                 icon="⚡"
               />
-              <ScoreCard
-                title="Skill Ease"
-                score={6 - pack.packScore.skillRequired}
-                description="How easy to learn"
-                icon="🎯"
-                inverted
-              />
+              {pack.packScore.skillRequired != null && (
+                <ScoreCard
+                  title="Skill Ease"
+                  score={6 - pack.packScore.skillRequired}
+                  description="How easy to learn"
+                  icon="🎯"
+                  inverted
+                />
+              )}
             </div>
             {pack.packIndex && pack.packIndex.recommendedFor && (
               <div className="mt-8 text-center">
@@ -167,6 +201,78 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
           <AnatomySection number={1} title="What This Is">
             <p className="text-fog-300 leading-relaxed">{pack.whatThisIs}</p>
           </AnatomySection>
+
+          {/* Rural Variant Panel — shown when toggle is on */}
+          {pack.ruralVariant && pack.ruralPositioning && ruralMode && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.35 }}
+              className="rounded-2xl border border-leaf-500/30 bg-leaf-500/5 p-6 space-y-5"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <svg className="w-5 h-5 text-leaf-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 className="font-display text-lg font-bold text-leaf-300">Rural Context</h3>
+              </div>
+
+              {pack.ruralPositioning.bestParishes.length > 0 && (
+                <div>
+                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-2">Best parishes</p>
+                  <div className="flex flex-wrap gap-2">
+                    {pack.ruralPositioning.bestParishes.map(p => (
+                      <span key={p} className="text-xs font-medium px-3 py-1 rounded-full bg-leaf-500/15 text-leaf-300 border border-leaf-500/25">
+                        {p}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div>
+                <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Supply advantage</p>
+                <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.supplyAdvantage}</p>
+              </div>
+
+              <div>
+                <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Market entry</p>
+                <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.marketEntry}</p>
+              </div>
+
+              {pack.ruralPositioning.coldChainSolution && (
+                <div>
+                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Cold chain / logistics</p>
+                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.coldChainSolution}</p>
+                </div>
+              )}
+
+              {pack.ruralPositioning.premiumOpportunity && (
+                <div>
+                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Premium opportunity</p>
+                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.premiumOpportunity}</p>
+                </div>
+              )}
+
+              {pack.ruralPositioning.transportNote && (
+                <div>
+                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Transport</p>
+                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.transportNote}</p>
+                </div>
+              )}
+
+              {pack.ruralPositioning.communityEntry && (
+                <div>
+                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Community entry</p>
+                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.communityEntry}</p>
+                </div>
+              )}
+
+              <p className="text-xs text-leaf-500/50 pt-2 border-t border-leaf-500/20">
+                Full rural playbook is inside the pack download — parish-by-parish logistics, market day timing, and cold chain solutions.
+              </p>
+            </motion.div>
+          )}
 
           {/* 2. What You Need */}
           <AnatomySection number={2} title="What You Need">
@@ -234,19 +340,21 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
           </AnatomySection>
 
           {/* 6. Value-Add Menu */}
-          <AnatomySection number={6} title="Value-Add Menu">
-            <p className="text-fog-500 text-sm mb-4">Additional services to increase revenue per customer:</p>
-            <ul className="space-y-2">
-              {pack.valueAddMenu.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-fog-300">
-                  <svg className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </AnatomySection>
+          {pack.valueAddMenu && pack.valueAddMenu.length > 0 && (
+            <AnatomySection number={6} title="Value-Add Menu">
+              <p className="text-fog-500 text-sm mb-4">Additional services to increase revenue per customer:</p>
+              <ul className="space-y-2">
+                {pack.valueAddMenu.map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-fog-300">
+                    <svg className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </AnatomySection>
+          )}
 
           {/* 7. Sales Mode */}
           <AnatomySection number={7} title="Sales Mode">
@@ -255,8 +363,45 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
 
           {/* 8. Daily Minimum */}
           <AnatomySection number={8} title="Daily Minimum Target">
-            <div className="bg-wave-600/10 border border-wave-600/30 rounded-2xl p-6">
-              <p className="text-fog-100 leading-relaxed">{pack.dailyMinimum}</p>
+            <div className="bg-wave-600/10 border border-wave-600/30 rounded-2xl p-6 space-y-3">
+              {isDailyMinimumDetail(pack.dailyMinimum) ? (
+                <>
+                  <p className="text-fog-100 leading-relaxed">{pack.dailyMinimum.description}</p>
+                  {(pack.dailyMinimum.weeklyProductionTarget || pack.dailyMinimum.weeklyRevenueTarget || pack.dailyMinimum.dailyTarget || pack.dailyMinimum.weeklyTarget) && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                      {pack.dailyMinimum.weeklyProductionTarget && (
+                        <div className="bg-navy-800/50 rounded-xl p-3">
+                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Weekly production</p>
+                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.weeklyProductionTarget}</p>
+                        </div>
+                      )}
+                      {pack.dailyMinimum.weeklyRevenueTarget && (
+                        <div className="bg-navy-800/50 rounded-xl p-3">
+                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Weekly revenue target</p>
+                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.weeklyRevenueTarget}</p>
+                        </div>
+                      )}
+                      {pack.dailyMinimum.monthOneProjection && (
+                        <div className="bg-navy-800/50 rounded-xl p-3">
+                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Month 1 projection</p>
+                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.monthOneProjection}</p>
+                        </div>
+                      )}
+                      {pack.dailyMinimum.monthThreeProjection && (
+                        <div className="bg-navy-800/50 rounded-xl p-3">
+                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Month 3 projection</p>
+                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.monthThreeProjection}</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  {pack.dailyMinimum.keyRule && (
+                    <p className="text-wave-400 text-sm italic border-t border-wave-600/20 pt-3">{pack.dailyMinimum.keyRule}</p>
+                  )}
+                </>
+              ) : (
+                <p className="text-fog-100 leading-relaxed">{pack.dailyMinimum}</p>
+              )}
             </div>
           </AnatomySection>
 

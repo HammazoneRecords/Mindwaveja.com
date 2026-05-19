@@ -55,7 +55,14 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
     >
       {/* Category Badge */}
       <div className="flex items-start justify-between mb-4">
-        <Badge variant="wave">{pack.category}</Badge>
+        <div className="flex items-center gap-2">
+          <Badge variant="wave">{pack.category}</Badge>
+          {pack.ruralVariant && (
+            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-leaf-500/15 text-leaf-400 border border-leaf-500/25">
+              Rural Ready
+            </span>
+          )}
+        </div>
         <span className={`text-sm font-medium ${getSkillLevelColor(pack.skillLevel)}`}>
           {pack.skillLevel}
         </span>
@@ -78,9 +85,13 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
           style={{ borderColor: 'rgb(var(--color-border-secondary))' }}
         >
           <ScoreIndicator label="Demand" score={pack.packScore.demandScore} />
-          <ScoreIndicator label="Capital" score={6 - pack.packScore.capitalDifficulty} inverted />
+          {pack.packScore.capitalDifficulty != null && (
+            <ScoreIndicator label="Capital" score={6 - pack.packScore.capitalDifficulty} inverted />
+          )}
           <ScoreIndicator label="Speed" score={pack.packScore.timeToFirstSale} />
-          <ScoreIndicator label="Skill" score={6 - pack.packScore.skillRequired} inverted />
+          {pack.packScore.skillRequired != null && (
+            <ScoreIndicator label="Skill" score={6 - pack.packScore.skillRequired} inverted />
+          )}
         </div>
       )}
 

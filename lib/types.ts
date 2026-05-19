@@ -39,10 +39,11 @@ export type PackCategory =
   | 'Agriculture';
 
 export type PackScore = {
-  demandScore: 1 | 2 | 3 | 4 | 5;
-  capitalDifficulty: 1 | 2 | 3 | 4 | 5;
-  timeToFirstSale: 1 | 2 | 3 | 4 | 5; // 5 = fastest
-  skillRequired: 1 | 2 | 3 | 4 | 5;
+  demandScore: number;
+  capitalDifficulty?: number;
+  timeToFirstSale: number;
+  skillRequired?: number;
+  packLadder?: string;
 };
 
 export type PackLadder = {
@@ -54,6 +55,27 @@ export type PackIndex = {
   categoryTags: string[];
   recommendedFor: string[]; // e.g. ["students", "low-capital", "weekend-hustle"]
 };
+
+export interface RuralPositioning {
+  bestParishes: string[];
+  supplyAdvantage: string;
+  marketEntry: string;
+  coldChainSolution?: string;
+  premiumOpportunity?: string;
+  transportNote?: string;
+  communityEntry?: string;
+}
+
+export interface DailyMinimumDetail {
+  description: string;
+  weeklyProductionTarget?: string;
+  weeklyRevenueTarget?: string;
+  monthOneProjection?: string;
+  monthThreeProjection?: string;
+  keyRule?: string;
+  dailyTarget?: string;
+  weeklyTarget?: string;
+}
 
 export interface PhasePack {
   id: string;
@@ -73,20 +95,42 @@ export interface PhasePack {
 
   // Phase Pack Anatomy
   whatThisIs: string;
+  whoThisIsNotFor?: string;
   whatYouNeed: string[];
   firstSevenActions: string[];
   waitingTimeTasks: string[];
   starterFolderContents: string[];
-  valueAddMenu: string[];
+  valueAddMenu?: string[];
   salesMode: string;
-  dailyMinimum: string;
+  dailyMinimum: string | DailyMinimumDetail;
   commonFailurePoints: string[];
+  ethicalCommunityRules?: string[];
   exitExpandPaths: string[];
-  
+
+  // Rural variant
+  ruralVariant?: boolean;
+  ruralPositioning?: RuralPositioning;
+
   // Pack Score & Progression
   packScore?: PackScore;
   packLadder?: PackLadder;
   packIndex?: PackIndex;
+
+  // Quality fields
+  invariantScore?: number;
+  prePack?: {
+    label: string;
+    skills: string[];
+    minimumEquipment?: string[];
+  };
+  executionTest?: {
+    status: string;
+    profile: string;
+    sequence: string;
+    firstSale: string;
+    netProfit: string;
+    monthOneProjection?: string;
+  };
 }
 
 // Store Product Types

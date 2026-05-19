@@ -5,7 +5,7 @@ import phasePacks from '@/content/phasePacks.json';
 import type { PhasePack } from '@/lib/types';
 
 export function PhasePacksHighlight() {
-  const featuredPacks = (phasePacks.phasePacks as PhasePack[])
+  const featuredPacks = (phasePacks.phasePacks as unknown as PhasePack[])
     .filter((pack) => pack.featured)
     .slice(0, 3);
 
