@@ -69,7 +69,7 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
               </span>
             </div>
 
-            <h1 className="font-display text-4xl sm:text-5xl font-bold text-fog-50 mb-4">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-fog-50 mb-4 leading-tight">
               {pack.name}
             </h1>
 
@@ -78,20 +78,20 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
             </p>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
               <div className="bg-navy-800/50 border border-navy-700 rounded-2xl p-4">
                 <span className="text-fog-500 text-xs uppercase tracking-wide block mb-1">Capital Needed</span>
-                <span className="text-fog-100 font-semibold">
+                <span className="text-fog-100 font-semibold text-sm sm:text-base">
                   {formatCapitalRange(pack.capitalRange.min, pack.capitalRange.max, pack.capitalRange.currency)}
                 </span>
               </div>
               <div className="bg-navy-800/50 border border-navy-700 rounded-2xl p-4">
                 <span className="text-fog-500 text-xs uppercase tracking-wide block mb-1">Time to First Sale</span>
-                <span className="text-fog-100 font-semibold">{pack.timeToFirstSale}</span>
+                <span className="text-fog-100 font-semibold text-sm sm:text-base">{pack.timeToFirstSale}</span>
               </div>
-              <div className="bg-navy-800/50 border border-navy-700 rounded-2xl p-4 col-span-2 sm:col-span-1">
+              <div className="bg-navy-800/50 border border-navy-700 rounded-2xl p-4">
                 <span className="text-fog-500 text-xs uppercase tracking-wide block mb-1">Skill Level</span>
-                <span className={`font-semibold ${getSkillLevelColor(pack.skillLevel)}`}>{pack.skillLevel}</span>
+                <span className={`font-semibold text-sm sm:text-base ${getSkillLevelColor(pack.skillLevel)}`}>{pack.skillLevel}</span>
               </div>
             </div>
 
@@ -332,9 +332,22 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
                 ))}
               </ul>
               <div className="mt-6 pt-4 border-t border-navy-600">
-                <Button variant="secondary" size="sm" disabled>
-                  Download Starter Folder (Available after purchase)
-                </Button>
+                {pack.price === 0 && pack.zip ? (
+                  <a
+                    href={`/media/${pack.zip}`}
+                    download
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-wave-600 hover:bg-wave-500 text-white transition-colors"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download Starter Folder
+                  </a>
+                ) : (
+                  <Button variant="secondary" size="sm" disabled>
+                    Download Starter Folder (Available after purchase)
+                  </Button>
+                )}
               </div>
             </div>
           </AnatomySection>
@@ -532,7 +545,18 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
             Get the complete {pack.name} Phase Pack with all resources, templates, and step-by-step guidance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {pack.price === 0 ? (
+            {pack.price === 0 && pack.zip ? (
+              <a
+                href={`/media/${pack.zip}`}
+                download
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm bg-wave-600 hover:bg-wave-500 text-white transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download Free Pack
+              </a>
+            ) : pack.price === 0 ? (
               <span className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm bg-leaf-500/20 text-leaf-400 border border-leaf-500/30">
                 Free Pack — No Payment Needed
               </span>
@@ -601,15 +625,15 @@ function AnatomySection({
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.4 }}
     >
-      <div className="flex items-center gap-4 mb-4">
-        <span className="flex-shrink-0 w-10 h-10 bg-navy-700 text-wave-400 rounded-full flex items-center justify-center text-sm font-bold">
+      <div className="flex items-center gap-3 mb-4">
+        <span className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-navy-700 text-wave-400 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">
           {number}
         </span>
-        <h2 className="text-xl sm:text-2xl font-display font-bold text-fog-50">
+        <h2 className="text-lg sm:text-2xl font-display font-bold text-fog-50">
           {title}
         </h2>
       </div>
-      <div className="pl-14">{children}</div>
+      <div className="pl-11 sm:pl-14">{children}</div>
     </motion.div>
   );
 }

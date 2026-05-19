@@ -92,6 +92,7 @@ export interface PhasePack {
   description: string;
   featured?: boolean;
   price?: number; // JMD — 0 = free, >0 = premium
+  zip?: string;
 
   // Phase Pack Anatomy
   whatThisIs: string;
