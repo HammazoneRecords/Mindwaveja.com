@@ -47,7 +47,7 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
-      className="group relative rounded-2xl p-4 transition-all duration-300 flex flex-col h-full"
+      className="group relative rounded-2xl p-4 transition-all duration-300 flex flex-col h-full overflow-hidden min-w-0"
       style={{
         backgroundColor: 'rgb(var(--color-bg-elevated))',
         border: '1px solid rgb(var(--color-border-primary))',
@@ -74,7 +74,15 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       </h3>
 
       {/* Description */}
-      <p className="text-sm leading-relaxed mb-4 line-clamp-2" style={{ color: 'rgb(var(--color-text-secondary))' }}>
+      <p
+        className="text-sm leading-relaxed mb-4 line-clamp-2 break-words overflow-hidden"
+        style={{
+          color: 'rgb(var(--color-text-secondary))',
+          display: '-webkit-box',
+          WebkitBoxOrient: 'vertical',
+          WebkitLineClamp: 2,
+        }}
+      >
         {pack.description}
       </p>
 
@@ -115,16 +123,19 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
           First 7 Actions Preview
         </span>
         <ul className="space-y-1">
-          {pack.firstSevenActions.slice(0, 3).map((action, i) => (
-            <li key={i} className="text-sm flex items-start gap-2" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-              <span className="mt-1" style={{ color: 'rgb(var(--color-brand-red))' }}>
-                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-              </span>
-              <span className="line-clamp-1">{action}</span>
-            </li>
-          ))}
+          {pack.firstSevenActions.slice(0, 3).map((action, i) => {
+            const truncated = action.length > 60 ? action.slice(0, 60).trimEnd() + '…' : action;
+            return (
+              <li key={i} className="text-sm flex items-start gap-2 min-w-0" style={{ color: 'rgb(var(--color-text-secondary))' }}>
+                <span className="mt-1 flex-shrink-0" style={{ color: 'rgb(var(--color-brand-red))' }}>
+                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                <span className="flex-1 min-w-0 truncate block">{truncated}</span>
+              </li>
+            );
+          })}
           <li className="text-brand-red dark:text-brand-red text-sm">+ {pack.firstSevenActions.length - 3} more actions</li>
         </ul>
       </div>
