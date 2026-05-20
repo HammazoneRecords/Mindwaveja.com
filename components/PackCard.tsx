@@ -63,9 +63,11 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
             </span>
           )}
         </div>
-        <span className={`text-sm font-medium ${getSkillLevelColor(pack.skillLevel)}`}>
-          {pack.skillLevel}
-        </span>
+        {pack.skillLevel && pack.skillLevel.length <= 30 && (
+          <span className={`text-sm font-medium ${getSkillLevelColor(pack.skillLevel)}`}>
+            {pack.skillLevel}
+          </span>
+        )}
       </div>
 
       {/* Title */}
