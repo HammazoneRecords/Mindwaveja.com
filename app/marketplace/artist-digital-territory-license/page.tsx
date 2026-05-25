@@ -119,7 +119,8 @@ export default function ArtistDigitalTerritoryPage() {
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 4 }}>
             <span style={{ fontSize: 24, fontWeight: 900, color: '#a4cf4c' }}>${CLAIM_USD.toLocaleString()} USD</span>
           </div>
-          <p style={{ fontSize: 11, color: 'var(--color-text-tertiary, #666)', fontWeight: 600, marginBottom: 20 }}>JMD {CLAIM_JMD}</p>
+          <p style={{ fontSize: 13, color: 'var(--color-text-secondary, #888)', fontWeight: 600, marginBottom: 4 }}>= JMD {CLAIM_JMD}</p>
+          <p style={{ fontSize: 11, color: 'var(--color-text-tertiary, #666)', fontWeight: 600, marginBottom: 20 }}>Flat license · all-in</p>
           <span style={{
             display: 'inline-flex', alignItems: 'center', gap: 6,
             fontSize: 13, fontWeight: 700, color: '#a4cf4c',
@@ -147,7 +148,7 @@ export default function ArtistDigitalTerritoryPage() {
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 4 }}>
             <span style={{ fontSize: 24, fontWeight: 900, color: 'rgb(var(--color-brand-red, 236 50 55))' }}>From ${TIER1_USD.toLocaleString()} USD</span>
           </div>
-          <p style={{ fontSize: 13, color: 'var(--color-text-secondary, #888)', fontWeight: 600, marginBottom: 4 }}>≈ JMD {TIER1_JMD}</p>
+          <p style={{ fontSize: 13, color: 'var(--color-text-secondary, #888)', fontWeight: 600, marginBottom: 4 }}>= JMD {TIER1_JMD}</p>
           <p style={{ fontSize: 11, color: 'var(--color-text-tertiary, #666)', fontWeight: 600, marginBottom: 20 }}>2 tiers based on complexity</p>
           <span style={{
             display: 'inline-flex', alignItems: 'center', gap: 6,
