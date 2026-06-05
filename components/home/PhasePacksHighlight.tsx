@@ -16,9 +16,9 @@ export function PhasePacksHighlight() {
         subtitle="Complete business blueprints ready to execute. Each pack contains everything you need to start."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
         {featuredPacks.map((pack, index) => (
-          <PackCard key={pack.id} pack={pack} index={index} />
+          <PackCard key={pack.id} pack={pack} index={index} compact />
         ))}
       </div>
 

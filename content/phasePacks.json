@@ -12,7 +12,7 @@
       },
       "timeToFirstSale": "7–14 days (assumes permit in hand, supplier visited, location confirmed — each assumption adds 2–3 days if unmet)",
       "skillLevel": "No prior business experience required. You must be physically mobile for 5–8 hours daily, comfortable handling money and making change quickly, and willing to speak to strangers to sell. If standing in sun for extended periods is a health concern, this model is not suitable.",
-      "description": "A high-frequency mobile retail model selling fresh, hygienically prepared cut fruits to urban workers, students, and commuters. Revenue depends on location consistency and daily volume — not one-off sales.",
+      "description":  "A high-frequency mobile retail model selling fresh, hygienically prepared cut fruits to urban workers, students, and commuters. Revenue depends on location consistency and daily volume — not one-off sales.",
       "featured": true,
       "whoThisIsNotFor": [
         "Anyone who cannot commit to the same location at the same time 5–6 days per week — irregular presence destroys the customer habit that makes this business work",
@@ -256,7 +256,7 @@
       "timeToFirstSale": "14–21 days (assumes portfolio site built, 2 demo sites ready, and first client found — each assumption adds 3–5 days if unmet)",
       "skillLevel": "You must be comfortable using a laptop for 3–6 hours at a stretch, navigating cloud-based tools without step-by-step help, and communicating clearly in writing with clients. You do not need to know how to code. You do need patience — most project delays come from waiting on clients, not from building. If you get frustrated easily when people are unresponsive, this model will be difficult.",
       "description": "A no-code web design service building professional websites for Jamaican small businesses. Revenue comes from project fees and monthly maintenance retainers. The business runs on your portfolio, your outreach, and your ability to manage clients who are often slow to send content.",
-      "featured": false,
+      "featured": true,
       "whoThisIsNotFor": [
         "Anyone without a working laptop — a smartphone cannot build or manage client websites on Wix or Squarespace. This is a non-negotiable requirement",
         "Anyone without reliable internet access at home or at a consistent workspace — every session on a cloud builder saves to the internet. Frequent disconnections corrupt work and destroy client trust",

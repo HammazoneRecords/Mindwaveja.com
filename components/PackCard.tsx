@@ -10,6 +10,7 @@ import { formatCapitalRange, getSkillLevelColor } from '@/utils/format';
 interface PackCardProps {
   pack: PhasePack;
   index?: number;
+  compact?: boolean;
 }
 
 // Score Indicator Component - Theme-aware
@@ -41,7 +42,7 @@ function ScoreIndicator({ label, score, inverted = false }: { label: string; sco
   );
 }
 
-export function PackCard({ pack, index = 0 }: PackCardProps) {
+export function PackCard({ pack, index = 0, compact = false }: PackCardProps) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -88,9 +89,9 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
         {pack.description}
       </p>
 
-      {/* Pack Score Strip */}
-      {pack.packScore && (
-        <div 
+      {/* Pack Score Strip — full cards only */}
+      {!compact && pack.packScore && (
+        <div
           className="flex items-center gap-3 mb-4 pb-4 border-b dark:border-border-secondary"
           style={{ borderColor: 'rgb(var(--color-border-secondary))' }}
         >
@@ -106,41 +107,50 @@ export function PackCard({ pack, index = 0 }: PackCardProps) {
       )}
 
       {/* Stats */}
-      <div className="grid grid-cols-2 gap-4 mb-4">
-        <div>
-          <span className="text-xs uppercase tracking-wide" style={{ color: 'rgb(var(--color-text-tertiary))' }}>Capital</span>
-          <p className="text-sm font-medium" style={{ color: 'rgb(var(--color-text-primary))' }}>
-            {formatCapitalRange(pack.capitalRange.min, pack.capitalRange.max, pack.capitalRange.currency)}
-          </p>
-        </div>
-        <div>
+      {compact ? (
+        <div className="mb-4">
           <span className="text-xs uppercase tracking-wide" style={{ color: 'rgb(var(--color-text-tertiary))' }}>First Sale</span>
           <p className="text-sm font-medium" style={{ color: 'rgb(var(--color-text-primary))' }}>{pack.timeToFirstSale}</p>
         </div>
-      </div>
+      ) : (
+        <div className="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <span className="text-xs uppercase tracking-wide" style={{ color: 'rgb(var(--color-text-tertiary))' }}>Capital</span>
+            <p className="text-sm font-medium" style={{ color: 'rgb(var(--color-text-primary))' }}>
+              {formatCapitalRange(pack.capitalRange.min, pack.capitalRange.max, pack.capitalRange.currency)}
+            </p>
+          </div>
+          <div>
+            <span className="text-xs uppercase tracking-wide" style={{ color: 'rgb(var(--color-text-tertiary))' }}>First Sale</span>
+            <p className="text-sm font-medium" style={{ color: 'rgb(var(--color-text-primary))' }}>{pack.timeToFirstSale}</p>
+          </div>
+        </div>
+      )}
 
-      {/* First 7 Actions Teaser */}
-      <div className="mb-4 flex-1">
-        <span className="text-xs uppercase tracking-wide mb-2 block" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
-          First 7 Actions Preview
-        </span>
-        <ul className="space-y-1">
-          {pack.firstSevenActions.slice(0, 3).map((action, i) => {
-            const truncated = action.length > 60 ? action.slice(0, 60).trimEnd() + '…' : action;
-            return (
-              <li key={i} className="text-sm flex items-start gap-2 min-w-0" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-                <span className="mt-1 flex-shrink-0" style={{ color: 'rgb(var(--color-brand-red))' }}>
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </span>
-                <span className="flex-1 min-w-0 truncate block">{truncated}</span>
-              </li>
-            );
-          })}
-          <li className="text-brand-red dark:text-brand-red text-sm">+ {pack.firstSevenActions.length - 3} more actions</li>
-        </ul>
-      </div>
+      {/* First 7 Actions Teaser — full cards only */}
+      {!compact && (
+        <div className="mb-4 flex-1">
+          <span className="text-xs uppercase tracking-wide mb-2 block" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
+            First 7 Actions Preview
+          </span>
+          <ul className="space-y-1">
+            {pack.firstSevenActions.slice(0, 3).map((action, i) => {
+              const truncated = action.length > 60 ? action.slice(0, 60).trimEnd() + '…' : action;
+              return (
+                <li key={i} className="text-sm flex items-start gap-2 min-w-0" style={{ color: 'rgb(var(--color-text-secondary))' }}>
+                  <span className="mt-1 flex-shrink-0" style={{ color: 'rgb(var(--color-brand-red))' }}>
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </span>
+                  <span className="flex-1 min-w-0 truncate block">{truncated}</span>
+                </li>
+              );
+            })}
+            <li className="text-brand-red dark:text-brand-red text-sm">+ {pack.firstSevenActions.length - 3} more actions</li>
+          </ul>
+        </div>
+      )}
 
       {/* CTA */}
       <Link

@@ -20,26 +20,26 @@ export function HeroSection() {
           </p>
 
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight" style={{ color: 'rgb(var(--color-text-primary))' }}>
-            Ideas to Income.
+            The Infrastructure Layer
             <br />
-            <span className="text-gradient">Guidance to Growth.</span>
+            <span className="text-gradient">for Jamaican Ideas.</span>
           </h1>
 
           <p className="text-lg sm:text-xl lg:text-2xl max-w-2xl mx-auto mb-10 leading-relaxed" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-            You bring a spark. We turn it into a blueprint.
+            Phase packs, R&amp;D resources, and digital infrastructure — for those building from the inside out.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/phase-packs" size="lg">
-              Browse Free Packs
+              Phase Packs
             </Button>
-            <Button href="/intake" size="lg" variant="outline">
-              Start Your Idea
+            <Button href="/store" size="lg" variant="outline">
+              Marketplace
+            </Button>
+            <Button href="/marketplace/artist-digital-territory-license" size="lg" variant="outline">
+              ADTL
             </Button>
           </div>
-          <p className="mt-4 text-sm" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
-            20+ business blueprints built for Jamaica. Free to download.
-          </p>
         </motion.div>
       </div>
     </section>
