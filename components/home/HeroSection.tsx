@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { HeroRevealPlaceholder } from '../HeroRevealPlaceholder';
-import { Button } from '../Button';
+import { HeroCTAButton } from '../HeroCTAButton';
 
 export function HeroSection() {
   return (
@@ -30,15 +30,9 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/phase-packs" size="lg">
-              Phase Packs
-            </Button>
-            <Button href="/store" size="lg" variant="outline">
-              Marketplace
-            </Button>
-            <Button href="/marketplace/artist-digital-territory-license" size="lg" variant="outline">
-              ADTL
-            </Button>
+            <HeroCTAButton href="/phase-packs">Phase Packs</HeroCTAButton>
+            <HeroCTAButton href="/store" accent="rgb(var(--color-brand-green))">Marketplace</HeroCTAButton>
+            <HeroCTAButton href="/marketplace/artist-digital-territory-license" accent="rgba(255,255,255,0.85)">ADTL</HeroCTAButton>
           </div>
         </motion.div>
       </div>
