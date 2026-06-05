@@ -57,24 +57,21 @@
       "slug": "ophones-and-iclones",
       "name": "oPhones & iClones",
       "category": "Books",
-      "tags": ["book", "technology", "digital platforms"],
-      "description": "Navigate the digital ecosystem of proprietary platforms and their alternatives. Build your business on a foundation of digital literacy and platform independence.",
+      "tags": ["book", "fiction", "Jamaica", "Maroon", "technology", "culture"],
+      "description": "Moore Town, Blue Mountains. The Maroon council chooses Tafari to bring the OPhone — a government-issued device — into their community. He opens iJamaica, a shop named by his cousin Nyah, inside an Arawak-inspired hut that honours the land beneath it. A story about what it costs to adopt something new without losing what you already are. Written in Patois and English.",
       "price": "JMD 4,500",
       "priceNote": "Digital download",
       "availableDate": "August 7, 2026",
       "comingSoon": true,
       "features": [
-        "Complete digital edition",
-        "Platform comparison guide",
-        "Digital independence strategies",
-        "Tool alternatives database",
-        "Cost optimization guide"
+        "Jamaican fiction — Maroon community in Moore Town, Blue Mountains",
+        "Tafari chosen by the elder council to distribute the OPhone",
+        "iJamaica shop — Arawak-inspired hut, named by cousin Nyah",
+        "Themes: cultural sovereignty, technology adoption, community trust",
+        "Written in Patois and English — authentic Jamaican voice"
       ],
       "included": [
-        "oPhones & iClones (PDF/ePub)",
-        "Platform Comparison Charts",
-        "Alternative Tools List",
-        "Migration Guides"
+        "oPhones & iClones (PDF/ePub)"
       ],
       "featured": true
     },
