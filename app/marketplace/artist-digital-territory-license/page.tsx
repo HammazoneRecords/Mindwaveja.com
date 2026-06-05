@@ -320,9 +320,11 @@ export default function ArtistDigitalTerritoryPage() {
           <h2 style={{ fontSize: 'clamp(18px, 4vw, 26px)', fontWeight: 900, marginBottom: 12 }}>
             Your Vision. Your Domain. We Build It.
           </h2>
-          <p style={{ fontSize: 14, color: 'var(--color-text-secondary, #888)', maxWidth: 560, lineHeight: 1.7 }}>
-            Bring your own domain and idea. We assess the complexity, agree on the scope,
-            build it, and hand it over. Pick the tier that fits your project.
+          <p style={{ fontSize: 14, color: 'var(--color-text-secondary, #888)', maxWidth: 600, lineHeight: 1.7, marginBottom: 16 }}>
+            Bring your own domain and idea. We assess the complexity, agree on the scope, build it, and hand it over completely — GitHub repo, full ownership, no lock-in. Every project starts with a WhatsApp conversation where we understand what you need, who it's for, and what success looks like. We don't start building until the scope is agreed.
+          </p>
+          <p style={{ fontSize: 14, color: 'var(--color-text-secondary, #888)', maxWidth: 600, lineHeight: 1.7 }}>
+            Both tiers are bespoke — not templates. Built on Vite + React, deployed to a private VPS on your own domain. Mobile-first, fast, and designed to reflect your identity — not a generic website builder output. Pick the tier that matches your scope.
           </p>
         </div>
 
@@ -338,10 +340,12 @@ export default function ArtistDigitalTerritoryPage() {
               bg: 'rgba(164,207,76,0.06)',
               border: 'rgba(164,207,76,0.25)',
               descriptors: [
-                'Clean, focused single-page site',
-                'Profile, streaming links, socials',
-                'Merch store integration',
-                'Mobile-first, fast load',
+                'Up to 8 pages — home, bio, music, merch, gallery, contact + more',
+                'Profile, streaming links, social integration',
+                'Merch store link-out (Printify or external)',
+                'Mobile-first, fast load, clean navigation',
+                'Brand extensions welcome — up to 2 sub-routes',
+                'Contact / booking form (demo mode, activate post-handover)',
               ],
               wa: `https://wa.me/16582170735?text=Hi%2C+I'd+like+to+create+a+Tier+1+(Simple)+digital+territory.%0AMy+domain%3A+%0AMy+brand%2Fartist+name%3A+%0AWhat+I'm+looking+for%3A+`,
             },
@@ -354,10 +358,12 @@ export default function ArtistDigitalTerritoryPage() {
               bg: 'rgba(236,50,55,0.05)',
               border: 'rgba(236,50,55,0.2)',
               descriptors: [
-                'Multi-page with sub-routes',
-                'Brand extensions, merch pages',
-                'Music player, video, booking',
-                'Custom animations, richer UI',
+                'Unlimited pages — complex routing, nested sub-routes',
+                'Fully custom UI concept (GTA, editorial, magazine, split-panel, etc.)',
+                'Integrated music player, live video backgrounds, booking flow',
+                'Multiple brand extensions — each with dedicated pages',
+                'Advanced animations, custom cursors, parallax, transitions',
+                'Database-backed features (pre-orders, fan signups, contact forms live)',
               ],
               wa: `https://wa.me/16582170735?text=Hi%2C+I'd+like+to+create+a+Tier+2+(Complex)+digital+territory.%0AMy+domain%3A+%0AMy+brand%2Fartist+name%3A+%0AWhat+I'm+looking+for%3A+`,
             },
