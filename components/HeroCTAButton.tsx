@@ -56,12 +56,14 @@ export function HeroCTAButton({ href, children, accent = 'rgb(var(--color-brand-
         userSelect: 'none',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+        (e.currentTarget as HTMLAnchorElement).style.background = '#000000';
         (e.currentTarget as HTMLAnchorElement).style.color = accent;
+        (e.currentTarget as HTMLAnchorElement).style.borderColor = accent;
       }}
       onMouseLeave={e => {
         (e.currentTarget as HTMLAnchorElement).style.background = accent;
         (e.currentTarget as HTMLAnchorElement).style.color = '#0f1117';
+        (e.currentTarget as HTMLAnchorElement).style.borderColor = accent;
       }}
     >
       {children}
