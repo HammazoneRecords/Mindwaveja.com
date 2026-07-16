@@ -5,10 +5,9 @@ import Image from 'next/image';
 
 const footerLinks = {
   services: [
-    { label: 'Phase Packs', href: '/phase-packs' },
     { label: 'Marketplace', href: '/marketplace' },
     { label: 'Projects', href: '/projects' },
-    { label: 'Opportunities', href: '/opportunities' },
+    { label: 'Blog', href: '/blog' },
   ],
   company: [
     { label: 'About', href: '/about' },
@@ -86,11 +85,11 @@ export function Footer() {
             <div className="mt-6 pt-6 border-t" style={{ borderColor: 'rgb(var(--color-border-primary))' }}>
               <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'rgb(var(--color-text-tertiary))' }}>Urgent Requests</p>
               <a
-                href="mailto:skygovament@gmail.com"
+                href="mailto:skygovament11@gmail.com"
                 className="text-sm hover:text-brand-green transition-colors break-all"
                 style={{ color: 'rgb(var(--color-text-secondary))' }}
               >
-                skygovament@gmail.com
+                skygovament11@gmail.com
               </a>
             </div>
           </div>

@@ -6,7 +6,8 @@ import { useState, useRef, MouseEvent } from 'react';
 interface Props {
   href: string;
   children: React.ReactNode;
-  accent?: string; // CSS color for the accent (border + ripple)
+  accent?: string;
+  compact?: boolean;
 }
 
 interface Ripple {
@@ -15,7 +16,7 @@ interface Ripple {
   y: number;
 }
 
-export function HeroCTAButton({ href, children, accent = 'rgb(var(--color-brand-red))' }: Props) {
+export function HeroCTAButton({ href, children, accent = 'rgb(var(--color-brand-red))', compact = false }: Props) {
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const ref = useRef<HTMLAnchorElement>(null);
   const counter = useRef(0);
@@ -41,7 +42,7 @@ export function HeroCTAButton({ href, children, accent = 'rgb(var(--color-brand-
         display: 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '15px 32px',
+        padding: compact ? '4px 32px' : '15px 32px',
         borderRadius: '14px',
         fontFamily: 'var(--font-playfair), serif',
         fontSize: '17px',

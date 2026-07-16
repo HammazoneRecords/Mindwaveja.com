@@ -24,7 +24,7 @@ export function FilterChips<T extends string>({
         type="button"
         onClick={() => onChange(null)}
         className={clsx(
-          'px-4 py-2 text-sm font-medium rounded-full transition-all duration-200',
+          'px-4 py-2.5 text-sm font-medium rounded-full transition-all duration-200 min-h-[44px]',
           selected === null
             ? 'bg-brand-red text-white'
             : 'bg-secondary text-secondary hover:bg-tertiary hover:text-primary border border-primary'
@@ -39,7 +39,7 @@ export function FilterChips<T extends string>({
           type="button"
           onClick={() => onChange(option)}
           className={clsx(
-            'px-4 py-2 text-sm font-medium rounded-full transition-all duration-200',
+            'px-4 py-2.5 text-sm font-medium rounded-full transition-all duration-200 min-h-[44px]',
             selected === option
               ? 'bg-brand-red text-white'
               : 'bg-secondary text-secondary hover:bg-tertiary hover:text-primary border border-primary'

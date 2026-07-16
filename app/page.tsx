@@ -1,22 +1,26 @@
 import { HeroSection } from '@/components/home/HeroSection';
-import { HowItWorksSection } from '@/components/home/HowItWorksSection';
 import { PhasePacksHighlight } from '@/components/home/PhasePacksHighlight';
-import { FeaturesSection } from '@/components/home/FeaturesSection';
+import { ADTLHighlight } from '@/components/home/ADTLHighlight';
+import { Chat2CashHighlight } from '@/components/home/Chat2CashHighlight';
+import { DancehallDataHighlight } from '@/components/home/DancehallDataHighlight';
 import { StoreHighlight } from '@/components/home/StoreHighlight';
 import { EmailCapture } from '@/components/home/EmailCapture';
-import { FAQSection } from '@/components/home/FAQSection';
+import { BlogHighlight } from '@/components/home/BlogHighlight';
+import { CommunityPreview } from '@/components/home/CommunityPreview';
 import { CTABand } from '@/components/home/CTABand';
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <HowItWorksSection />
       <PhasePacksHighlight />
-      <FeaturesSection />
+      <ADTLHighlight />
+      <Chat2CashHighlight />
+      <DancehallDataHighlight />
       <StoreHighlight />
       <EmailCapture />
-      <FAQSection />
+      <BlogHighlight />
+      <CommunityPreview />
       <CTABand />
     </>
   );

@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Section } from '@/components/Section';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | MindWave Jamaica',
+  title: 'Privacy Policy',
   description: 'Privacy Policy for MindWave Jamaica',
 };
 

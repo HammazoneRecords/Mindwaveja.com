@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Button } from './Button';
 
 interface ReservationModalProps {
   isOpen: boolean;
@@ -24,12 +25,13 @@ export function ReservationModal({
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [copied, setCopied] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
-  const copyToClipboard = (text: string, key: string) => {
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(key);
-      setTimeout(() => setCopied(null), 1500);
+  const copyAmount = () => {
+    const amount = productPrice.replace(/[^\d.,]/g, '');
+    navigator.clipboard.writeText(amount).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
     });
   };
 
@@ -132,61 +134,50 @@ export function ReservationModal({
               }}
             >
               <p className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
-                Step 1 — Send payment to this account
+                Step 1 — Send payment
               </p>
-              <div className="space-y-2 text-sm" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-                <div className="flex justify-between">
-                  <span>Bank</span>
-                  <span className="font-semibold" style={{ color: 'rgb(var(--color-text-primary))' }}>Scotiabank Jamaica</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Account Name</span>
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold" style={{ color: 'rgb(var(--color-text-primary))' }}>Ovando Brown</span>
-                    <button
-                      type="button"
-                      onClick={() => copyToClipboard('Ovando Brown', 'name')}
-                      className="text-xs px-2 py-0.5 rounded-md transition-colors"
-                      style={{
-                        backgroundColor: copied === 'name' ? 'rgb(var(--color-brand-red) / 0.15)' : 'rgb(var(--color-bg-primary))',
-                        color: copied === 'name' ? 'rgb(var(--color-brand-red))' : 'rgb(var(--color-text-tertiary))',
-                        border: '1px solid rgb(var(--color-border-primary))',
-                      }}
-                    >
-                      {copied === 'name' ? 'Copied!' : 'Copy'}
-                    </button>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Account Type</span>
-                  <span className="font-semibold" style={{ color: 'rgb(var(--color-text-primary))' }}>Savings</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Account #</span>
-                  <div className="flex items-center gap-2">
-                    <span className="font-semibold font-mono" style={{ color: 'rgb(var(--color-text-primary))' }}>50575 000972844</span>
-                    <button
-                      type="button"
-                      onClick={() => copyToClipboard('50575000972844', 'acct')}
-                      className="text-xs px-2 py-0.5 rounded-md transition-colors"
-                      style={{
-                        backgroundColor: copied === 'acct' ? 'rgb(var(--color-brand-red) / 0.15)' : 'rgb(var(--color-bg-primary))',
-                        color: copied === 'acct' ? 'rgb(var(--color-brand-red))' : 'rgb(var(--color-text-tertiary))',
-                        border: '1px solid rgb(var(--color-border-primary))',
-                      }}
-                    >
-                      {copied === 'acct' ? 'Copied!' : 'Copy'}
-                    </button>
-                  </div>
-                </div>
-                <div
-                  className="flex justify-between pt-2 mt-2"
-                  style={{ borderTop: '1px solid rgb(var(--color-border-primary))' }}
+
+              {/* WiPay */}
+              <Button
+                href="https://jm.wipayfinancial.com/to_me/mindwaveja"
+                variant="wipay"
+                size="sm"
+                fullWidth
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pay with WiPay
+              </Button>
+              <p className="text-xs mt-2 text-center" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
+                Enter{' '}
+                <button
+                  type="button"
+                  onClick={copyAmount}
+                  className="inline-flex items-center gap-1 font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity"
+                  style={{ color: 'rgb(var(--color-text-secondary))' }}
                 >
-                  <span className="font-semibold">Amount</span>
-                  <span className="font-bold text-base" style={{ color: 'rgb(var(--color-brand-red))' }}>{productPrice}</span>
-                </div>
-              </div>
+                  {productPrice}
+                  {copied ? (
+                    <span className="text-xs" style={{ color: 'rgb(var(--color-brand-green))' }}>✓ Copied</span>
+                  ) : (
+                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                    </svg>
+                  )}
+                </button>
+                {' '}when prompted on the payment page
+              </p>
+              <p className="text-xs mt-3 text-center" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
+                Prefer bank transfer?{' '}
+                <a
+                  href={`mailto:info@mindwaveja.com?subject=Bank%20Transfer%20-%20${encodeURIComponent(productName)}`}
+                  style={{ color: 'rgb(var(--color-brand-red))', textDecoration: 'underline' }}
+                >
+                  Email us
+                </a>
+                {' '}and we&apos;ll send you the details.
+              </p>
             </div>
 
             {/* Form */}
@@ -288,17 +279,16 @@ export function ReservationModal({
                 <p className="text-xs" style={{ color: 'rgb(var(--color-brand-red))' }}>{error}</p>
               )}
 
-              <button
+              <Button
                 type="submit"
                 disabled={loading}
-                className="w-full py-2.5 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90 mt-1 disabled:opacity-60"
-                style={{
-                  backgroundColor: 'rgb(var(--color-brand-red))',
-                  color: '#fff',
-                }}
+                size="sm"
+                fullWidth
+                isLoading={loading}
+                className="mt-1"
               >
-                {loading ? 'Sending...' : 'Submit Reservation'}
-              </button>
+                Submit Reservation
+              </Button>
             </form>
           </>
         ) : (
@@ -319,16 +309,12 @@ export function ReservationModal({
             <p className="text-xs mb-6" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
               Check your email at <strong style={{ color: 'rgb(var(--color-text-secondary))' }}>{email}</strong> for confirmation.
             </p>
-            <button
+            <Button
               onClick={handleClose}
-              className="px-6 py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90"
-              style={{
-                backgroundColor: 'rgb(var(--color-brand-red))',
-                color: '#fff',
-              }}
+              size="sm"
             >
               Done
-            </button>
+            </Button>
           </div>
         )}
       </div>

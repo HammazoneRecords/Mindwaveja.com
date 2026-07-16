@@ -3,7 +3,7 @@ import { ProjectsHero } from "@/components/projects/ProjectsHero";
 import { ProjectsGrid } from "@/components/projects/ProjectsGrid";
 
 export const metadata: Metadata = {
-  title: "Projects | MindWave Jamaica",
+  title: 'Projects',
   description: "Explore MindWave's innovative projects including AI-powered tools, transparency platforms, and ecosystem initiatives.",
 };
 

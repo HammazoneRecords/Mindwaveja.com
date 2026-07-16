@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${product.name} | Store | MindWave Jamaica`,
+    title: `${product.name} | Store`,
     description: product.description,
   };
 }

@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import { IntakeForm } from '@/components/intake/IntakeForm';
 
 export const metadata: Metadata = {
-  title: 'Start Your Idea | MindWave Jamaica',
+  title: 'Start Your Idea',
   description: 'Tell us about your idea and let us help you take the next step. Free initial consultation.',
 };
 

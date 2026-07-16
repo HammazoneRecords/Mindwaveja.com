@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation';
 const PRODUCTS = [
   'MindWave Phase Packs',
   'Patois Calibration Agent',
-  'RAAS — Reggae As A Service',
+  'Artist Digital Territory License',
   'Solobility Portal',
   'Marcus Garvey App',
   'Time-Check App',

@@ -20,7 +20,8 @@ import { motion, useReducedMotion } from 'framer-motion';
 
 type MediaType = 'video' | 'gif' | 'placeholder';
 
-const HERO_VIDEO_SRC = '/media/herobkgvideo.mp4';
+const HERO_VIDEO_SRC = '/media/herobkgvideo-compressed.mp4';
+const HERO_VIDEO_POSTER = '/media/herobkgvideo-poster.webp';
 const LOOP_HANDOFF_SEC = 0.05; // Switch to other video this many seconds before end (avoids seek flash)
 
 export function HeroRevealPlaceholder() {
@@ -121,7 +122,8 @@ export function HeroRevealPlaceholder() {
         autoPlay={!prefersReducedMotion}
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
+        poster={HERO_VIDEO_POSTER}
         className="absolute inset-0 w-full h-full object-cover hero-video-dark-invert transition-all duration-700"
         style={{
           objectPosition: 'center',
@@ -136,7 +138,8 @@ export function HeroRevealPlaceholder() {
         ref={videoBRef}
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
+        poster={HERO_VIDEO_POSTER}
         className="absolute inset-0 w-full h-full object-cover hero-video-dark-invert transition-all duration-700"
         style={{
           objectPosition: 'center',

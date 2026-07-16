@@ -22,19 +22,19 @@ export function AboutMission() {
               Our Mission
             </h2>
             <p className="leading-relaxed mb-6" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-              Too many brilliant ideas die in Jamaica because people do not know
-              where to start. They have the vision, the drive, and often the skills,
-              but they lack the roadmap.
+              Jamaican artists deserve to own their digital ground — not rent it
+              from platforms that don't serve them. That's the gap ADTL exists to close.
             </p>
             <p className="leading-relaxed mb-6" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-              MindWave Jamaica bridges that gap. We provide structured guidance,
-              proven frameworks, and practical resources that transform raw ideas
-              into operational businesses.
+              MindWave Jamaica builds that infrastructure: ADTL gives each artist
+              a bespoke, owned site as their digital territory. Alongside that, we
+              ship Phase Packs, Projects, and Books that turn ideas into things
+              that actually exist.
             </p>
             <p className="leading-relaxed" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-              Our approach is not about theory. It is about action. Every service,
-              every Phase Pack, every resource we create is designed to move you
-              from thinking to doing.
+              Our approach is not about theory. It is about action. Every Phase Pack,
+              every project, every site we build is designed to move from thinking
+              to shipping.
             </p>
           </div>
 

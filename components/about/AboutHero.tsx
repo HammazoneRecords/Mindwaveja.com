@@ -21,12 +21,13 @@ export function AboutHero() {
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style={{ color: 'rgb(var(--color-text-primary))' }}>
             Building Jamaica&apos;s
             <br />
-            <span className="text-gradient">Entrepreneurial Future</span>
+            <span className="text-gradient">Creative Infrastructure</span>
           </h1>
 
           <p className="text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgb(var(--color-text-secondary))' }}>
-            MindWave Jamaica exists to transform the way Jamaicans approach
-            entrepreneurship. We believe every idea deserves a chance to become reality.
+            MindWave Jamaica gives Jamaican artists owned digital territory
+            through ADTL, alongside Phase Packs, Projects, and Books that turn
+            ideas into things that actually ship.
           </p>
         </motion.div>
       </div>

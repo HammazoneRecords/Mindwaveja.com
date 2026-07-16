@@ -3,37 +3,20 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
-import { Section } from '../Section';
-import { Button } from '../Button';
 import { Badge } from '../Badge';
-import { WiPayPackButton } from '../WiPayButton';
-import { PackCard } from '../PackCard';
-import type { PhasePack, DailyMinimumDetail } from '@/lib/types';
+import { PackContentRenderer } from './PackContentRenderer';
+import { PackTOC } from './PackTOC';
+import type { PhasePack } from '@/lib/types';
+import type { CanonFile } from '@/lib/pack-content';
 import { formatCapitalRange, getSkillLevelColor } from '@/utils/format';
-import { getEnhancedLadder, getAvailableNextPacks, getResearchPaths, getCategoryStage } from '@/utils/enhancedLadder';
-import phasePacks from '@/content/phasePacks.json';
 
 interface PhasePackDetailProps {
   pack: PhasePack;
+  content: CanonFile[];
 }
 
-function isDailyMinimumDetail(val: string | DailyMinimumDetail): val is DailyMinimumDetail {
-  return typeof val === 'object' && val !== null;
-}
-
-export function PhasePackDetail({ pack }: PhasePackDetailProps) {
+export function PhasePackDetail({ pack, content }: PhasePackDetailProps) {
   const [ruralMode, setRuralMode] = useState(false);
-  // Get recommended next packs from enhanced ladder
-  const enhancedLadder = getEnhancedLadder(pack.slug);
-  const nextPacks = enhancedLadder 
-    ? getAvailableNextPacks(pack.slug)
-    : (pack.packLadder?.nextPacks
-        ? (phasePacks.phasePacks as PhasePack[]).filter(p =>
-            pack.packLadder?.nextPacks.includes(p.id)
-          )
-        : []);
-  const researchPaths = getResearchPaths(pack.slug);
-  const categoryStage = getCategoryStage(pack.slug);
 
   return (
     <>
@@ -41,7 +24,6 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-navy-800/50 to-navy-900" />
         <div className="absolute inset-0 wave-gradient opacity-30" />
-
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -78,7 +60,7 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
             </p>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="bg-navy-800/50 border border-navy-700 rounded-2xl p-4">
                 <span className="text-fog-500 text-xs uppercase tracking-wide block mb-1">Capital Needed</span>
                 <span className="text-fog-100 font-semibold text-sm sm:text-base">
@@ -93,23 +75,6 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
                 <span className="text-fog-500 text-xs uppercase tracking-wide block mb-1">Skill Level</span>
                 <span className={`font-semibold text-sm sm:text-base ${getSkillLevelColor(pack.skillLevel)}`}>{pack.skillLevel}</span>
               </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 max-w-sm">
-              {pack.price === 0 ? (
-                <span className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm bg-leaf-500/20 text-leaf-400 border border-leaf-500/30">
-                  Free Pack
-                </span>
-              ) : (
-                <WiPayPackButton packPrice={pack.price ?? 1450} />
-              )}
-              <Button
-                href={`/intake?pack=${pack.slug}`}
-                variant="outline"
-                size="lg"
-              >
-                Request Consultation
-              </Button>
             </div>
 
             {/* Rural context toggle */}
@@ -139,501 +104,20 @@ export function PhasePackDetail({ pack }: PhasePackDetailProps) {
         </div>
       </section>
 
-      {/* Pack Score Panel */}
-      {pack.packScore && (
-        <Section background="default">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal-900 mb-8 text-center">
-              Pack Performance Scores
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
-              <ScoreCard
-                title="Market Demand"
-                score={pack.packScore.demandScore}
-                description="How much people need this"
-                icon="📈"
-              />
-              {pack.packScore.capitalDifficulty != null && (
-                <ScoreCard
-                  title="Capital Ease"
-                  score={6 - pack.packScore.capitalDifficulty}
-                  description="How affordable to start"
-                  icon="💰"
-                  inverted
-                />
-              )}
-              <ScoreCard
-                title="Speed to Sale"
-                score={pack.packScore.timeToFirstSale}
-                description="How fast you can earn"
-                icon="⚡"
-              />
-              {pack.packScore.skillRequired != null && (
-                <ScoreCard
-                  title="Skill Ease"
-                  score={6 - pack.packScore.skillRequired}
-                  description="How easy to learn"
-                  icon="🎯"
-                  inverted
-                />
-              )}
+      {/* Content + TOC */}
+      <section className="py-12 sm:py-16" style={{ backgroundColor: 'rgb(var(--color-bg-primary))' }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex gap-10 lg:gap-12">
+            {/* Main content */}
+            <div className="flex-1 min-w-0 max-w-3xl">
+              <PackContentRenderer files={content} />
             </div>
-            {pack.packIndex && pack.packIndex.recommendedFor && (
-              <div className="mt-8 text-center">
-                <p className="text-sm text-charcoal-600 mb-3">Best for:</p>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {pack.packIndex.recommendedFor.map((tag) => (
-                    <Badge key={tag} variant="leaf" size="sm">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        </Section>
-      )}
 
-      {/* Phase Pack Anatomy */}
-      <Section background="default">
-        <div className="max-w-4xl mx-auto space-y-12">
-          {/* 1. What This Is */}
-          <AnatomySection number={1} title="What This Is">
-            <p className="text-fog-300 leading-relaxed">{pack.whatThisIs}</p>
-          </AnatomySection>
-
-          {/* Rural Variant Panel — shown when toggle is on */}
-          {pack.ruralVariant && pack.ruralPositioning && ruralMode && (
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.35 }}
-              className="rounded-2xl border border-leaf-500/30 bg-leaf-500/5 p-6 space-y-5"
-            >
-              <div className="flex items-center gap-3 mb-2">
-                <svg className="w-5 h-5 text-leaf-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <h3 className="font-display text-lg font-bold text-leaf-300">Rural Context</h3>
-              </div>
-
-              {pack.ruralPositioning.bestParishes.length > 0 && (
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-2">Best parishes</p>
-                  <div className="flex flex-wrap gap-2">
-                    {pack.ruralPositioning.bestParishes.map(p => (
-                      <span key={p} className="text-xs font-medium px-3 py-1 rounded-full bg-leaf-500/15 text-leaf-300 border border-leaf-500/25">
-                        {p}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              <div>
-                <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Supply advantage</p>
-                <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.supplyAdvantage}</p>
-              </div>
-
-              <div>
-                <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Market entry</p>
-                <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.marketEntry}</p>
-              </div>
-
-              {pack.ruralPositioning.coldChainSolution && (
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Cold chain / logistics</p>
-                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.coldChainSolution}</p>
-                </div>
-              )}
-
-              {pack.ruralPositioning.premiumOpportunity && (
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Premium opportunity</p>
-                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.premiumOpportunity}</p>
-                </div>
-              )}
-
-              {pack.ruralPositioning.transportNote && (
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Transport</p>
-                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.transportNote}</p>
-                </div>
-              )}
-
-              {pack.ruralPositioning.communityEntry && (
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-leaf-500/70 mb-1">Community entry</p>
-                  <p className="text-fog-300 text-sm leading-relaxed">{pack.ruralPositioning.communityEntry}</p>
-                </div>
-              )}
-
-              <p className="text-xs text-leaf-500/50 pt-2 border-t border-leaf-500/20">
-                Full rural playbook is inside the pack download — parish-by-parish logistics, market day timing, and cold chain solutions.
-              </p>
-            </motion.div>
-          )}
-
-          {/* 2. What You Need */}
-          <AnatomySection number={2} title="What You Need">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {pack.whatYouNeed.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-fog-300">
-                  <svg className="w-5 h-5 text-wave-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </AnatomySection>
-
-          {/* 3. First 7 Actions */}
-          <AnatomySection number={3} title="First 7 Actions">
-            <ol className="space-y-4">
-              {pack.firstSevenActions.map((action, i) => (
-                <li key={i} className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-wave-600/20 text-wave-400 rounded-full flex items-center justify-center text-sm font-semibold">
-                    {i + 1}
-                  </span>
-                  <span className="text-fog-300 pt-1">{action}</span>
-                </li>
-              ))}
-            </ol>
-          </AnatomySection>
-
-          {/* 4. Waiting Time Tasks */}
-          <AnatomySection number={4} title="Waiting-Time Tasks">
-            <p className="text-fog-500 text-sm mb-4">Things to do while waiting for supplies, responses, or between clients:</p>
-            <ul className="space-y-2">
-              {pack.waitingTimeTasks.map((task, i) => (
-                <li key={i} className="flex items-start gap-2 text-fog-300">
-                  <svg className="w-4 h-4 text-fog-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                  </svg>
-                  {task}
-                </li>
-              ))}
-            </ul>
-          </AnatomySection>
-
-          {/* 5. Starter Folder */}
-          <AnatomySection number={5} title="Starter Folder Contents">
-            <div className="bg-navy-800/50 border border-navy-700 rounded-2xl p-6">
-              <p className="text-fog-500 text-sm mb-4">Your Phase Pack includes these ready-to-use resources:</p>
-              <ul className="space-y-2">
-                {pack.starterFolderContents.map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 text-fog-300">
-                    <svg className="w-4 h-4 text-wave-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-6 pt-4 border-t border-navy-600">
-                {pack.price === 0 && pack.zip ? (
-                  <a
-                    href={`/media/${pack.zip}`}
-                    download
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-wave-600 hover:bg-wave-500 text-white transition-colors"
-                  >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                    </svg>
-                    Download Starter Folder
-                  </a>
-                ) : (
-                  <Button variant="secondary" size="sm" disabled>
-                    Download Starter Folder (Available after purchase)
-                  </Button>
-                )}
-              </div>
-            </div>
-          </AnatomySection>
-
-          {/* 6. Value-Add Menu */}
-          {pack.valueAddMenu && pack.valueAddMenu.length > 0 && (
-            <AnatomySection number={6} title="Value-Add Menu">
-              <p className="text-fog-500 text-sm mb-4">Additional services to increase revenue per customer:</p>
-              <ul className="space-y-2">
-                {pack.valueAddMenu.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-fog-300">
-                    <svg className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
-                    </svg>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </AnatomySection>
-          )}
-
-          {/* 7. Sales Mode */}
-          <AnatomySection number={7} title="Sales Mode">
-            <p className="text-fog-300 leading-relaxed">{pack.salesMode}</p>
-          </AnatomySection>
-
-          {/* 8. Daily Minimum */}
-          <AnatomySection number={8} title="Daily Minimum Target">
-            <div className="bg-wave-600/10 border border-wave-600/30 rounded-2xl p-6 space-y-3">
-              {isDailyMinimumDetail(pack.dailyMinimum) ? (
-                <>
-                  <p className="text-fog-100 leading-relaxed">{pack.dailyMinimum.description}</p>
-                  {(pack.dailyMinimum.weeklyProductionTarget || pack.dailyMinimum.weeklyRevenueTarget || pack.dailyMinimum.dailyTarget || pack.dailyMinimum.weeklyTarget) && (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                      {pack.dailyMinimum.weeklyProductionTarget && (
-                        <div className="bg-navy-800/50 rounded-xl p-3">
-                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Weekly production</p>
-                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.weeklyProductionTarget}</p>
-                        </div>
-                      )}
-                      {pack.dailyMinimum.weeklyRevenueTarget && (
-                        <div className="bg-navy-800/50 rounded-xl p-3">
-                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Weekly revenue target</p>
-                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.weeklyRevenueTarget}</p>
-                        </div>
-                      )}
-                      {pack.dailyMinimum.monthOneProjection && (
-                        <div className="bg-navy-800/50 rounded-xl p-3">
-                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Month 1 projection</p>
-                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.monthOneProjection}</p>
-                        </div>
-                      )}
-                      {pack.dailyMinimum.monthThreeProjection && (
-                        <div className="bg-navy-800/50 rounded-xl p-3">
-                          <p className="text-xs text-fog-500 uppercase tracking-wide mb-1">Month 3 projection</p>
-                          <p className="text-fog-200 text-sm font-medium">{pack.dailyMinimum.monthThreeProjection}</p>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                  {pack.dailyMinimum.keyRule && (
-                    <p className="text-wave-400 text-sm italic border-t border-wave-600/20 pt-3">{pack.dailyMinimum.keyRule}</p>
-                  )}
-                </>
-              ) : (
-                <p className="text-fog-100 leading-relaxed">{pack.dailyMinimum}</p>
-              )}
-            </div>
-          </AnatomySection>
-
-          {/* 9. Common Failure Points */}
-          <AnatomySection number={9} title="Common Failure Points">
-            <p className="text-fog-500 text-sm mb-4">Avoid these common mistakes:</p>
-            <ul className="space-y-2">
-              {pack.commonFailurePoints.map((point, i) => (
-                <li key={i} className="flex items-start gap-2 text-fog-300">
-                  <svg className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                  </svg>
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </AnatomySection>
-
-          {/* 10. Exit/Expand Paths */}
-          <AnatomySection number={10} title="Exit / Expand Paths">
-            <p className="text-fog-500 text-sm mb-4">Where this business can take you:</p>
-            <ul className="space-y-2">
-              {pack.exitExpandPaths.map((path, i) => (
-                <li key={i} className="flex items-start gap-2 text-fog-300">
-                  <svg className="w-4 h-4 text-wave-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                  {path}
-                </li>
-              ))}
-            </ul>
-          </AnatomySection>
-        </div>
-      </Section>
-
-      {/* Category Stage Badge */}
-      {enhancedLadder && (
-        <Section background="default">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-navy-800/50 border border-navy-700 rounded-full px-6 py-3">
-              <span className="text-wave-400 text-lg">🎯</span>
-              <span className="text-fog-300">
-                <span className="text-fog-100 font-semibold capitalize">{categoryStage}</span>
-                {' '}Level • {enhancedLadder.progressionType} Progression
-              </span>
-            </div>
-          </div>
-        </Section>
-      )}
-
-      {/* Research Paths */}
-      {researchPaths.length > 0 && (
-        <Section background="default">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal-900 mb-8 text-center">
-              Research & Expansion Paths
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {researchPaths.map((path, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="bg-navy-800/30 border border-navy-700 rounded-2xl p-6 hover:border-wave-500/50 transition-colors"
-                >
-                  <div className="text-2xl mb-3">
-                    {path.direction.includes('Restaurant') ? '🍽️' :
-                     path.direction.includes('Manufacturing') ? '🏭' :
-                     path.direction.includes('Export') ? '🚢' :
-                     path.direction.includes('Franchise') ? '🏪' :
-                     path.direction.includes('B2B') ? '🤝' :
-                     path.direction.includes('Facility') ? '🏢' :
-                     path.direction.includes('Scale') ? '📈' : '🔬'}
-                  </div>
-                  <h3 className="font-semibold text-fog-100 mb-2">{path.direction}</h3>
-                  <p className="text-sm text-fog-400">{path.researchPrompt}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </Section>
-      )}
-
-      {/* Recommended Next Packs */}
-      {nextPacks.length > 0 && (
-        <Section background="default">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-10">
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-charcoal-900 mb-3">
-                What's Next?
-              </h2>
-              <p className="text-charcoal-600 max-w-2xl mx-auto">
-                {enhancedLadder 
-                  ? `Scale your business with these ${categoryStage === 'entry' ? 'mid-level' : categoryStage === 'mid' ? 'advanced' : 'expansion'} opportunities`
-                  : pack.packLadder?.reason}
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {nextPacks.map((nextPack, index) => {
-                const nextLadder = enhancedLadder?.availableNext?.find(n => n.slug === nextPack.slug);
-                return (
-                  <div key={nextPack.id} className="relative">
-                    {nextLadder && (
-                      <div className="absolute -top-3 left-4 z-10">
-                        <Badge variant="wave" size="sm">
-                          {nextLadder.relationship}
-                        </Badge>
-                      </div>
-                    )}
-                    <PackCard pack={nextPack} index={index} />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </Section>
-      )}
-
-      {/* CTA */}
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-navy-900 to-navy-800">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-display text-3xl sm:text-4xl font-bold text-fog-50 mb-4">
-            Ready to Start?
-          </h2>
-          <p className="text-fog-300 mb-8 max-w-xl mx-auto">
-            Get the complete {pack.name} Phase Pack with all resources, templates, and step-by-step guidance.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {pack.price === 0 && pack.zip ? (
-              <a
-                href={`/media/${pack.zip}`}
-                download
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-xl font-semibold text-sm bg-wave-600 hover:bg-wave-500 text-white transition-colors"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Download Free Pack
-              </a>
-            ) : pack.price === 0 ? (
-              <span className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm bg-leaf-500/20 text-leaf-400 border border-leaf-500/30">
-                Free Pack — No Payment Needed
-              </span>
-            ) : (
-              <WiPayPackButton packPrice={pack.price ?? 1450} className="sm:w-auto min-w-[220px]" />
-            )}
-            <Button href="/phase-packs" variant="ghost" size="lg">
-              Browse Other Packs
-            </Button>
+            {/* TOC — handles both desktop sidebar + mobile drawer internally */}
+            <PackTOC files={content} />
           </div>
         </div>
       </section>
-
     </>
-  );
-}
-
-// Score Card Component
-function ScoreCard({
-  title,
-  score,
-  description,
-  icon,
-  inverted = false
-}: {
-  title: string;
-  score: number;
-  description: string;
-  icon: string;
-  inverted?: boolean;
-}) {
-  const displayScore = inverted ? score : score;
-  const percentage = (displayScore / 5) * 100;
-
-  return (
-    <div className="bg-white border border-charcoal-200 rounded-2xl p-6 text-center">
-      <div className="text-3xl mb-3">{icon}</div>
-      <h3 className="font-semibold text-charcoal-900 mb-2">{title}</h3>
-      <div className="mb-3">
-        <div className="text-3xl font-bold text-wave-600">{displayScore}/5</div>
-      </div>
-      <div className="w-full bg-charcoal-100 rounded-full h-2 mb-3">
-        <div
-          className="bg-gradient-to-r from-wave-500 to-leaf-500 h-2 rounded-full transition-all duration-500"
-          style={{ width: `${percentage}%` }}
-        />
-      </div>
-      <p className="text-xs text-charcoal-600">{description}</p>
-    </div>
-  );
-}
-
-function AnatomySection({
-  number,
-  title,
-  children,
-}: {
-  number: number;
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.4 }}
-    >
-      <div className="flex items-center gap-3 mb-4">
-        <span className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 bg-navy-700 text-wave-400 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold">
-          {number}
-        </span>
-        <h2 className="text-lg sm:text-2xl font-display font-bold text-fog-50">
-          {title}
-        </h2>
-      </div>
-      <div className="pl-11 sm:pl-14">{children}</div>
-    </motion.div>
   );
 }

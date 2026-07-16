@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Button } from './Button';
 
 const WIPAY_URL = 'https://jm.wipayfinancial.com/to_me/mindwaveja';
 
@@ -25,15 +25,16 @@ export function WiPayButton({ price, priceNote, className = '' }: WiPayButtonPro
 
   return (
     <div className={`space-y-1.5 ${className}`}>
-      <Link
+      <Button
         href={WIPAY_URL}
+        variant="wipay"
+        size="sm"
+        fullWidth
         target="_blank"
         rel="noopener noreferrer"
-        className="block w-full text-center py-3 px-6 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90"
-        style={{ backgroundColor: '#0b5fff', color: '#ffffff' }}
       >
         Pay with WiPay
-      </Link>
+      </Button>
       <p className="text-xs text-center text-fog-500">
         Enter <strong className="text-fog-300">{displayPrice}</strong> when prompted on the payment page
       </p>
@@ -51,15 +52,16 @@ export function WiPayPackButton({ packPrice, className = '' }: WiPayPackButtonPr
 
   return (
     <div className={`space-y-1.5 ${className}`}>
-      <Link
+      <Button
         href={WIPAY_URL}
+        variant="wipay"
+        size="sm"
+        fullWidth
         target="_blank"
         rel="noopener noreferrer"
-        className="block w-full text-center py-3 px-6 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90"
-        style={{ backgroundColor: '#0b5fff', color: '#ffffff' }}
       >
         Pay with WiPay
-      </Link>
+      </Button>
       <p className="text-xs text-center text-fog-500">
         Enter <strong className="text-fog-300">J${packPrice.toLocaleString('en-JM')}</strong> when prompted on the payment page
       </p>

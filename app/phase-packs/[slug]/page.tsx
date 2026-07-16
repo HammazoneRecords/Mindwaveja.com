@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import phasePacks from '@/content/phasePacks.json';
 import type { PhasePack } from '@/lib/types';
+import { getPackContent } from '@/lib/pack-content';
 import { PhasePackDetail } from '@/components/phase-packs/PhasePackDetail';
 
 interface Props {
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${pack.name} | Phase Packs | MindWave Jamaica`,
+    title: `${pack.name} | Phase Packs`,
     description: pack.description,
   };
 }
@@ -40,5 +41,7 @@ export default async function PhasePackPage({ params }: Props) {
     notFound();
   }
 
-  return <PhasePackDetail pack={pack} />;
+  const content = getPackContent(slug);
+
+  return <PhasePackDetail pack={pack} content={content} />;
 }

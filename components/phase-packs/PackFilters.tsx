@@ -18,7 +18,7 @@ interface PackFiltersProps {
     packCount: number;
 }
 
-const selectClass = 'px-3 py-2 bg-primary border border-primary rounded-xl text-primary text-sm focus:outline-none focus:ring-2 focus:ring-brand-red w-full';
+const selectClass = 'px-3 py-2 bg-primary border border-primary rounded-xl text-primary text-sm focus:outline-none focus:ring-2 focus:ring-brand-red w-full max-w-full min-h-[44px]';
 
 export function PackFiltersComponent({ filters, onFilterChange, packCount }: PackFiltersProps) {
     const [searchOpen, setSearchOpen] = useState(false);

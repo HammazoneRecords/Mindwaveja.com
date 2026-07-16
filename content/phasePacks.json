@@ -1509,7 +1509,7 @@
         "Kitchen scale (measures in grams) — J$2,500–J$4,000",
         "Food-grade PET bottles (250ml or 500ml) with caps — J$25–J$45 each",
         "Hard-sided delivery cooler with gel packs — J$4,000–J$8,000",
-        "Food handler's permit (Ministry of Health) — J$2,000–J$4,000",
+        "Food handler's permit (Ministry of Health) — J$500",
         "Initial fruit and ingredient sourcing budget — J$8,000–J$12,000",
         "Food-grade sanitiser and cleaning supplies — J$2,000–J$3,000"
       ],
@@ -1524,7 +1524,7 @@
         "Write your 3 core recipes with exact ingredient weights and test each recipe twice — do not proceed until the same recipe produces the same result twice",
         "Visit Coronation Market (or your parish market) and price your key ingredients — calculate cost per bottle for each product before buying equipment",
         "Purchase the minimum equipment kit: commercial blender, stainless steel pot, kitchen scale, food-grade bottles — total J$25,000–J$35,000",
-        "Apply for your food handler's permit at the nearest health centre — bring valid ID and J$2,000–J$4,000 in fees",
+        "Apply for your food handler's permit at the nearest health centre — bring valid ID and J$500 in fees",
         "Produce your first 20-bottle sample batch — taste, score, and label every bottle with a best-before date",
         "Identify 5 potential buyers within a 30-minute radius — a cookshop, a small restaurant, an office, a gym, a school — and approach each with 3 free sample bottles",
         "Follow up on samples after 2 days and convert at least 1 to a confirmed weekly order before producing your next batch"
@@ -1532,7 +1532,7 @@
       "waitingTimeTasks": [
         "Build your seasonal calendar — note when soursop peaks (March–June), June plum is available (December–April), and sorrel runs (November–January), and plan production volume for each window",
         "Identify 3 backup suppliers for your primary fruit ingredients — know their names, market stall locations, and phone numbers before you need them",
-        "Begin BSJ registration process once monthly revenue is consistent at J$100,000+ — visit bsj.org.jm for current requirements",
+        "Begin BSJ registration process once monthly revenue is consistent at J$75,000+ — visit bsj.org.jm for current requirements",
         "Design your label in Canva — must include product name, volume, ingredients in descending order by weight, best-before date, producer name, permit number, contact number",
         "Build a buyer pipeline of 20 potential accounts — research cookshops, offices, gyms, and schools within your delivery radius and note the contact person at each"
       ],
@@ -1620,7 +1620,7 @@
       "executionTest": {
         "status": "PASS",
         "profile": "Kingston operator, Portmore area, J$30,000 starting capital",
-        "sequence": "Week 1: recipe testing (J$2,000 ingredients), food handler's permit application (J$3,000), equipment purchase — commercial blender J$18,000, pot J$4,500, scale J$3,000, bottles × 50 J$1,500, sanitiser J$1,200, cooler J$5,500. Total spend: J$38,700. Week 2: first production batch — soursop x 30 bottles (J$250 wholesale). Ingredient cost: 3kg soursop J$1,200, sweetener J$300, 30 bottles J$900 = J$2,400 total. Revenue: 30 × J$250 = J$7,500. Net on first batch: J$5,100.",
+        "sequence": "Week 1: recipe testing (J$2,000 ingredients), food handler's permit application (J$500), equipment purchase — commercial blender J$18,000, pot J$4,500, scale J$3,000, bottles × 50 J$1,500, sanitiser J$1,200, cooler J$5,500. Total spend: J$38,700. Week 2: first production batch — soursop x 30 bottles (J$250 wholesale). Ingredient cost: 3kg soursop J$1,200, sweetener J$300, 30 bottles J$900 = J$2,400 total. Revenue: 30 × J$250 = J$7,500. Net on first batch: J$5,100.",
         "firstSale": "30-bottle soursop wholesale delivery to 1 cookshop + 1 office on Day 10",
         "netProfit": "J$5,100 net on first production batch (34% margin)",
         "monthOneProjection": "J$30,000–J$45,000 net with 6 buyers at 15 bottles/week average"

@@ -3,6 +3,7 @@ import { Outfit, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -17,17 +18,23 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'MindWave Jamaica | Ideas to Income. Guidance to Growth.',
+  metadataBase: new URL('https://mindwaveja.com'),
+  title: {
+    default: 'MindWave Jamaica | Ideas to Income. Guidance to Growth.',
+    template: '%s | MindWave Jamaica',
+  },
   description:
-    'A Jamaican Engine for Innovation. You bring a spark. We turn it into a blueprint. Transform your ideas into operational businesses with structured guidance and support.',
+    'Dancehall artist websites on owned domains. 79+ Jamaican business blueprints & startup guides. Own your digital territory — not a link-in-bio. Built in Jamaica.',
   keywords: [
-    'Jamaica business',
-    'entrepreneurship',
-    'startup',
-    'business consulting',
+    'dancehall artist website',
+    'jamaican artist website',
+    'artist digital territory',
+    'jamaica business plan',
+    'small business jamaica',
+    'startup guide jamaica',
+    'jamaican business blueprint',
+    'dancehall artist management',
     'Kingston',
-    'small business',
-    'business plan',
   ],
   authors: [{ name: 'MindWave Jamaica' }],
   icons: {
@@ -35,11 +42,21 @@ export const metadata: Metadata = {
     shortcut: '/mindwave-logo.svg',
     apple: '/mindwave-logo.svg',
   },
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'MindWave Jamaica | Ideas to Income',
     description: 'A Jamaican Engine for Innovation. Transform your ideas into operational businesses.',
+    url: '/',
+    siteName: 'MindWave Jamaica',
     type: 'website',
     locale: 'en_JM',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MindWave Jamaica | Ideas to Income',
+    description: 'A Jamaican Engine for Innovation. Transform your ideas into operational businesses.',
   },
 };
 
@@ -54,9 +71,43 @@ export default function RootLayout({
         {/* Preload hero background video for faster loading */}
         <link
           rel="preload"
-          href="/media/herobkgvideo.mp4"
+          href="/media/herobkgvideo-compressed.mp4"
           as="video"
           type="video/mp4"
+        />
+        {/* JSON-LD Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'MindWave Jamaica',
+              url: 'https://mindwaveja.com',
+              description:
+                'A Jamaican Engine for Innovation. Dancehall artist websites on owned domains. Jamaican business blueprints & startup guides.',
+              foundingDate: '2019',
+              founder: {
+                '@type': 'Person',
+                name: 'Ovando Brown',
+                url: 'https://ovandobrown.com',
+              },
+              contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'sales',
+                email: 'skygovament11@gmail.com',
+                telephone: '+1-658-217-0735',
+                availableLanguage: ['English'],
+              },
+              sameAs: ['https://wa.me/16582170735'],
+              knowsAbout: [
+                'Artist Digital Territory License',
+                'Jamaican business blueprints',
+                'Phase packs',
+                'Dancehall artist websites',
+              ],
+            }),
+          }}
         />
         {/* Prevent FOUC by setting theme before first paint */}
         <script
@@ -82,6 +133,7 @@ export default function RootLayout({
         )}
       </head>
       <body className="font-sans min-h-screen flex flex-col">
+        <ScrollToTop />
         <NavBar />
         <main className="flex-1">{children}</main>
         <Footer />

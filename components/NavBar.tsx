@@ -11,8 +11,8 @@ import { ThemeToggle } from './ThemeToggle';
 
 const navLinks = [
   { label: 'Phase Packs', href: '/phase-packs' },
-  { label: 'Opportunities', href: '/opportunities' },
   { label: 'Marketplace', href: '/marketplace' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Projects', href: '/projects' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
@@ -50,7 +50,7 @@ export function NavBar() {
         borderColor: 'rgb(var(--color-border-primary))',
       } : undefined}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
         <div className="flex items-center justify-between h-12 lg:h-14">
           {/* Logo */}
           <Link

@@ -1,12 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Badge } from './Badge';
 import { Button } from './Button';
 import { ReservationModal } from './ReservationModal';
-import { WiPayButton } from './WiPayButton';
 import type { Product } from '@/lib/types';
 
 interface ProductCardProps {
@@ -42,7 +40,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
         <div className="flex gap-2">
           {product.comingSoon && (
             <span
-              className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-full"
+              className="text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
               style={{
                 backgroundColor: 'rgb(var(--color-brand-red) / 0.12)',
                 color: 'rgb(var(--color-brand-red))',
@@ -83,9 +81,9 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
         ))}
       </div>
 
-      {/* Price / Available date */}
-      <div className="mb-4">
-        {product.comingSoon && product.availableDate ? (
+      {/* Price / Available date (coming soon products only) */}
+      {product.comingSoon && product.availableDate && (
+        <div className="mb-4">
           <div>
             <span className="text-base font-semibold" style={{ color: 'rgb(var(--color-brand-red))' }}>
               {product.price}
@@ -94,56 +92,30 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               Launching {product.availableDate} — reserve now
             </p>
           </div>
-        ) : (
-          <>
-            <span className="text-lg font-bold" style={{ color: 'rgb(var(--color-brand-green))' }}>
-              {product.price}
-            </span>
-            {product.priceNote && (
-              <span className="text-sm ml-2" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
-                {product.priceNote}
-              </span>
-            )}
-          </>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* CTA */}
       {product.comingSoon && product.ctaHref ? (
-        <Link
+        <Button
           href={product.ctaHref}
-          className="w-full py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90 block text-center"
-          style={{
-            backgroundColor: 'rgb(var(--color-brand-red))',
-            color: '#fff',
-          }}
+          size="sm"
+          fullWidth
         >
           {product.ctaLabel ?? 'Reserve Your Copy'}
-        </Link>
+        </Button>
       ) : product.comingSoon ? (
-        <button
+        <Button
           onClick={() => setModalOpen(true)}
-          className="w-full py-2 rounded-xl text-sm font-semibold transition-opacity hover:opacity-90"
-          style={{
-            backgroundColor: 'rgb(var(--color-brand-red))',
-            color: '#fff',
-          }}
+          size="sm"
+          fullWidth
         >
           Reserve Your Copy
-        </button>
+        </Button>
       ) : (
-        <>
-          <Link href={`/marketplace/${product.slug}`} className="block mb-2">
-            <Button variant="secondary" className="w-full" size="sm">
-              View Details
-            </Button>
-          </Link>
-          <WiPayButton
-            price={product.price}
-            priceNote={product.priceNote}
-            className="mt-1"
-          />
-        </>
+        <Button href={`/marketplace/${product.slug}`} variant="secondary" size="sm" fullWidth>
+          View Details
+        </Button>
       )}
     </motion.article>
     </>

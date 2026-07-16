@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Section } from '@/components/Section';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | MindWave Jamaica',
+  title: 'Terms of Service',
   description: 'Terms of Service for MindWave Jamaica',
 };
 
@@ -38,10 +38,10 @@ export default function TermsPage() {
                 2. Description of Services
               </h2>
               <p className="leading-relaxed">
-                MindWave Jamaica provides business consulting, coaching, and educational 
-                resources designed to help entrepreneurs develop and grow their businesses. 
-                Our services include but are not limited to: consultation sessions, business 
-                blueprints, Phase Packs, and digital products.
+                MindWave Jamaica provides educational resources, Phase Packs, and digital
+                products designed to help entrepreneurs develop and grow their businesses,
+                alongside our Artist Digital Territory License (ADTL) marketplace for
+                Jamaican artists.
               </p>
             </div>
 

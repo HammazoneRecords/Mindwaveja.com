@@ -12,42 +12,33 @@
 
 | Branch | Last Updated | Deployed? | Notes |
 |---|---|---|---|
+| master | 2026-07-09 | ⬜ Local only | Button unification, dynamic pack renderer, price syncs |
 | feature/adtl-nav-link | 2026-06-05 | ⬜ Local only | Hero text, PackCard compact, 3-pack grid, product swap |
-| master | 2026-06-04 | ⚠️ Local changes not deployed | LCP fix: compressed video + poster added |
 | main | 2026-05-19 | ✅ Production (stale) | Last deploy pre-LCP fix |
 
-## Last Action (2026-06-05)
+## Last Action (2026-07-09)
+
+**Date:** 2026-07-09
+**Branch:** master
+**Action:** Button unification + dynamic pack content renderer + price syncs
+**What changed:**
+- Button.tsx: uniform rounded-xl, wipay variant, fullWidth prop, onClick passthrough to Link
+- WiPayButton/ProductCard/ReservationModal: all raw buttons migrated to shared Button
+- ReservationModal: WiPay primary payment, bank transfer replaced with email fallback, copy-to-clipboard amount
+- Phase pack pages: scrapped hardcoded 10-section anatomy — now dynamically renders canon .md files via react-markdown
+- New: lib/pack-content.ts, PackContentRenderer.tsx, PackTOC.tsx (macOS dock-style sidebar)
+- phasePacks.json + canon .md files: food handler permit J$2,000-J$4,000 → J$500, BSJ threshold J$100,000 → J$75,000, bootstrap total recalculated
+- ADTLPricing removed from home page
+- Footer: urgent request email → skygovament11@gmail.com
+**Schema migration:** none
+
+## Previous Action (2026-06-05)
 
 **Date:** 2026-06-05
 **Branch:** feature/adtl-nav-link
-**Action:** Homepage copy + UI updates
-**What changed:**
-- HeroSection: headline → "The Infrastructure Layer for Jamaican Ideas", tagline → "Phase packs, R&D resources, and digital infrastructure — for those building from the inside out.", CTAs → Phase Packs · Marketplace · ADTL
-- PackCard: `compact` prop added — hides packScore strip, capitalRange stat, firstSevenActions preview; only shows First Sale duration. Full pack pages unchanged.
-- PhasePacksHighlight: grid changed `md:grid-cols-2 lg:grid-cols-3` → `sm:grid-cols-2 md:grid-cols-3`; passes `compact` to cards
-- phasePacks.json: Basic Website Creation marked `featured: true` (was false) — now 3 featured packs
-- products.json: Black Espionage marked `featured: false`; ADTL now shows as 3rd featured product (was cut by slice)
-**Schema migration:** none
 
-## Previous Action
+## Previous Action (2026-06-04)
 **Branch:** master
-**Action:** 4-commit session — pack renovations, rural context switch, homepage funnel fixes, deploy ×3
-**What changed:**
-
-*Commit 7b7d72c — Phase Packs + rural context switch:*
-- `/phase-packs` and `/phase-packs/[slug]` routes restored from `_archived_phase-packs/`
-- Phase Packs added to NavBar (first position)
-- Rural context toggle button on pack detail pages (`ruralVariant: true` packs only)
-- Rural panel: parishes, supply advantage, market entry, cold chain, premium opportunity
-- "Rural Ready" badge on PackCard
-- `dailyMinimum` handled as string or structured object (Week/Month projections)
-- `valueAddMenu` made optional in render
-- PhasePack type extended: ruralVariant, ruralPositioning, DailyMinimumDetail, ethicalCommunityRules, prePack, invariantScore, executionTest, whoThisIsNotFor
-- PackScore fields made optional (capitalDifficulty, skillRequired)
-- pp-063 Natural Juice Production Wholesale: all 18 canon files, 5 downloads, 23-entry zip, full JSON (invariantScore 13, executionTest PASS — J$5,100 net first batch)
-
-*Commit 98995c8 — Free pack downloads + mobile fix + ADTL:*
-- Free packs: "Download Starter Folder" is now a real `<a download>` link to `/media/[slug].zip`
 - "Available after purchase" disabled button removed for free packs
 - Download button also in CTA section at page bottom
 - Mobile: quick stats stack 1-column on mobile

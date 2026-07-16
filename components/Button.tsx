@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 
-type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline';
+type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'wipay';
 type ButtonSize = 'sm' | 'md' | 'lg';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -14,6 +14,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
+  fullWidth?: boolean;
 }
 
 // Theme-aware button variants using CSS variables
@@ -26,12 +27,14 @@ const variants: Record<ButtonVariant, string> = {
     'bg-transparent hover:bg-tertiary text-secondary hover:text-primary transition-all',
   outline:
     'bg-transparent border-2 border-brand-red/50 hover:border-brand-red text-brand-red hover:bg-brand-red/10 transition-all',
+  wipay:
+    'bg-[#0b5fff] hover:opacity-90 text-white font-semibold transition-all',
 };
 
 const sizes: Record<ButtonSize, string> = {
   sm: 'px-4 py-2 text-sm rounded-xl',
-  md: 'px-6 py-3 text-base rounded-2xl',
-  lg: 'px-8 py-4 text-lg rounded-2xl',
+  md: 'px-6 py-3 text-base rounded-xl',
+  lg: 'px-8 py-4 text-lg rounded-xl',
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -43,6 +46,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       isLoading,
       leftIcon,
       rightIcon,
+      fullWidth,
       className,
       children,
       disabled,
@@ -58,6 +62,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       sizes[size],
       // Text color for secondary button
       variant === 'secondary' && 'text-primary',
+      fullWidth && 'w-full',
       className
     );
 
@@ -95,7 +100,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     if (href) {
       return (
-        <Link href={href} className={baseStyles}>
+        <Link href={href} className={baseStyles} onClick={props.onClick as React.MouseEventHandler<HTMLAnchorElement> | undefined}>
           {content}
         </Link>
       );

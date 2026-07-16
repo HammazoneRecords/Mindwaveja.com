@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!product) {
     return {
-      title: 'Product Not Found | MindWave Jamaica',
+      title: 'Product Not Found',
     };
   }
 
   return {
-    title: `${product.name} | MindWave Jamaica`,
+    title: `${product.name}`,
     description: product.description,
   };
 }

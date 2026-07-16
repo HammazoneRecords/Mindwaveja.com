@@ -23,8 +23,8 @@
     /* Near-black, not pure */
     --color-text-secondary: 82 82 82;
     /* Medium grey */
-    --color-text-tertiary: 138 138 138;
-    /* Light grey */
+    --color-text-tertiary: 92 92 92;
+    /* Light grey — darkened from 138 to clear 4.5:1 contrast on the light bg (was 2.8:1) */
 
     /* Borders - Subtle gray */
     --color-border-primary: 220 220 220;
@@ -59,8 +59,8 @@
     /* Soft off-white */
     --color-text-secondary: 170 180 190;
     /* Medium grey-blue */
-    --color-text-tertiary: 110 120 130;
-    /* Low emphasis grey-blue */
+    --color-text-tertiary: 140 150 160;
+    /* Low emphasis grey-blue — brightened from 110/120/130 to clear 4.5:1 contrast on the dark bg (was 4.0:1) */
 
     /* Borders - Subtle but visible */
     --color-border-primary: 50 70 90;

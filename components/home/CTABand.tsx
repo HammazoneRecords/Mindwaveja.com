@@ -37,13 +37,10 @@ export function CTABand() {
             <Button href="/intake" size="lg">
               Start Your Idea
             </Button>
-            <Button href="/phase-packs" variant="secondary" size="lg">
-              View Phase Packs
-            </Button>
           </div>
 
           <p className="mt-8 text-charcoal-400 text-sm">
-            Free initial consultation. No commitment required.
+            Free to start. No commitment required.
           </p>
         </motion.div>
       </div>

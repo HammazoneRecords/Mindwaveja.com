@@ -1,106 +1,32 @@
 {
   "products": [
     {
-      "id": "prod-005",
-      "slug": "book-to-my-son",
-      "name": "Book to My Son",
-      "category": "Books",
-      "tags": ["book", "personal", "legacy", "solobility", "print"],
-      "description": "A personal legacy document written from father to son. Printed and bound — a physical artefact meant to be held, not scrolled. Available in standard and premium print, both JAD-bound.",
-      "price": "JMD 13,000",
-      "priceNote": "Standard (regular paper) · JMD 17,100 premium paper · Both JAD-bound",
-      "availableDate": "August 7, 2026",
-      "comingSoon": true,
-      "features": [
-        "Physical printed book",
-        "JAD binder binding — both editions",
-        "Standard edition: regular print paper",
-        "Premium edition: premium paper stock",
-        "Personalised artefact — not a digital file"
-      ],
-      "included": [
-        "Printed & bound copy",
-        "JAD binder",
-        "Standard: JMD 13,000 (≈ USD $84)",
-        "Premium: JMD 17,100 (≈ USD $110)"
-      ],
-      "featured": true
-    },
-    {
-      "id": "prod-002",
-      "slug": "black-espionage",
-      "name": "Black Espionage",
-      "category": "Books",
-      "tags": ["book", "espionage", "business intelligence"],
-      "description": "Master competitive intelligence and market surveillance. Ethical strategies for understanding your competition and staying ahead in the digital economy.",
-      "price": "JMD 6,500",
-      "priceNote": "Digital download",
-      "availableDate": "August 7, 2026",
-      "comingSoon": true,
-      "features": [
-        "Complete digital edition",
-        "Intelligence gathering frameworks",
-        "Ethical compliance guide",
-        "Jamaican market insights",
-        "Digital tools recommendations"
-      ],
-      "included": [
-        "Black Espionage (PDF/ePub)",
-        "Intelligence Templates",
-        "Framework Guides",
-        "Resources Directory"
-      ],
-      "featured": false
-    },
-    {
-      "id": "prod-003",
-      "slug": "ophones-and-iclones",
-      "name": "oPhones & iClones",
-      "category": "Books",
-      "tags": ["book", "fiction", "Jamaica", "Maroon", "technology", "culture"],
-      "description": "A local cultural thriller. Moore Town, Blue Mountains. The Maroon council chooses Tafari to bring the OPhone — a government-issued device — into their community. He opens iJamaica, a name his cousin Nyah gave it, inside an Arawak-inspired hut built as tribute to the land beneath it. A story about what it costs to adopt something new without losing what you already are. Written in Patois and English.",
-      "price": "JMD 4,500",
-      "priceNote": "Digital download",
-      "availableDate": "August 7, 2026",
-      "comingSoon": true,
-      "features": [
-        "Jamaican fiction — Maroon community in Moore Town, Blue Mountains",
-        "Tafari chosen by the elder council to distribute the OPhone",
-        "iJamaica shop — Arawak-inspired hut, named by cousin Nyah",
-        "Themes: cultural sovereignty, technology adoption, community trust",
-        "Written in Patois and English — authentic Jamaican voice"
-      ],
-      "included": [
-        "oPhones & iClones (PDF/ePub)"
-      ],
-      "featured": true
-    },
-    {
       "id": "prod-004",
       "slug": "artist-digital-territory-license",
       "name": "Artist Digital Territory License",
       "category": "Licenses",
-      "tags": ["license", "artist", "digital", "territory"],
-      "description": "Own your digital ground. We hold domains for 20 Jamaican artists — one flat license gets you a bespoke artist site, built and transferred to you with full ownership on an owned domain.",
-      "price": "$5,200 USD",
-      "priceNote": "JMD 832,468 · one-time",
+      "tags": ["license", "artist", "dancehall", "digital territory", "domain"],
+      "description": "Bespoke dancehall & reggae artist websites on owned domains. 16 artists already live — Skeng, Chronic Law, Aidonia, Mavado, and more. Flat license, full ownership, no lock-in.",
+      "price": "$4,200 USD",
+      "priceNote": "Flat license · full ownership · JMD 672,378",
       "availableDate": "Available Now",
-      "comingSoon": true,
-      "ctaLabel": "View Available Sites",
+      "comingSoon": false,
+      "ctaLabel": "View Available Sites →",
       "ctaHref": "/marketplace/artist-digital-territory-license",
       "features": [
-        "Bespoke Vite + React artist website",
-        "Built on an owned artist domain",
-        "Linked Printify merch store",
-        "Full GitHub repo transfer",
-        "DNS handover — you own everything"
+        "Bespoke artist site — Vite + React, live on your owned domain",
+        "Pre-order capture + fan database",
+        "Hosted on MindWave JA servers",
+        "GitHub repo + DNS handover — full ownership, no lock-in",
+        "Merch designs included",
+        "Or build custom from $1,599 — 2 tiers based on complexity"
       ],
       "included": [
-        "Custom artist website (built & deployed)",
-        "Domain transfer to buyer",
-        "GitHub repository",
-        "Printify merch store setup",
-        "30-day post-transfer support"
+        "Owned domain + bespoke site",
+        "GitHub repo transfer",
+        "DNS handover",
+        "Merch design package",
+        "2 years complimentary site management (Managed tier)"
       ],
       "featured": true
     }
