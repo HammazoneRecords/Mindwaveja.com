@@ -138,16 +138,19 @@ export function ReservationModal({
               </p>
 
               {/* WiPay */}
-              <Button
+              <a
                 href="https://jm.wipayfinancial.com/to_me/mindwaveja"
-                variant="wipay"
-                size="sm"
-                fullWidth
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  display: 'block', textAlign: 'center', padding: '10px 20px', borderRadius: 10,
+                  fontWeight: 700, fontSize: 13, textDecoration: 'none',
+                  background: '#1a1a2e', color: '#fff', border: '1px solid rgba(255,255,255,0.1)',
+                  width: '100%',
+                }}
               >
                 Pay with WiPay
-              </Button>
+              </a>
               <p className="text-xs mt-2 text-center" style={{ color: 'rgb(var(--color-text-tertiary))' }}>
                 Enter{' '}
                 <button

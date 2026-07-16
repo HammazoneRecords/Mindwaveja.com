@@ -36,6 +36,10 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "app/_archived_legal",
+    "app/_archived_opportunities",
+    "app/_archived_phase-packs",
+    "app/_archived_services"
   ]
 }

@@ -25,16 +25,14 @@ export function WiPayButton({ price, priceNote, className = '' }: WiPayButtonPro
 
   return (
     <div className={`space-y-1.5 ${className}`}>
-      <Button
+      <a
         href={WIPAY_URL}
-        variant="wipay"
-        size="sm"
-        fullWidth
         target="_blank"
         rel="noopener noreferrer"
+        className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 bg-[#e8a020] text-white hover:bg-[#d4921a]"
       >
         Pay with WiPay
-      </Button>
+      </a>
       <p className="text-xs text-center text-fog-500">
         Enter <strong className="text-fog-300">{displayPrice}</strong> when prompted on the payment page
       </p>
@@ -52,16 +50,14 @@ export function WiPayPackButton({ packPrice, className = '' }: WiPayPackButtonPr
 
   return (
     <div className={`space-y-1.5 ${className}`}>
-      <Button
+      <a
         href={WIPAY_URL}
-        variant="wipay"
-        size="sm"
-        fullWidth
         target="_blank"
         rel="noopener noreferrer"
+        className="inline-flex items-center justify-center w-full px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 bg-[#e8a020] text-white hover:bg-[#d4921a]"
       >
         Pay with WiPay
-      </Button>
+      </a>
       <p className="text-xs text-center text-fog-500">
         Enter <strong className="text-fog-300">J${packPrice.toLocaleString('en-JM')}</strong> when prompted on the payment page
       </p>
