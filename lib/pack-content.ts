@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import type { PhasePack } from '@/lib/types';
 
 export interface CanonFile {
   /** Slug derived from filename, e.g. "04-what-you-need" */
@@ -15,6 +16,16 @@ const PACKS_ROOT = path.join(process.cwd(), '..', 'packs');
 function extractTitle(content: string): string {
   const match = content.match(/^#\s+(.+)$/m);
   return match ? match[1].trim() : '';
+}
+
+/** Converts a string array to a markdown bullet list */
+function toBulletList(items: string[]): string {
+  return items.map((item) => `- ${item}`).join('\n');
+}
+
+/** Converts a string array to a numbered list */
+function toNumberedList(items: string[]): string {
+  return items.map((item, i) => `${i + 1}. ${item}`).join('\n');
 }
 
 /**
@@ -48,4 +59,54 @@ export function getPackContent(slug: string): CanonFile[] {
       content: raw,
     };
   });
+}
+
+/**
+ * Builds CanonFile[] from a PhasePack JSON object.
+ * No disk reads — all content is generated from the JSON fields.
+ * This is the production path — the filesystem-based getPackContent() is
+ * only used when pack markdown files exist alongside the codebase.
+ */
+export function getPackContentFromJSON(pack: PhasePack): CanonFile[] {
+  const files: CanonFile[] = [];
+
+  if (pack.whatThisIs) {
+    files.push({ slug: 'what-this-is', title: 'What This Is', content: `## What This Is\n\n${pack.whatThisIs}` });
+  }
+  if (pack.whoThisIsNotFor?.length) {
+    files.push({ slug: 'who-this-is-not-for', title: 'Who This Is Not For', content: `## Who This Is Not For\n\n${toBulletList(pack.whoThisIsNotFor)}` });
+  }
+  if (pack.whatYouNeed?.length) {
+    files.push({ slug: 'what-you-need', title: 'What You Need', content: `## What You Need\n\n${toBulletList(pack.whatYouNeed)}` });
+  }
+  if (pack.firstSevenActions?.length) {
+    files.push({ slug: 'first-seven-actions', title: 'First Seven Actions', content: `## First Seven Actions\n\n${toNumberedList(pack.firstSevenActions)}` });
+  }
+  if (pack.waitingTimeTasks?.length) {
+    files.push({ slug: 'waiting-time-tasks', title: 'Waiting Time Tasks', content: `## Waiting Time Tasks\n\n${toBulletList(pack.waitingTimeTasks)}` });
+  }
+  if (pack.starterFolderContents?.length) {
+    files.push({ slug: 'starter-folder', title: 'Starter Folder Contents', content: `## Starter Folder Contents\n\n${toBulletList(pack.starterFolderContents)}` });
+  }
+  if (pack.valueAddMenu?.length) {
+    files.push({ slug: 'value-add-menu', title: 'Value Add Menu', content: `## Value Add Menu\n\n${toBulletList(pack.valueAddMenu)}` });
+  }
+  if (pack.salesMode) {
+    files.push({ slug: 'sales-mode', title: 'Sales Mode', content: `## Sales Mode\n\n${pack.salesMode}` });
+  }
+  if (pack.dailyMinimum) {
+    const dm = typeof pack.dailyMinimum === 'string' ? pack.dailyMinimum : JSON.stringify(pack.dailyMinimum);
+    files.push({ slug: 'daily-minimum', title: 'Daily Minimum', content: `## Daily Minimum\n\n${dm}` });
+  }
+  if (pack.commonFailurePoints?.length) {
+    files.push({ slug: 'common-failure-points', title: 'Common Failure Points', content: `## Common Failure Points\n\n${toBulletList(pack.commonFailurePoints)}` });
+  }
+  if (pack.ethicalCommunityRules?.length) {
+    files.push({ slug: 'ethical-community-rules', title: 'Ethical Community Rules', content: `## Ethical Community Rules\n\n${toBulletList(pack.ethicalCommunityRules)}` });
+  }
+  if (pack.exitExpandPaths?.length) {
+    files.push({ slug: 'exit-expand-paths', title: 'Exit & Expand Paths', content: `## Exit & Expand Paths\n\n${toBulletList(pack.exitExpandPaths)}` });
+  }
+
+  return files;
 }

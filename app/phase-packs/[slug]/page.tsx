@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import phasePacks from '@/content/phasePacks.json';
 import type { PhasePack } from '@/lib/types';
-import { getPackContent } from '@/lib/pack-content';
+import { getPackContentFromJSON } from '@/lib/pack-content';
 import { PhasePackDetail } from '@/components/phase-packs/PhasePackDetail';
 
 interface Props {
@@ -41,7 +41,7 @@ export default async function PhasePackPage({ params }: Props) {
     notFound();
   }
 
-  const content = getPackContent(slug);
+  const content = getPackContentFromJSON(pack);
 
   return <PhasePackDetail pack={pack} content={content} />;
 }
