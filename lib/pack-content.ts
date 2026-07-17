@@ -73,8 +73,11 @@ export function getPackContentFromJSON(pack: PhasePack): CanonFile[] {
   if (pack.whatThisIs) {
     files.push({ slug: 'what-this-is', title: 'What This Is', content: `## What This Is\n\n${pack.whatThisIs}` });
   }
-  if (pack.whoThisIsNotFor?.length) {
-    files.push({ slug: 'who-this-is-not-for', title: 'Who This Is Not For', content: `## Who This Is Not For\n\n${toBulletList(pack.whoThisIsNotFor)}` });
+  if (pack.whoThisIsNotFor) {
+    const items = Array.isArray(pack.whoThisIsNotFor) ? pack.whoThisIsNotFor : [pack.whoThisIsNotFor];
+    if (items.length > 0) {
+      files.push({ slug: 'who-this-is-not-for', title: 'Who This Is Not For', content: `## Who This Is Not For\n\n${toBulletList(items)}` });
+    }
   }
   if (pack.whatYouNeed?.length) {
     files.push({ slug: 'what-you-need', title: 'What You Need', content: `## What You Need\n\n${toBulletList(pack.whatYouNeed)}` });
