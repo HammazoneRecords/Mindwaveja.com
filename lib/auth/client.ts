@@ -1,6 +1,5 @@
 import { createAuthClient } from "better-auth/react";
 
-export const authClient = createAuthClient({
-  baseURL: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
-});
-
+// Use the browser's current origin. A NEXT_PUBLIC_* value is baked at build
+// time, while this app's production URL is supplied at container runtime.
+export const authClient = createAuthClient();
